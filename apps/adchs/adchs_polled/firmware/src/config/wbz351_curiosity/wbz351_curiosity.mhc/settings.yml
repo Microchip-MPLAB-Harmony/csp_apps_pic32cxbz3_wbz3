@@ -1,0 +1,14 @@
+configName: wbz351_curiosity
+folderName: wbz351_curiosity
+format_version: v1.0
+frameworkPath: ..\..\..\..\..
+processor: WBZ351
+projectName: adchs_polled_wbz351_curiosity
+settings:
+  PackageFilter: core;csp;devices;dev_packs
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\PIC32CX-BZ3_DFP\1.0.24\WBZ35\atdf\WBZ351.atdf
