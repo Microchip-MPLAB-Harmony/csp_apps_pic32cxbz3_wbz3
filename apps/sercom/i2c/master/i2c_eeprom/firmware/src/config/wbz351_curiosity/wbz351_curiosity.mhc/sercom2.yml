@@ -1,0 +1,22 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: sercom2}
+children:
+- type: Symbols
+  children:
+  - type: Hex
+    attributes: {id: I2CM_BAUD}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom2, value: '255'}
+  - type: Boolean
+    attributes: {id: I2CS_SDASETUP_TIME_SUPPORT}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom2, value: 'true'}
+- type: ElementPosition
+  attributes: {x: '170', y: '60', id: sercom2}
