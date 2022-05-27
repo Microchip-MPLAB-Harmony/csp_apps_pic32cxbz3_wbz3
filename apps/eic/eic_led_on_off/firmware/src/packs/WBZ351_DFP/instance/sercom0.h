@@ -20,16 +20,16 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_SERCOM0_INSTANCE_
 #define _WBZ35_SERCOM0_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SERCOM0 peripheral ========== */
-#define SERCOM0_INSTANCE_ID                      _UL_(3)    
-#define SERCOM0_DMAC_ID_RX                       _UL_(4)    
-#define SERCOM0_DMAC_ID_TX                       _UL_(5)    
-#define SERCOM0_GCLK_ID_SLOW                     _UL_(3)    
-#define SERCOM0_GCLK_ID_CORE                     _UL_(3)    
+#define SERCOM0_INSTANCE_ID                      (3)        
+#define SERCOM0_DMAC_ID_RX                       (4)        
+#define SERCOM0_DMAC_ID_TX                       (5)        
+#define SERCOM0_GCLK_ID_SLOW                     (3)        
+#define SERCOM0_GCLK_ID_CORE                     (3)        
 
 #endif /* _WBZ35_SERCOM0_INSTANCE_ */

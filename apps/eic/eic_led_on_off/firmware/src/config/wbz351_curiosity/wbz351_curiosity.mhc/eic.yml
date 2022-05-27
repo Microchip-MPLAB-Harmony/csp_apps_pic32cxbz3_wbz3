@@ -28,15 +28,6 @@ children:
       - type: User
         attributes: {value: 'true'}
   - type: Boolean
-    attributes: {id: EIC_CONFIG_FILTEN_0}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Boolean
     attributes: {id: EIC_CONFIG_FILTEN_1}
     children:
     - type: Attributes
@@ -63,15 +54,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: eic, value: '2'}
-  - type: Boolean
-    attributes: {id: EIC_DEBOUNCEN_0}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Boolean
     attributes: {id: EIC_DEBOUNCEN_1}
     children:
@@ -106,15 +88,6 @@ children:
       children:
       - type: User
         attributes: {value: 'true'}
-  - type: Menu
-    attributes: {id: EIC_MENU0}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Menu
     attributes: {id: EIC_MENU1}
     children:

@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_HMATRIX2TOP_COMPONENT_H_
 #define _WBZ35_HMATRIX2TOP_COMPONENT_H_
 
@@ -29,20 +29,20 @@
 /* ************************************************************************** */
 
 /* -------- HMATRIX2TOP_PRAS : (HMATRIX2TOP Offset: 0x00) (R/W 32) Priority A for Slave -------- */
-#define HMATRIX2TOP_PRAS_RESETVALUE           _U_(0x00)                                            /**<  (HMATRIX2TOP_PRAS) Priority A for Slave  Reset Value */
+#define HMATRIX2TOP_PRAS_RESETVALUE           _UINT32_(0x00)                                       /*  (HMATRIX2TOP_PRAS) Priority A for Slave  Reset Value */
 
-#define HMATRIX2TOP_PRAS_Msk                  _U_(0x00000000)                                      /**< (HMATRIX2TOP_PRAS) Register Mask  */
+#define HMATRIX2TOP_PRAS_Msk                  _UINT32_(0x00000000)                                 /* (HMATRIX2TOP_PRAS) Register Mask  */
 
 
 /* -------- HMATRIX2TOP_PRBS : (HMATRIX2TOP Offset: 0x04) (R/W 32) Priority B for Slave -------- */
-#define HMATRIX2TOP_PRBS_RESETVALUE           _U_(0x00)                                            /**<  (HMATRIX2TOP_PRBS) Priority B for Slave  Reset Value */
+#define HMATRIX2TOP_PRBS_RESETVALUE           _UINT32_(0x00)                                       /*  (HMATRIX2TOP_PRBS) Priority B for Slave  Reset Value */
 
-#define HMATRIX2TOP_PRBS_Msk                  _U_(0x00000000)                                      /**< (HMATRIX2TOP_PRBS) Register Mask  */
+#define HMATRIX2TOP_PRBS_Msk                  _UINT32_(0x00000000)                                 /* (HMATRIX2TOP_PRBS) Register Mask  */
 
 
 /** \brief HMATRIX2TOP register offsets definitions */
-#define HMATRIX2TOP_PRAS_REG_OFST      (0x00)              /* (HMATRIX2TOP_PRAS) Priority A for Slave Offset */
-#define HMATRIX2TOP_PRBS_REG_OFST      (0x04)              /* (HMATRIX2TOP_PRBS) Priority B for Slave Offset */
+#define HMATRIX2TOP_PRAS_REG_OFST      _UINT32_(0x00)      /* (HMATRIX2TOP_PRAS) Priority A for Slave Offset */
+#define HMATRIX2TOP_PRBS_REG_OFST      _UINT32_(0x04)      /* (HMATRIX2TOP_PRBS) Priority B for Slave Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 /** \brief PRS register API structure */
@@ -52,7 +52,7 @@ typedef struct
   __IO  uint32_t                       HMATRIX2TOP_PRBS;   /**< Offset: 0x04 (R/W  32) Priority B for Slave */
 } hmatrix2top_prs_registers_t;
 
-#define HMATRIX2TOP_PRS_NUMBER _U_(16)
+#define HMATRIX2TOP_PRS_NUMBER 16
 
 /** \brief HMATRIX2TOP register API structure */
 typedef struct

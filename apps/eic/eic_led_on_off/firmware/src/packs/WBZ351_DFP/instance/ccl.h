@@ -20,15 +20,15 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_CCL_INSTANCE_
 #define _WBZ35_CCL_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for CCL peripheral ========== */
-#define CCL_INSTANCE_ID                          _UL_(70)   
-#define CCL_CHIP_CCL_PADDR_MSB                   _UL_(9)    
-#define CCL_CHIP_CCL_LUT_NUM                     _UL_(2)    
-#define CCL_GCLK_ID                              _UL_(0)    
+#define CCL_INSTANCE_ID                          (70)       
+#define CCL_CHIP_CCL_PADDR_MSB                   (9)        
+#define CCL_CHIP_CCL_LUT_NUM                     (2)        
+#define CCL_GCLK_ID                              (0)        
 
 #endif /* _WBZ35_CCL_INSTANCE_ */
