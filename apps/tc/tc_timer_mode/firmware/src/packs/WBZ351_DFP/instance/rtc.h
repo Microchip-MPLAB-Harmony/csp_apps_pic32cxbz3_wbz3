@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_RTC_INSTANCE_
 #define _WBZ35_RTC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for RTC peripheral ========== */
-#define RTC_CHIP_RTC_PADDR_MSB                   _UL_(9)    
-#define RTC_CHIP_RTC_NUM_OF_ALARMS               _UL_(2)    
-#define RTC_CHIP_RTC_NUM_OF_BKREGS               _UL_(1)    
-#define RTC_CHIP_RTC_NUM_OF_COMP16               _UL_(4)    
-#define RTC_CHIP_RTC_NUM_OF_TAMPERS              _UL_(4)    
-#define RTC_DMAC_ID_TIMESTAMP                    _UL_(1)    
+#define RTC_CHIP_RTC_PADDR_MSB                   (9)        
+#define RTC_CHIP_RTC_NUM_OF_ALARMS               (2)        
+#define RTC_CHIP_RTC_NUM_OF_BKREGS               (1)        
+#define RTC_CHIP_RTC_NUM_OF_COMP16               (4)        
+#define RTC_CHIP_RTC_NUM_OF_TAMPERS              (4)        
+#define RTC_DMAC_ID_TIMESTAMP                    (1)        
 
 #endif /* _WBZ35_RTC_INSTANCE_ */
