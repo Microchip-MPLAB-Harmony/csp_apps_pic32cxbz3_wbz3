@@ -59,7 +59,7 @@
 typedef void (*pfn_handler_t)(void);
 
 /* Structure defining device vector types */
-typedef struct _H3DeviceVectors
+typedef struct H3DeviceVectorsTag
 {
   /* Stack pointer */
   uint32_t* pvStack;
@@ -86,8 +86,8 @@ typedef struct _H3DeviceVectors
   pfn_handler_t pfnEIC_Handler;                     /* 1 External Interrupt Controller */
   pfn_handler_t pfnFREQM_Handler;                   /* 2 Frequency Meter */
   pfn_handler_t pfnNVM_Handler;                     /* 3 Non-Volatile Memory */
-  pfn_handler_t pfnGPIOA_Handler;                   /* 4 PORT_A_INPUT_CHANGE_INTERRUPT */
-  pfn_handler_t pfnGPIOB_Handler;                   /* 5 PORT_B_INPUT_CHANGE_INTERRUPT */
+  pfn_handler_t pfnCHANGE_NOTICE_A_Handler;         /* 4 PORT_A_INPUT_CHANGE_INTERRUPT */
+  pfn_handler_t pfnCHANGE_NOTICE_B_Handler;         /* 5 PORT_B_INPUT_CHANGE_INTERRUPT */
   pfn_handler_t pfnDMAC_0_3_Handler;                /* 6 DMA Channel 0..3 */
   pfn_handler_t pfnDMAC_4_15_Handler;               /* 7 DMA Channel 4..15 */
   pfn_handler_t pfnEVSYS_0_3_Handler;               /* 8 Event System Channel 0..3 */

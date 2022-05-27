@@ -20,14 +20,14 @@
  *
  */
 
-/* file generated from device description version 2022-01-30T18:13:55Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_FREQM_INSTANCE_
 #define _WBZ35_FREQM_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for FREQM peripheral ========== */
-#define FREQM_INSTANCE_ID                        _UL_(1)    
-#define FREQM_GCLK_ID_MSR                        _UL_(1)    
-#define FREQM_GCLK_ID_REF                        _UL_(2)    
+#define FREQM_INSTANCE_ID                        (1)        
+#define FREQM_GCLK_ID_MSR                        (2)        
+#define FREQM_GCLK_ID_REF                        (1)        
 
 #endif /* _WBZ35_FREQM_INSTANCE_ */
