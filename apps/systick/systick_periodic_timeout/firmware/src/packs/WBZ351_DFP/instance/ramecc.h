@@ -20,12 +20,12 @@
  *
  */
 
-/* file generated from device description version 2022-01-30T18:13:55Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_RAMECC_INSTANCE_
 #define _WBZ35_RAMECC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for RAMECC peripheral ========== */
-#define RAMECC_INSTANCE_ID                       _UL_(36)   
+#define RAMECC_INSTANCE_ID                       (36)       
 
 #endif /* _WBZ35_RAMECC_INSTANCE_ */

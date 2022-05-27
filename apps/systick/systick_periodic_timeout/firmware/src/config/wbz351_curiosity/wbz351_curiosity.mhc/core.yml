@@ -164,7 +164,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '2'}
   - type: Combo
     attributes: {id: CONFIG_POSCMOD}
     children:
@@ -309,6 +309,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
+  - type: Combo
+    attributes: {id: OSCCON_NOSC_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: SPLL}
   - type: Hex
     attributes: {id: OSCCON_VALUE}
     children:
