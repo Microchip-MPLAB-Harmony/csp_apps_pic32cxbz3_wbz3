@@ -20,33 +20,33 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_ADCHS_INSTANCE_
 #define _WBZ35_ADCHS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ADCHS peripheral ========== */
-#define ADCHS_NUM_INTS                           _UL_(2)    
-#define ADCHS_SET_CLR_INV_PRESENT                _UL_(1)    /* Present */
-#define ADCHS_ADC_EXTERN_ANALOG_IP               _UL_(0)    /* Microchip SARCORE */
-#define ADCHS_ADC_USE_SYNP_MUX                   _UL_(0)    /* Microchip SARCORE */
-#define ADCHS_ADC_INPUTS_NMBR                    _UL_(12)   /* Number of Analog ADC Channels */
-#define ADCHS_ADC_VREF_STARTUP_TIME              _UL_(50)   /* from Rio-2 */
-#define ADCHS_ADC_CORE_CALIBRATE_TIME            _UL_(81)   /* from Rio-2 */
-#define ADCHS_ADC_CORES_NMBR                     _UL_(1)    /* Number of SARCOREs */
-#define ADCHS_ADC_FCC_NMBR                       _UL_(0)    /* No 1st class channels present */
-#define ADCHS_ADC_ITRIG_NMBR                     _UL_(6)    
-#define ADCHS_ADC_UPB_FIFO_PRESENT               _UL_(0)    /* FIFO present */
-#define ADCHS_ADC_UPB_FIFO_DEPTH                 _UL_(0)    
-#define ADCHS_ADC_BVCI_PORT_PRESENT              _UL_(1)    
-#define ADCHS_ADC_BVCI_FIFO_DEPTH                _UL_(16)   
-#define ADCHS_ADC_BVCI_ADDR_WIDTH                _UL_(15)   
-#define ADCHS_ADC_DCMP_NMBR                      _UL_(2)    
-#define ADCHS_ADC_FLTR_NMBR                      _UL_(2)    
-#define ADCHS_ADC_INTR_NMBR                      _UL_(114)  
-#define ADCHS_ADC_EARLY_INTR_PRESENT             _UL_(0)    /* No early interrupts */
-#define ADCHS_ADC_32BIT_REG_ADDR                 _UL_(1)    /* 32-bit wide registers */
-#define ADCHS_ADC_32BIT_OUTPUT_DATA              _UL_(1)    /* 32-bit wide register data */
-#define ADCHS_ADC_CVD_PRESENT                    _UL_(1)    /* CVD present */
+#define ADCHS_NUM_INTS                           (2)        
+#define ADCHS_SET_CLR_INV_PRESENT                (1)        /* Present */
+#define ADCHS_ADC_EXTERN_ANALOG_IP               (0)        /* Microchip SARCORE */
+#define ADCHS_ADC_USE_SYNP_MUX                   (0)        /* Microchip SARCORE */
+#define ADCHS_ADC_INPUTS_NMBR                    (12)       /* Number of Analog ADC Channels */
+#define ADCHS_ADC_VREF_STARTUP_TIME              (50)       /* from Rio-2 */
+#define ADCHS_ADC_CORE_CALIBRATE_TIME            (81)       /* from Rio-2 */
+#define ADCHS_ADC_CORES_NMBR                     (1)        /* Number of SARCOREs */
+#define ADCHS_ADC_FCC_NMBR                       (0)        /* No 1st class channels present */
+#define ADCHS_ADC_ITRIG_NMBR                     (6)        
+#define ADCHS_ADC_UPB_FIFO_PRESENT               (0)        /* FIFO present */
+#define ADCHS_ADC_UPB_FIFO_DEPTH                 (0)        
+#define ADCHS_ADC_BVCI_PORT_PRESENT              (1)        
+#define ADCHS_ADC_BVCI_FIFO_DEPTH                (16)       
+#define ADCHS_ADC_BVCI_ADDR_WIDTH                (15)       
+#define ADCHS_ADC_DCMP_NMBR                      (2)        
+#define ADCHS_ADC_FLTR_NMBR                      (2)        
+#define ADCHS_ADC_INTR_NMBR                      (114)      
+#define ADCHS_ADC_EARLY_INTR_PRESENT             (0)        /* No early interrupts */
+#define ADCHS_ADC_32BIT_REG_ADDR                 (1)        /* 32-bit wide registers */
+#define ADCHS_ADC_32BIT_OUTPUT_DATA              (1)        /* 32-bit wide register data */
+#define ADCHS_ADC_CVD_PRESENT                    (1)        /* CVD present */
 
 #endif /* _WBZ35_ADCHS_INSTANCE_ */

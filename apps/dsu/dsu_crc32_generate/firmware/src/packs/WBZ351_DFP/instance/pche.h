@@ -20,28 +20,28 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_PCHE_INSTANCE_
 #define _WBZ35_PCHE_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PCHE peripheral ========== */
-#define PCHE_UPB_ADDRL                           _UL_(0x2400) 
-#define PCHE_NUM_INTS                            _UL_(1)    /* ECC present */
-#define PCHE_PFM_ECC_PRESENT                     _UL_(1)    /* ECC present */
-#define PCHE_DCHE_PRIORITY                       _UL_(0)    /* dCache has equal priority with iCache and aCache */
-#define PCHE_PFM_RDATA_MSB                       _UL_(255)  /* bit flash data and 16-byte cache lines */
-#define PCHE_NUM_CL_I                            _UL_(4)    
-#define PCHE_NUM_CL_D                            _UL_(2)    
-#define PCHE_NUM_CL_A                            _UL_(2)    
-#define PCHE_FLOP_BASED_CACHE_ARRAY_I            _UL_(1)    /* Subject to Change / Design Legwork is needed */
-#define PCHE_FLOP_BASED_CACHE_ARRAY_D            _UL_(1)    /* Subject to Change / Design Legwork is needed */
-#define PCHE_FLOP_BASED_CACHE_ARRAY_A            _UL_(1)    /* Subject to Change / Design Legwork is needed */
+#define PCHE_UPB_ADDRL                           (0x2400)   
+#define PCHE_NUM_INTS                            (1)        /* ECC present */
+#define PCHE_PFM_ECC_PRESENT                     (1)        /* ECC present */
+#define PCHE_DCHE_PRIORITY                       (0)        /* dCache has equal priority with iCache and aCache */
+#define PCHE_PFM_RDATA_MSB                       (255)      /* bit flash data and 16-byte cache lines */
+#define PCHE_NUM_CL_I                            (4)        
+#define PCHE_NUM_CL_D                            (2)        
+#define PCHE_NUM_CL_A                            (2)        
+#define PCHE_FLOP_BASED_CACHE_ARRAY_I            (1)        /* Subject to Change / Design Legwork is needed */
+#define PCHE_FLOP_BASED_CACHE_ARRAY_D            (1)        /* Subject to Change / Design Legwork is needed */
+#define PCHE_FLOP_BASED_CACHE_ARRAY_A            (1)        /* Subject to Change / Design Legwork is needed */
 
 
-#if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
+#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 #define PCHE_CHE_TAG_MASK                        0xFD00_000F 
-#endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
+#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 
 
