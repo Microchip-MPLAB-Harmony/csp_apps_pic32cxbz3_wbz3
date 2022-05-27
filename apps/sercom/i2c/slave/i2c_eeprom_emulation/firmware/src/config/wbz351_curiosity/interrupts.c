@@ -78,13 +78,9 @@ void __attribute__((optimize("-O1"),section(".text.Dummy_Handler"),long_call, no
 }
 
 /* MISRAC 2012 deviation block start */
-/* MISRA C-2012 Rule 8.6 deviated 48 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
+/* MISRA C-2012 Rule 8.6 deviated 44 times.  Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
-extern void MemoryManagement_Handler   ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void BusFault_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void UsageFault_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SVCall_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void DebugMonitor_Handler       ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SysTick_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void RTC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
