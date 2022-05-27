@@ -20,20 +20,20 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_EIC_INSTANCE_
 #define _WBZ35_EIC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for EIC peripheral ========== */
-#define EIC_INSTANCE_ID                          _UL_(2)    
-#define EIC_CHIP_EIC_PADDR_MSB                   _UL_(9)    
-#define EIC_CHIP_EIC_EXTINT_NUM                  _UL_(4)    
-#define EIC_CHIP_EIC_NMISENSE_DEFAULT_VALUE      _UL_(0)    
-#define EIC_CHIP_EIC_NMI_FORCE_DETECTION         _UL_(0)    
-#define EIC_CHIP_EIC_NUMBER_OF_CONFIG_REGS       _UL_(1)    /* (CHIP_EIC_EXTINT_NUM+7)/8 */
-#define EIC_CHIP_EIC_NUMBER_OF_DPRESCALER_REGS   _UL_(1)    /* (CHIP_EIC_EXTINT_NUM+7)/8 */
-#define EIC_CHIP_EIC_NUMBER_OF_INTERRUPTS        _UL_(4)    /* CHIP_EIC_EXTINT_NUM */
-#define EIC_GCLK_ID                              _UL_(0)    
+#define EIC_INSTANCE_ID                          (2)        
+#define EIC_CHIP_EIC_PADDR_MSB                   (9)        
+#define EIC_CHIP_EIC_EXTINT_NUM                  (4)        
+#define EIC_CHIP_EIC_NMISENSE_DEFAULT_VALUE      (0)        
+#define EIC_CHIP_EIC_NMI_FORCE_DETECTION         (0)        
+#define EIC_CHIP_EIC_NUMBER_OF_CONFIG_REGS       (1)        /* (CHIP_EIC_EXTINT_NUM+7)/8 */
+#define EIC_CHIP_EIC_NUMBER_OF_DPRESCALER_REGS   (1)        /* (CHIP_EIC_EXTINT_NUM+7)/8 */
+#define EIC_CHIP_EIC_NUMBER_OF_INTERRUPTS        (4)        /* CHIP_EIC_EXTINT_NUM */
+#define EIC_GCLK_ID                              (0)        
 
 #endif /* _WBZ35_EIC_INSTANCE_ */

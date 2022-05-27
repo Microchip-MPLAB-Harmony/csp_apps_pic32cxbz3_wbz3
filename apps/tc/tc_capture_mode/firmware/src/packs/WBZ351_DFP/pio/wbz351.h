@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ351_GPIO_H_
 #define _WBZ351_GPIO_H_
 

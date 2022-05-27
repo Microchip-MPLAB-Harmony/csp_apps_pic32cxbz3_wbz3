@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_TC5_INSTANCE_
 #define _WBZ35_TC5_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC5 peripheral ========== */
-#define TC5_INSTANCE_ID                          _UL_(10)   
-#define TC5_DMAC_ID_OVF                          _UL_(42)   
-#define TC5_DMAC_ID_MC0                          _UL_(43)   
-#define TC5_DMAC_ID_MC1                          _UL_(44)   
-#define TC5_MASTER_SLAVE_MODE                    _UL_(2)    
-#define TC5_GCLK_ID                              _UL_(27)   
+#define TC5_INSTANCE_ID                          (10)       
+#define TC5_DMAC_ID_OVF                          (42)       
+#define TC5_DMAC_ID_MC0                          (43)       
+#define TC5_DMAC_ID_MC1                          (44)       
+#define TC5_MASTER_SLAVE_MODE                    (2)        
+#define TC5_GCLK_ID                              (27)       
 
 #endif /* _WBZ35_TC5_INSTANCE_ */
