@@ -128,7 +128,7 @@ void CLK_Initialize( void )
     while((BTZBSYS_REGS -> BTZBSYS_SUBSYS_STATUS_REG1 & 0x03) != 0x03);
 
     /* OSWEN    = SWITCH    */
-    /* SOSCEN   = ON   */
+    /* SOSCEN   = OFF   */
     /* CF       = NO_FAILDET       */
     /* SLPEN    = IDLE    */
     /* CLKLOCK  = UNLOCKED  */

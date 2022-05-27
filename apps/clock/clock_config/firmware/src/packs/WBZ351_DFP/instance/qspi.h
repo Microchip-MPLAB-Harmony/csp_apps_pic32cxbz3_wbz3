@@ -20,14 +20,14 @@
  *
  */
 
-/* file generated from device description version 2022-01-30T18:13:55Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_QSPI_INSTANCE_
 #define _WBZ35_QSPI_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for QSPI peripheral ========== */
-#define QSPI_INSTANCE_ID                         _UL_(64)   
-#define QSPI_DMAC_ID_RX                          _UL_(51)   
-#define QSPI_DMAC_ID_TX                          _UL_(52)   
+#define QSPI_INSTANCE_ID                         (64)       
+#define QSPI_DMAC_ID_RX                          (51)       
+#define QSPI_DMAC_ID_TX                          (52)       
 
 #endif /* _WBZ35_QSPI_INSTANCE_ */
