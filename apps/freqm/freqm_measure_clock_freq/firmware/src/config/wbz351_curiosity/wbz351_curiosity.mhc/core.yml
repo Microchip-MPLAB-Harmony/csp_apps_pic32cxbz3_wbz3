@@ -157,7 +157,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '2'}
   - type: Combo
     attributes: {id: CONFIG_LPOSCEN}
     children:
@@ -212,12 +212,6 @@ children:
   - type: Boolean
     attributes: {id: CONFIG_SYS_CLK_REFCLK1_OE}
     children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: User
@@ -231,15 +225,6 @@ children:
         attributes: {id: core, value: '0'}
       - type: User
         attributes: {value: '0'}
-  - type: Boolean
-    attributes: {id: CONFIG_SYS_CLK_REFCLK2_OE}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: String
     attributes: {id: CONFIG_SYS_CLK_REFCLK3_FREQ}
     children:
@@ -268,100 +253,13 @@ children:
       children:
       - type: User
         attributes: {value: '0'}
-  - type: Boolean
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_RSLP1}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: Boolean
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_RSLP2}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Boolean
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_SIDL1}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: Boolean
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_SIDL2}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Combo
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_SOURCE1}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: Combo
-    attributes: {id: CONFIG_SYS_CLK_REFCLK_SOURCE2}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: CONFIG_SYS_CLK_RODIV1}
     children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: User
         attributes: {value: '0'}
-  - type: Integer
-    attributes: {id: CONFIG_SYS_CLK_RODIV2}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Integer
-    attributes: {id: CONFIG_SYS_CLK_ROTRIM1}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: Integer
-    attributes: {id: CONFIG_SYS_CLK_ROTRIM2}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Combo
     attributes: {id: CONFIG_VBKP_32KCSEL}
     children:
