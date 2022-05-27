@@ -59,12 +59,12 @@ void GPIO_Initialize ( void )
 {
  
           /* PORTA Initialization */
-    GPIOA_REGS->GPIO_LAT = 0x200; /* Initial Latch Value */
-    GPIOA_REGS->GPIO_TRISCLR = 0x200; /* Direction Control */
+    GPIOA_REGS->GPIO_LAT = 0x200U; /* Initial Latch Value */
+    GPIOA_REGS->GPIO_TRISCLR = 0x200U; /* Direction Control */
     /* PORTB Initialization */
-    GPIOB_REGS->GPIO_LAT = 0x404; /* Initial Latch Value */
-    GPIOB_REGS->GPIO_TRISCLR = 0x40c; /* Direction Control */
-    GPIOB_REGS->GPIO_ANSELCLR = 0xc; /* Digital Mode Enable */
+    GPIOB_REGS->GPIO_LAT = 0x404U; /* Initial Latch Value */
+    GPIOB_REGS->GPIO_TRISCLR = 0x40cU; /* Direction Control */
+    GPIOB_REGS->GPIO_ANSELCLR = 0xcU; /* Digital Mode Enable */
 
 
     /* PPS Input Remapping */
