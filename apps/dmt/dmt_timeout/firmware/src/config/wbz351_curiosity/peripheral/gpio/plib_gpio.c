@@ -68,23 +68,23 @@ void GPIO_Initialize ( void )
     GPIOA_REGS->GPIO_CNCONSET = GPIO_CNCON_ON_Msk;
     GPIOA_REGS->GPIO_PORT;
     /* PORTB Initialization */
-    GPIOB_REGS->GPIO_LAT = 0x0; /* Initial Latch Value */
-    GPIOB_REGS->GPIO_TRISCLR = 0x8; /* Direction Control */
-    GPIOB_REGS->GPIO_ANSELCLR = 0x8; /* Digital Mode Enable */
+    GPIOB_REGS->GPIO_LAT = 0x0U; /* Initial Latch Value */
+    GPIOB_REGS->GPIO_TRISCLR = 0x8U; /* Direction Control */
+    GPIOB_REGS->GPIO_ANSELCLR = 0x8U; /* Digital Mode Enable */
 
 
     /* PPS Input Remapping */
-    PPS_REGS->PPS_SCOM0P1R = 3;
+    PPS_REGS->PPS_SCOM0P1R = 3U;
 
     /* PPS Output Remapping */
-    PPS_REGS->PPS_RPA5G3R = 2;
+    PPS_REGS->PPS_RPA5G3R = 2U;
 
 
     uint32_t i;
     /* Initialize Interrupt Pin data structures */
     portPinCbObj[0 + 0].pin = GPIO_PIN_RA4;
     
-    for(i=0; i<1; i++)
+    for(i=0U; i<1; i++)
     {
         portPinCbObj[i].callback = NULL;
     }

@@ -64,16 +64,16 @@ void DMT_Enable( void )
 void DMT_Clear( void )
 {
     /* Clear STEP1 */
-    DMT_REGS->DMT_DMTPRECLR = DMT_DMTPRECLR_STEP1(0x40);
+    DMT_REGS->DMT_DMTPRECLR = DMT_DMTPRECLR_STEP1(0x40U);
 
     /* Clear STEP2 */
-    DMT_REGS->DMT_DMTCLR = DMT_DMTCLR_STEP2(0x08);
+    DMT_REGS->DMT_DMTCLR = DMT_DMTCLR_STEP2(0x08U);
 }
 
 bool DMT_ClearWindowStatusGet( void )
 {
     /* Clear window open status */
-    return (bool) ((DMT_REGS->DMT_DMTSTAT & DMT_DMTSTAT_WINOPN_Msk) >> DMT_DMTSTAT_WINOPN_Pos);
+    return (bool) (((DMT_REGS->DMT_DMTSTAT & DMT_DMTSTAT_WINOPN_Msk) >> DMT_DMTSTAT_WINOPN_Pos) != 0U);
 }
 
 uint32_t DMT_CounterGet( void )
