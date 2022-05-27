@@ -262,6 +262,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: adchs, value: '941.17645'}
+  - type: String
+    attributes: {id: ADCHS_DMA_STATUS_REG}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: ADCDMASTAT}
   - type: Boolean
     attributes: {id: ADCHS_INTERRUPT}
     children:

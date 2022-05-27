@@ -20,23 +20,23 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_AC_INSTANCE_
 #define _WBZ35_AC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for AC peripheral ========== */
-#define AC_INSTANCE_ID                           _UL_(71)   
-#define AC_CHIP_AC_PADDR_MSB                     _UL_(9)    
-#define AC_CHIP_AC_IMPLEMENTS_VDBLR              _UL_(0)    
-#define AC_CHIP_AC_PAIRS                         _UL_(1)    
-#define AC_CHIP_AC_NUM_CMP                       _UL_(2)    
-#define AC_CHIP_AC_FUSES_DATA_MSB                _UL_(127)  
-#define AC_CHIP_AC_FUSES_RDY_MSB                 _UL_(3)    
-#define AC_CHIP_AC_FUSES_BIAS0_ROWID             _UL_(4)    
-#define AC_CHIP_AC_FUSES_BIAS0_START             _UL_(0)    
-#define AC_CHIP_AC_FUSES_BIAS0_SIZE              _UL_(2)    
-#define AC_GCLK_ID                               _UL_(20)   
-#define AC_LOAD_CALIB                            _UL_(0)    
+#define AC_INSTANCE_ID                           (71)       
+#define AC_CHIP_AC_PADDR_MSB                     (9)        
+#define AC_CHIP_AC_IMPLEMENTS_VDBLR              (0)        
+#define AC_CHIP_AC_PAIRS                         (1)        
+#define AC_CHIP_AC_NUM_CMP                       (2)        
+#define AC_CHIP_AC_FUSES_DATA_MSB                (127)      
+#define AC_CHIP_AC_FUSES_RDY_MSB                 (3)        
+#define AC_CHIP_AC_FUSES_BIAS0_ROWID             (4)        
+#define AC_CHIP_AC_FUSES_BIAS0_START             (0)        
+#define AC_CHIP_AC_FUSES_BIAS0_SIZE              (2)        
+#define AC_GCLK_ID                               (20)       
+#define AC_LOAD_CALIB                            (0)        
 
 #endif /* _WBZ35_AC_INSTANCE_ */
