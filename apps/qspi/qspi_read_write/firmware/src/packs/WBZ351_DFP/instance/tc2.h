@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_TC2_INSTANCE_
 #define _WBZ35_TC2_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC2 peripheral ========== */
-#define TC2_INSTANCE_ID                          _UL_(7)    
-#define TC2_DMAC_ID_OVF                          _UL_(33)   
-#define TC2_DMAC_ID_MC0                          _UL_(34)   
-#define TC2_DMAC_ID_MC1                          _UL_(35)   
-#define TC2_MASTER_SLAVE_MODE                    _UL_(1)    
-#define TC2_GCLK_ID                              _UL_(26)   
+#define TC2_INSTANCE_ID                          (7)        
+#define TC2_DMAC_ID_OVF                          (33)       
+#define TC2_DMAC_ID_MC0                          (34)       
+#define TC2_DMAC_ID_MC1                          (35)       
+#define TC2_MASTER_SLAVE_MODE                    (1)        
+#define TC2_GCLK_ID                              (26)       
 
 #endif /* _WBZ35_TC2_INSTANCE_ */

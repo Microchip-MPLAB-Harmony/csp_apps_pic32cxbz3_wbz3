@@ -20,13 +20,13 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_PPS_INSTANCE_
 #define _WBZ35_PPS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PPS peripheral ========== */
-#define PPS_PB_ADDRL                             _UL_(0x1000) 
-#define PPS_PB_ADDRH                             _UL_(0x13FF) 
+#define PPS_PB_ADDRL                             (0x1000)   
+#define PPS_PB_ADDRH                             (0x13FF)   
 
 #endif /* _WBZ35_PPS_INSTANCE_ */

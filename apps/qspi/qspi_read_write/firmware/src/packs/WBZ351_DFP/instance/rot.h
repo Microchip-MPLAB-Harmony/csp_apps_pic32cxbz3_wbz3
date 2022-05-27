@@ -20,15 +20,15 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_ROT_INSTANCE_
 #define _WBZ35_ROT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ROT peripheral ========== */
-#define ROT_ROM_SIZE                             _UL_(64)   
-#define ROT_NUM_FUSE_BLKS                        _UL_(3)    /* CAL bits and die info a part of the NVR region */
-#define ROT_CAL_NUM                              _UL_(0)    
-#define ROT_SYMMETRIC_SECURE_BOOT                _UL_(0)    /* Secure boot using ECCDSA authentication */
+#define ROT_ROM_SIZE                             (64)       
+#define ROT_NUM_FUSE_BLKS                        (3)        /* CAL bits and die info a part of the NVR region */
+#define ROT_CAL_NUM                              (0)        
+#define ROT_SYMMETRIC_SECURE_BOOT                (0)        /* Secure boot using ECCDSA authentication */
 
 #endif /* _WBZ35_ROT_INSTANCE_ */
