@@ -20,25 +20,25 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_TCC2_INSTANCE_
 #define _WBZ35_TCC2_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TCC2 peripheral ========== */
-#define TCC2_INSTANCE_ID                         _UL_(15)   
-#define TCC2_SIZE                                _UL_(16)   
-#define TCC2_MASTER_SLAVE_MODE                   _UL_(0)    
-#define TCC2_CC_NUM                              _UL_(2)    
-#define TCC2_OW_NUM                              _UL_(2)    
-#define TCC2_DITHERING                           _UL_(16)   
-#define TCC2_OTMX                                _UL_(1)    
-#define TCC2_DTI                                 _UL_(2)    
-#define TCC2_SWAP                                _UL_(4)    
-#define TCC2_PG                                  _UL_(8)    
-#define TCC2_DMAC_ID_OVF                         _UL_(24)   
-#define TCC2_DMAC_ID_MC0                         _UL_(25)   
-#define TCC2_DMAC_ID_MC1                         _UL_(26)   
-#define TCC2_GCLK_ID                             _UL_(5)    
+#define TCC2_INSTANCE_ID                         (15)       
+#define TCC2_SIZE                                (16)       
+#define TCC2_MASTER_SLAVE_MODE                   (0)        
+#define TCC2_CC_NUM                              (2)        
+#define TCC2_OW_NUM                              (2)        
+#define TCC2_DITHERING                           (1)        
+#define TCC2_OTMX                                (1)        
+#define TCC2_DTI                                 (1)        
+#define TCC2_SWAP                                (1)        
+#define TCC2_PG                                  (1)        
+#define TCC2_DMAC_ID_OVF                         (24)       
+#define TCC2_DMAC_ID_MC0                         (25)       
+#define TCC2_DMAC_ID_MC1                         (26)       
+#define TCC2_GCLK_ID                             (5)        
 
 #endif /* _WBZ35_TCC2_INSTANCE_ */

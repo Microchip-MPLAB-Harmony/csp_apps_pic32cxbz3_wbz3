@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_TC6_INSTANCE_
 #define _WBZ35_TC6_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC6 peripheral ========== */
-#define TC6_INSTANCE_ID                          _UL_(11)   
-#define TC6_DMAC_ID_OVF                          _UL_(45)   
-#define TC6_DMAC_ID_MC0                          _UL_(46)   
-#define TC6_DMAC_ID_MC1                          _UL_(47)   
-#define TC6_MASTER_SLAVE_MODE                    _UL_(1)    
-#define TC6_GCLK_ID                              _UL_(28)   
+#define TC6_INSTANCE_ID                          (11)       
+#define TC6_DMAC_ID_OVF                          (45)       
+#define TC6_DMAC_ID_MC0                          (46)       
+#define TC6_DMAC_ID_MC1                          (47)       
+#define TC6_MASTER_SLAVE_MODE                    (1)        
+#define TC6_GCLK_ID                              (28)       
 
 #endif /* _WBZ35_TC6_INSTANCE_ */

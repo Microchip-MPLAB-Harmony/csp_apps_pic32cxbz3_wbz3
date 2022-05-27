@@ -54,11 +54,11 @@ The following table shows the target hardware for the application projects.
 |Signal Name| Pad   | Pin |
 |-----------|-------|-----|
 | TCC0-WO0  | PA08  | Pin 18 of Xpro Header |
-| TCC0-WO1  | PA14  | Pin 12 of Xpro Header |
+| TCC0-WO1  | PA14  | Pin 16 of Xpro Header |
 | TCC0-WO2  | PB01  | Pin 8 of Xpro Header |
-| TCC0-WO3  | PA07  | Pin 16 of Xpro Header |
+| TCC0-WO3  | PA07  | Pin 4 of Xpro Header |
 | TCC0-WO4  | PA04  | Pin 6 of Xpro Header |
-| TCC0-WO5  | PB03  | Pin 4 of Xpro Header |
+| TCC0-WO5  | PB03  | Pin 12 of Xpro Header |
 ||||
 
 

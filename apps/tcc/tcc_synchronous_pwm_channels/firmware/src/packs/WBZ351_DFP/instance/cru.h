@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_CRU_INSTANCE_
 #define _WBZ35_CRU_INSTANCE_
 

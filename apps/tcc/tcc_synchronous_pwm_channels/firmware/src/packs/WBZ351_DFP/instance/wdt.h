@@ -20,15 +20,15 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_WDT_INSTANCE_
 #define _WBZ35_WDT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for WDT peripheral ========== */
-#define WDT_UPB_ADDRL                            _UL_(320)  /* See Table 3-20 */
-#define WDT_MAX_RUN_PS                           _UL_(20)   
-#define WDT_MAX_SLEEP_PS                         _UL_(20)   
-#define WDT_WINDOW_WDT                           _UL_(1)    /* enabled */
+#define WDT_UPB_ADDRL                            (320)      /* See Table 3-20 */
+#define WDT_MAX_RUN_PS                           (20)       
+#define WDT_MAX_SLEEP_PS                         (20)       
+#define WDT_WINDOW_WDT                           (1)        /* enabled */
 
 #endif /* _WBZ35_WDT_INSTANCE_ */

@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_DMAC_INSTANCE_
 #define _WBZ35_DMAC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DMAC peripheral ========== */
-#define DMAC_INSTANCE_ID                         _UL_(34)   
-#define DMAC_TRIG_NUM                            _UL_(53)   
-#define DMAC_DMA_EVIN_NUM                        _UL_(8)    
-#define DMAC_DMA_CH_NUM                          _UL_(16)   
-#define DMAC_DMA_EVOUT_NUM                       _UL_(4)    
-#define DMAC_DMA_FIFO_SIZE                       _UL_(16)   
+#define DMAC_INSTANCE_ID                         (34)       
+#define DMAC_TRIG_NUM                            (53)       
+#define DMAC_DMA_EVIN_NUM                        (8)        
+#define DMAC_DMA_CH_NUM                          (16)       
+#define DMAC_DMA_EVOUT_NUM                       (4)        
+#define DMAC_DMA_FIFO_SIZE                       (16)       
 
 #endif /* _WBZ35_DMAC_INSTANCE_ */

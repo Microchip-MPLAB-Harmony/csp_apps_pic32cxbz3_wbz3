@@ -5,10 +5,10 @@ frameworkPath: ..\..\..\..\..
 processor: WBZ351
 projectName: tcc_synchronous_pwm_channels_wbz351_curiosity
 settings:
-  PackageFilter: core;csp;devices;dev_packs
+  PackageFilter: bootloader;bsp;cec173x_soteria_lib;core;crypto;csp;Devices;dev_packs;harmony-services;net;quick_docs;usb
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'
   CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: .\dev_packs\Microchip\PIC32CX-BZ3_DFP\1.0.24\WBZ35\atdf\WBZ351.atdf
+  DFPPath: .\dev_packs\Microchip\PIC32CX-BZ3_DFP\1.0.44\WBZ35\atdf\WBZ351.atdf

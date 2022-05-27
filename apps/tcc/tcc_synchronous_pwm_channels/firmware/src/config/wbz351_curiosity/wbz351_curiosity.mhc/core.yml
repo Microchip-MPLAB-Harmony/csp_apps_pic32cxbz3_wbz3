@@ -206,7 +206,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1'}
+        attributes: {id: core, value: '2'}
   - type: Combo
     attributes: {id: CONFIG_POSCMOD}
     children:
@@ -524,7 +524,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '39'}
+        attributes: {value: '27'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_FUNCTION_1}
     children:
@@ -663,7 +663,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '37'}
+        attributes: {value: '28'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_FUNCTION_2}
     children:
@@ -802,7 +802,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '28'}
+        attributes: {value: '37'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_FUNCTION_3}
     children:
@@ -815,7 +815,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '38'}
+        attributes: {value: '39'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_FUNCTION_4}
     children:
@@ -828,7 +828,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '29'}
+        attributes: {value: '38'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_FUNCTION_5}
     children:
@@ -841,7 +841,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '27'}
+        attributes: {value: '29'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_PIN_0}
     children:
@@ -854,7 +854,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '10'}
+        attributes: {value: '26'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_PIN_1}
     children:
@@ -918,7 +918,7 @@ children:
           - type: Pair
             attributes: {description: RPA3G3R, value: RPA3G3R, key: RPA3}
           - type: Pair
-            attributes: {description: RPA4G4R, value: RPA4G4R, key: RPA4}
+            attributes: {description: RPA4G4R, value: RPA4G3R, key: RPA4}
       - type: Boolean
         attributes: {id: visible}
         children:
@@ -926,7 +926,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '22'}
+        attributes: {value: '21'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_PIN_2}
     children:
@@ -980,9 +980,9 @@ children:
           - type: Pair
             attributes: {description: RPA9G4R, value: RPA9G4R, key: RPA9}
           - type: Pair
-            attributes: {description: RPA7G2R, value: RPA7G2R, key: RPA7}
+            attributes: {description: RPA7G2R, value: RPA7G1R, key: RPA7}
           - type: Pair
-            attributes: {description: RPA8G4R, value: RPA8G4R, key: RPA8}
+            attributes: {description: RPA8G4R, value: RPA8G3R, key: RPA8}
           - type: Pair
             attributes: {description: RPA5G4R, value: RPA5G4R, key: RPA5}
           - type: Pair
@@ -998,7 +998,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '21'}
+        attributes: {value: '22'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_PIN_3}
     children:
@@ -1070,7 +1070,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '4'}
+        attributes: {value: '10'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_PIN_4}
     children:
@@ -1083,7 +1083,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '4'}
   - type: KeyValueSet
     attributes: {id: SYS_PORT_PPS_OUTPUT_PIN_5}
     children:
@@ -1155,7 +1155,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '26'}
+        attributes: {value: '1'}
   - type: Boolean
     attributes: {id: TCC0_CLOCK_ENABLE}
     children:
