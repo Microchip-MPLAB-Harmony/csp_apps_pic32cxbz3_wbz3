@@ -18,5 +18,14 @@ children:
       children:
       - type: Dynamic
         attributes: {id: sercom2, value: 'true'}
+  - type: Comment
+    attributes: {id: I2C_BAUD_ERROR_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
 - type: ElementPosition
   attributes: {x: '170', y: '60', id: sercom2}

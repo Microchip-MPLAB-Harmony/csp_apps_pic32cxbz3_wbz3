@@ -20,13 +20,13 @@
  *
  */
 
-/* file generated from device description version 2022-01-30T18:13:55Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_DGI_SPI_INSTANCE_
 #define _WBZ35_DGI_SPI_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DGI_SPI peripheral ========== */
-#define DGI_SPI_PB_ADDRL                         _UL_(0x3E00) 
-#define DGI_SPI_PB_ADDRH                         _UL_(0x3FFF) 
+#define DGI_SPI_PB_ADDRL                         (0x3E00)   
+#define DGI_SPI_PB_ADDRH                         (0x3FFF)   
 
 #endif /* _WBZ35_DGI_SPI_INSTANCE_ */

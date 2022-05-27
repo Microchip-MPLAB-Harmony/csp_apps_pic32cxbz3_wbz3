@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-01-30T18:13:55Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_ZIGBEE_COMPONENT_H_
 #define _WBZ35_ZIGBEE_COMPONENT_H_
 
