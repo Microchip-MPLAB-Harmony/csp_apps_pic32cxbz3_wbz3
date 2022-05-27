@@ -20,15 +20,16 @@
  *
  */
 
-/* File generated from device description version 2022-02-03T13:54:44Z */
+/* File generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ351_H_
 #define _WBZ351_H_
 
 /* Header version uses Semantic Versioning 2.0.0 (https://semver.org/) */
-#define HEADER_FORMAT_VERSION "2.0.0"
+#define HEADER_FORMAT_VERSION "2.1.0"
 
 #define HEADER_FORMAT_VERSION_MAJOR (2)
-#define HEADER_FORMAT_VERSION_MINOR (0)
+#define HEADER_FORMAT_VERSION_MINOR (1)
+#define HEADER_FORMAT_VERSION_PATCH (0)
 
 /* WBZ351 definitions
   This file defines all structures and symbols for WBZ351:
@@ -47,21 +48,21 @@
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #if !defined(SKIP_INTEGER_LITERALS)
-#  if defined(_U_) || defined(_L_) || defined(_UL_)
-#    error "Integer Literals macros already defined elsewhere"
+#  if defined(_UINT8_) || defined(_UINT16_) || defined(_UINT32_)
+#    error "Integer constant value macros already defined elsewhere"
 #  endif
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/* Macros that deal with adding suffixes to integer literal constants for C/C++ */
-#  define _U_(x) (x ## U)    /* C code: Unsigned integer literal constant value */
-#  define _L_(x) (x ## L)    /* C code: Long integer literal constant value */
-#  define _UL_(x) (x ## UL)  /* C code: Unsigned Long integer literal constant value */
+/* Macros that deal with sizes of integer constants for C/C++ */
+#  define _UINT8_(x)   ((uint8_t)(x))    /* C code: 8-bits unsigned integer constant value */
+#  define _UINT16_(x)  ((uint16_t)(x))   /* C code: 16-bits unsigned integer constant value */
+#  define _UINT32_(x)  ((uint32_t)(x))   /* C code: 32-bits unsigned integer constant value */
 
 #else /* Assembler */
 
-#  define _U_(x) x    /* Assembler: Unsigned integer literal constant value */
-#  define _L_(x) x    /* Assembler: Long integer literal constant value */
-#  define _UL_(x) x   /* Assembler: Unsigned Long integer literal constant value */
+#  define _UINT8_(x) x    /* Assembler: 8-bits unsigned integer constant value */
+#  define _UINT16_(x) x   /* Assembler: 16-bits unsigned integer constant value */
+#  define _UINT32_(x) x   /* Assembler: 32-bits unsigned integer constant value */
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 #endif /* SKIP_INTEGER_LITERALS */
 
@@ -473,58 +474,58 @@ void BT_LC_Handler                 ( void );
 /* ************************************************************************** */
 /*   BASE ADDRESS DEFINITIONS FOR WBZ351                                      */
 /* ************************************************************************** */
-#define AC_BASE_ADDRESS                  _UL_(0x42001c00)                              /* AC Base Address */
-#define ADCHS_BASE_ADDRESS               _UL_(0x44001400)                              /* ADCHS Base Address */
-#define ARB_BASE_ADDRESS                 _UL_(0x41011000)                              /* ARB Base Address */
-#define BLE_BASE_ADDRESS                 _UL_(0x41012000)                              /* BLE Base Address */
-#define BTZBSYS_BASE_ADDRESS             _UL_(0x41014000)                              /* BTZBSYS Base Address */
-#define CCL_BASE_ADDRESS                 _UL_(0x42001800)                              /* CCL Base Address */
-#define CFG_BASE_ADDRESS                 _UL_(0x44000000)                              /* CFG Base Address */
-#define CMCC_BASE_ADDRESS                _UL_(0x41002000)                              /* CMCC Base Address */
-#define CRU_BASE_ADDRESS                 _UL_(0x44000a00)                              /* CRU Base Address */
-#define CVD_BASE_ADDRESS                 _UL_(0x44002400)                              /* CVD Base Address */
-#define DAC_CTRL_BASE_ADDRESS            _UL_(0x44003c00)                              /* DAC_CTRL Base Address */
-#define DGI_SPI_BASE_ADDRESS             _UL_(0x44003e00)                              /* DGI_SPI Base Address */
-#define DMAC_BASE_ADDRESS                _UL_(0x41004000)                              /* DMAC Base Address */
-#define DMT_BASE_ADDRESS                 _UL_(0x44000e00)                              /* DMT Base Address */
-#define DSCON_BASE_ADDRESS               _UL_(0x42011000)                              /* DSCON Base Address */
-#define DSU_BASE_ADDRESS                 _UL_(0x41000000)                              /* DSU Base Address */
-#define EIC_BASE_ADDRESS                 _UL_(0x40000800)                              /* EIC Base Address */
-#define EFUSE_BASE_ADDRESS               _UL_(0x00000000)                              /* EFUSE Base Address */
-#define EVSYS_BASE_ADDRESS               _UL_(0x41006000)                              /* EVSYS Base Address */
-#define FREQM_BASE_ADDRESS               _UL_(0x40000400)                              /* FREQM Base Address */
-#define FUSES_DEVICECFG_BASE_ADDRESS     _UL_(0x00805e80)                              /* FUSES Base Address */
-#define GPIOA_BASE_ADDRESS               _UL_(0x44002a00)                              /* GPIOA Base Address */
-#define GPIOB_BASE_ADDRESS               _UL_(0x44002b00)                              /* GPIOB Base Address */
-#define HMATRIX2TOP_BASE_ADDRESS         _UL_(0x42002400)                              /* HMATRIX2TOP Base Address */
-#define NVM_BASE_ADDRESS                 _UL_(0x44000600)                              /* NVM Base Address */
-#define PAC_BASE_ADDRESS                 _UL_(0x40000000)                              /* PAC Base Address */
-#define PCHE_BASE_ADDRESS                _UL_(0x44012400)                              /* PCHE Base Address */
-#define PFW_BASE_ADDRESS                 _UL_(0x44000800)                              /* PFW Base Address */
-#define PMU_BASE_ADDRESS                 _UL_(0x44013e00)                              /* PMU Base Address */
-#define PPS_BASE_ADDRESS                 _UL_(0x44001000)                              /* PPS Base Address */
-#define QSPI_BASE_ADDRESS                _UL_(0x42000000)                              /* QSPI Base Address */
-#define RAMECC_BASE_ADDRESS              _UL_(0x41008000)                              /* RAMECC Base Address */
-#define RCON_BASE_ADDRESS                _UL_(0x44000a00)                              /* RCON Base Address */
-#define ROT_BASE_ADDRESS                 _UL_(0x44002c00)                              /* ROT Base Address */
-#define RTC_BASE_ADDRESS                 _UL_(0x42010000)                              /* RTC Base Address */
-#define SERCOM0_BASE_ADDRESS             _UL_(0x40000c00)                              /* SERCOM0 Base Address */
-#define SERCOM1_BASE_ADDRESS             _UL_(0x40001000)                              /* SERCOM1 Base Address */
-#define SERCOM2_BASE_ADDRESS             _UL_(0x42000400)                              /* SERCOM2 Base Address */
-#define SILEX_BASE_ADDRESS               _UL_(0x43000000)                              /* SILEX Base Address */
-#define TC0_BASE_ADDRESS                 _UL_(0x40001400)                              /* TC0 Base Address */
-#define TC1_BASE_ADDRESS                 _UL_(0x40001800)                              /* TC1 Base Address */
-#define TC2_BASE_ADDRESS                 _UL_(0x40001c00)                              /* TC2 Base Address */
-#define TC3_BASE_ADDRESS                 _UL_(0x40002000)                              /* TC3 Base Address */
-#define TC4_BASE_ADDRESS                 _UL_(0x40002400)                              /* TC4 Base Address */
-#define TC5_BASE_ADDRESS                 _UL_(0x40002800)                              /* TC5 Base Address */
-#define TC6_BASE_ADDRESS                 _UL_(0x40002c00)                              /* TC6 Base Address */
-#define TC7_BASE_ADDRESS                 _UL_(0x40003000)                              /* TC7 Base Address */
-#define TCC0_BASE_ADDRESS                _UL_(0x40003400)                              /* TCC0 Base Address */
-#define TCC1_BASE_ADDRESS                _UL_(0x40003800)                              /* TCC1 Base Address */
-#define TCC2_BASE_ADDRESS                _UL_(0x40003c00)                              /* TCC2 Base Address */
-#define WDT_BASE_ADDRESS                 _UL_(0x44000500)                              /* WDT Base Address */
-#define ZIGBEE_BASE_ADDRESS              _UL_(0x41010000)                              /* ZIGBEE Base Address */
+#define AC_BASE_ADDRESS                  _UINT32_(0x42001c00)                          /* AC Base Address */
+#define ADCHS_BASE_ADDRESS               _UINT32_(0x44001400)                          /* ADCHS Base Address */
+#define ARB_BASE_ADDRESS                 _UINT32_(0x41011000)                          /* ARB Base Address */
+#define BLE_BASE_ADDRESS                 _UINT32_(0x41012000)                          /* BLE Base Address */
+#define BTZBSYS_BASE_ADDRESS             _UINT32_(0x41014000)                          /* BTZBSYS Base Address */
+#define CCL_BASE_ADDRESS                 _UINT32_(0x42001800)                          /* CCL Base Address */
+#define CFG_BASE_ADDRESS                 _UINT32_(0x44000000)                          /* CFG Base Address */
+#define CMCC_BASE_ADDRESS                _UINT32_(0x41002000)                          /* CMCC Base Address */
+#define CRU_BASE_ADDRESS                 _UINT32_(0x44000a00)                          /* CRU Base Address */
+#define CVD_BASE_ADDRESS                 _UINT32_(0x44002400)                          /* CVD Base Address */
+#define DAC_CTRL_BASE_ADDRESS            _UINT32_(0x44003c00)                          /* DAC_CTRL Base Address */
+#define DGI_SPI_BASE_ADDRESS             _UINT32_(0x44003e00)                          /* DGI_SPI Base Address */
+#define DMAC_BASE_ADDRESS                _UINT32_(0x41004000)                          /* DMAC Base Address */
+#define DMT_BASE_ADDRESS                 _UINT32_(0x44000e00)                          /* DMT Base Address */
+#define DSCON_BASE_ADDRESS               _UINT32_(0x42011000)                          /* DSCON Base Address */
+#define DSU_BASE_ADDRESS                 _UINT32_(0x41000000)                          /* DSU Base Address */
+#define EIC_BASE_ADDRESS                 _UINT32_(0x40000800)                          /* EIC Base Address */
+#define EFUSE_BASE_ADDRESS               _UINT32_(0x00000000)                          /* EFUSE Base Address */
+#define EVSYS_BASE_ADDRESS               _UINT32_(0x41006000)                          /* EVSYS Base Address */
+#define FREQM_BASE_ADDRESS               _UINT32_(0x40000400)                          /* FREQM Base Address */
+#define FUSES_DEVICECFG_BASE_ADDRESS     _UINT32_(0x00805e80)                          /* FUSES Base Address */
+#define GPIOA_BASE_ADDRESS               _UINT32_(0x44002a00)                          /* GPIOA Base Address */
+#define GPIOB_BASE_ADDRESS               _UINT32_(0x44002b00)                          /* GPIOB Base Address */
+#define HMATRIX2TOP_BASE_ADDRESS         _UINT32_(0x42002400)                          /* HMATRIX2TOP Base Address */
+#define NVM_BASE_ADDRESS                 _UINT32_(0x44000600)                          /* NVM Base Address */
+#define PAC_BASE_ADDRESS                 _UINT32_(0x40000000)                          /* PAC Base Address */
+#define PCHE_BASE_ADDRESS                _UINT32_(0x44012400)                          /* PCHE Base Address */
+#define PFW_BASE_ADDRESS                 _UINT32_(0x44000800)                          /* PFW Base Address */
+#define PMU_BASE_ADDRESS                 _UINT32_(0x44013e00)                          /* PMU Base Address */
+#define PPS_BASE_ADDRESS                 _UINT32_(0x44001000)                          /* PPS Base Address */
+#define QSPI_BASE_ADDRESS                _UINT32_(0x42000000)                          /* QSPI Base Address */
+#define RAMECC_BASE_ADDRESS              _UINT32_(0x41008000)                          /* RAMECC Base Address */
+#define RCON_BASE_ADDRESS                _UINT32_(0x44000a00)                          /* RCON Base Address */
+#define ROT_BASE_ADDRESS                 _UINT32_(0x44002c00)                          /* ROT Base Address */
+#define RTC_BASE_ADDRESS                 _UINT32_(0x42010000)                          /* RTC Base Address */
+#define SERCOM0_BASE_ADDRESS             _UINT32_(0x40000c00)                          /* SERCOM0 Base Address */
+#define SERCOM1_BASE_ADDRESS             _UINT32_(0x40001000)                          /* SERCOM1 Base Address */
+#define SERCOM2_BASE_ADDRESS             _UINT32_(0x42000400)                          /* SERCOM2 Base Address */
+#define SILEX_BASE_ADDRESS               _UINT32_(0x43000000)                          /* SILEX Base Address */
+#define TC0_BASE_ADDRESS                 _UINT32_(0x40001400)                          /* TC0 Base Address */
+#define TC1_BASE_ADDRESS                 _UINT32_(0x40001800)                          /* TC1 Base Address */
+#define TC2_BASE_ADDRESS                 _UINT32_(0x40001c00)                          /* TC2 Base Address */
+#define TC3_BASE_ADDRESS                 _UINT32_(0x40002000)                          /* TC3 Base Address */
+#define TC4_BASE_ADDRESS                 _UINT32_(0x40002400)                          /* TC4 Base Address */
+#define TC5_BASE_ADDRESS                 _UINT32_(0x40002800)                          /* TC5 Base Address */
+#define TC6_BASE_ADDRESS                 _UINT32_(0x40002c00)                          /* TC6 Base Address */
+#define TC7_BASE_ADDRESS                 _UINT32_(0x40003000)                          /* TC7 Base Address */
+#define TCC0_BASE_ADDRESS                _UINT32_(0x40003400)                          /* TCC0 Base Address */
+#define TCC1_BASE_ADDRESS                _UINT32_(0x40003800)                          /* TCC1 Base Address */
+#define TCC2_BASE_ADDRESS                _UINT32_(0x40003c00)                          /* TCC2 Base Address */
+#define WDT_BASE_ADDRESS                 _UINT32_(0x44000500)                          /* WDT Base Address */
+#define ZIGBEE_BASE_ADDRESS              _UINT32_(0x41010000)                          /* ZIGBEE Base Address */
 
 /* ************************************************************************** */
 /*   PIO DEFINITIONS FOR WBZ351                                               */
@@ -534,58 +535,57 @@ void BT_LC_Handler                 ( void );
 /* ************************************************************************** */
 /*   MEMORY MAPPING DEFINITIONS FOR WBZ351                                    */
 /* ************************************************************************** */
+#define ROM_SECURE_BOOT_ROM_SIZE       _UINT32_(0x00010000)    /*   64kB Memory segment type: rom */
+#define ROM_SECURE_BOOT_PATCH_SIZE     _UINT32_(0x00000800)    /*    2kB Memory segment type: rom */
+#define FCR_PFM_SIZE                   _UINT32_(0x00080000)    /*  512kB Memory segment type: flash */
+#define FCR_PFM_PAGE_SIZE              _UINT32_(      4096)
+#define FCR_PFM_NB_OF_PAGES            _UINT32_(       128)
 
-#define ROM_SECURE_BOOT_ROM_SIZE       _UL_(0x00010000)    /*   64kB Memory segment type: rom */
-#define ROM_SECURE_BOOT_PATCH_SIZE     _UL_(0x00000800)    /*    2kB Memory segment type: rom */
-#define FCR_PFM_SIZE                   _UL_(0x00080000)    /*  512kB Memory segment type: flash */
-#define FCR_PFM_PAGE_SIZE              _UL_(      4096)
-#define FCR_PFM_NB_OF_PAGES            _UL_(       128)
+#define FCR_BFM_SIZE                   _UINT32_(0x00005000)    /*   20kB Memory segment type: flash */
+#define FCR_BFM_PAGE_SIZE              _UINT32_(      4096)
+#define FCR_BFM_NB_OF_PAGES            _UINT32_(         5)
 
-#define FCR_BFM_SIZE                   _UL_(0x00005000)    /*   20kB Memory segment type: flash */
-#define FCR_BFM_PAGE_SIZE              _UL_(      4096)
-#define FCR_BFM_NB_OF_PAGES            _UL_(         5)
+#define FCR_CFM_SIZE                   _UINT32_(0x00001000)    /*    4kB Memory segment type: fuses */
+#define FCR_CFM_PAGE_SIZE              _UINT32_(      4096)
+#define FCR_CFM_NB_OF_PAGES            _UINT32_(         1)
 
-#define FCR_CFM_SIZE                   _UL_(0x00001000)    /*    4kB Memory segment type: fuses */
-#define FCR_CFM_PAGE_SIZE              _UL_(      4096)
-#define FCR_CFM_NB_OF_PAGES            _UL_(         1)
+#define FCR_OTP_PAGE_SIZE              _UINT32_(0x00001000)    /*    4kB Memory segment type: flash */
+#define FCR_OTP_PAGE_PAGE_SIZE         _UINT32_(      4096)
+#define FCR_OTP_PAGE_NB_OF_PAGES       _UINT32_(         1)
 
-#define FCR_OTP_PAGE_SIZE              _UL_(0x00001000)    /*    4kB Memory segment type: flash */
-#define FCR_OTP_PAGE_PAGE_SIZE         _UL_(      4096)
-#define FCR_OTP_PAGE_NB_OF_PAGES       _UL_(         1)
+#define CMCC_TCM_SIZE                  _UINT32_(0x00001000)    /*    4kB Memory segment type: other */
+#define RAM_SYSTEM_RAM_SIZE            _UINT32_(0x00018000)    /*   96kB Memory segment type: ram */
+#define QSPI_SIZE                      _UINT32_(0x01000000)    /* 16384kB Memory segment type: other */
+#define PBA_BRIDGE_SIZE                _UINT32_(0x00004000)    /*   16kB Memory segment type: io */
+#define PBB_BRIDGE_SIZE                _UINT32_(0x00017000)    /*   92kB Memory segment type: io */
+#define PBC_BRIDGE_SIZE                _UINT32_(0x00012000)    /*   72kB Memory segment type: io */
+#define SILEX_SFR_SIZE                 _UINT32_(0x00020000)    /*  128kB Memory segment type: io */
+#define PBPIC_BRIDGE_SIZE              _UINT32_(0x00014000)    /*   80kB Memory segment type: io */
+#define MCROM_ROM_SIZE                 _UINT32_(0x00002000)    /*    8kB Memory segment type: rom */
+#define SYSTEM_CM4F_SYSTEM_REGISTERS_SIZE _UINT32_(0x1fff4000)    /* 524240kB Memory segment type: io */
 
-#define CMCC_TCM_SIZE                  _UL_(0x00001000)    /*    4kB Memory segment type: other */
-#define RAM_SYSTEM_RAM_SIZE            _UL_(0x00018000)    /*   96kB Memory segment type: ram */
-#define QSPI_SIZE                      _UL_(0x01000000)    /* 16384kB Memory segment type: other */
-#define PBA_BRIDGE_SIZE                _UL_(0x00004000)    /*   16kB Memory segment type: io */
-#define PBB_BRIDGE_SIZE                _UL_(0x00017000)    /*   92kB Memory segment type: io */
-#define PBC_BRIDGE_SIZE                _UL_(0x00012000)    /*   72kB Memory segment type: io */
-#define SILEX_SFR_SIZE                 _UL_(0x00020000)    /*  128kB Memory segment type: io */
-#define PBPIC_BRIDGE_SIZE              _UL_(0x00014000)    /*   80kB Memory segment type: io */
-#define MCROM_ROM_SIZE                 _UL_(0x00002000)    /*    8kB Memory segment type: rom */
-#define SYSTEM_CM4F_SYSTEM_REGISTERS_SIZE _UL_(0x1fff4000)    /* 524240kB Memory segment type: io */
-
-#define ROM_SECURE_BOOT_ROM_ADDR       _UL_(0x00000000)    /* ROM_SECURE_BOOT_ROM base address (type: rom)*/
-#define ROM_SECURE_BOOT_PATCH_ADDR     _UL_(0x00018000)    /* ROM_SECURE_BOOT_PATCH base address (type: rom)*/
-#define FCR_PFM_ADDR                   _UL_(0x01000000)    /* FCR_PFM base address (type: flash)*/
-#define FCR_BFM_ADDR                   _UL_(0x00800000)    /* FCR_BFM base address (type: flash)*/
-#define FCR_CFM_ADDR                   _UL_(0x00805000)    /* FCR_CFM base address (type: fuses)*/
-#define FCR_OTP_PAGE_ADDR              _UL_(0x00806000)    /* FCR_OTP_PAGE base address (type: flash)*/
-#define CMCC_TCM_ADDR                  _UL_(0x02000000)    /* CMCC_TCM base address (type: other)*/
-#define RAM_SYSTEM_RAM_ADDR            _UL_(0x20000000)    /* RAM_SYSTEM_RAM base address (type: ram)*/
-#define QSPI_ADDR                      _UL_(0x04000000)    /* QSPI base address (type: other)*/
-#define PBA_BRIDGE_ADDR                _UL_(0x40000000)    /* PBA_BRIDGE base address (type: io)*/
-#define PBB_BRIDGE_ADDR                _UL_(0x41000000)    /* PBB_BRIDGE base address (type: io)*/
-#define PBC_BRIDGE_ADDR                _UL_(0x42000000)    /* PBC_BRIDGE base address (type: io)*/
-#define SILEX_SFR_ADDR                 _UL_(0x43000000)    /* SILEX_SFR base address (type: io)*/
-#define PBPIC_BRIDGE_ADDR              _UL_(0x44000000)    /* PBPIC_BRIDGE base address (type: io)*/
-#define MCROM_ROM_ADDR                 _UL_(0x45000000)    /* MCROM_ROM base address (type: rom)*/
-#define SYSTEM_CM4F_SYSTEM_REGISTERS_ADDR _UL_(0xe0000000)    /* SYSTEM_CM4F_SYSTEM_REGISTERS base address (type: io)*/
-#define EFUSE_ADDR                     _UL_(0x00000000)    /* EFUSE base address (type: fuses)*/
+#define ROM_SECURE_BOOT_ROM_ADDR       _UINT32_(0x00000000)    /* ROM_SECURE_BOOT_ROM base address (type: rom)*/
+#define ROM_SECURE_BOOT_PATCH_ADDR     _UINT32_(0x00018000)    /* ROM_SECURE_BOOT_PATCH base address (type: rom)*/
+#define FCR_PFM_ADDR                   _UINT32_(0x01000000)    /* FCR_PFM base address (type: flash)*/
+#define FCR_BFM_ADDR                   _UINT32_(0x00800000)    /* FCR_BFM base address (type: flash)*/
+#define FCR_CFM_ADDR                   _UINT32_(0x00805000)    /* FCR_CFM base address (type: fuses)*/
+#define FCR_OTP_PAGE_ADDR              _UINT32_(0x00806000)    /* FCR_OTP_PAGE base address (type: flash)*/
+#define CMCC_TCM_ADDR                  _UINT32_(0x02000000)    /* CMCC_TCM base address (type: other)*/
+#define RAM_SYSTEM_RAM_ADDR            _UINT32_(0x20000000)    /* RAM_SYSTEM_RAM base address (type: ram)*/
+#define QSPI_ADDR                      _UINT32_(0x04000000)    /* QSPI base address (type: other)*/
+#define PBA_BRIDGE_ADDR                _UINT32_(0x40000000)    /* PBA_BRIDGE base address (type: io)*/
+#define PBB_BRIDGE_ADDR                _UINT32_(0x41000000)    /* PBB_BRIDGE base address (type: io)*/
+#define PBC_BRIDGE_ADDR                _UINT32_(0x42000000)    /* PBC_BRIDGE base address (type: io)*/
+#define SILEX_SFR_ADDR                 _UINT32_(0x43000000)    /* SILEX_SFR base address (type: io)*/
+#define PBPIC_BRIDGE_ADDR              _UINT32_(0x44000000)    /* PBPIC_BRIDGE base address (type: io)*/
+#define MCROM_ROM_ADDR                 _UINT32_(0x45000000)    /* MCROM_ROM base address (type: rom)*/
+#define SYSTEM_CM4F_SYSTEM_REGISTERS_ADDR _UINT32_(0xe0000000)    /* SYSTEM_CM4F_SYSTEM_REGISTERS base address (type: io)*/
+#define EFUSE_ADDR                     _UINT32_(0x00000000)    /* EFUSE base address (type: fuses)*/
 
 /* ************************************************************************** */
 /*   DEVICE SIGNATURES FOR WBZ351                                             */
 /* ************************************************************************** */
-#define CHIP_DSU_DID                   _UL_(0X00009E03)
+#define CHIP_DSU_DID                   _UINT32_(0X00009E03)
 
 /* ************************************************************************** */
 /*   ELECTRICAL DEFINITIONS FOR WBZ351                                        */

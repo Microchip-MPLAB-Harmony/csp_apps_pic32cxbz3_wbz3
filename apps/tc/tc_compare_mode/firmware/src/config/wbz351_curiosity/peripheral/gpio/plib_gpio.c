@@ -65,9 +65,9 @@ void GPIO_Initialize ( void )
     /* PPS Input Remapping */
 
     /* PPS Output Remapping */
-    PPS_REGS->PPS_RPA7G2R = 15;
-    PPS_REGS->PPS_RPA8G3R = 16;
-    PPS_REGS->PPS_RPA14G4R = 17;
+    PPS_REGS->PPS_RPA8G3R = 16U;
+    PPS_REGS->PPS_RPA7G2R = 15U;
+    PPS_REGS->PPS_RPA14G4R = 17U;
 
 
 }

@@ -20,12 +20,12 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_HMATRIX2TOP_INSTANCE_
 #define _WBZ35_HMATRIX2TOP_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for HMATRIX2TOP peripheral ========== */
-#define HMATRIX2TOP_INSTANCE_ID                  _UL_(73)   
+#define HMATRIX2TOP_INSTANCE_ID                  (73)       
 
 #endif /* _WBZ35_HMATRIX2TOP_INSTANCE_ */
