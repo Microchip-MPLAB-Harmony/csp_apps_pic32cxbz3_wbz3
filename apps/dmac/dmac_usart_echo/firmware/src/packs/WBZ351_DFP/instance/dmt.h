@@ -20,13 +20,13 @@
  *
  */
 
-/* file generated from device description version 2022-01-30T18:13:55Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_DMT_INSTANCE_
 #define _WBZ35_DMT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DMT peripheral ========== */
-#define DMT_UPB_ADDRL                            _UL_(0)    /* See Table 3-20 */
-#define DMT_HOLDREG_PRESENT                      _UL_(0)    /* Used for 16 bit devices only */
+#define DMT_UPB_ADDRL                            (0)        /* See Table 3-20 */
+#define DMT_HOLDREG_PRESENT                      (0)        /* Used for 16 bit devices only */
 
 #endif /* _WBZ35_DMT_INSTANCE_ */

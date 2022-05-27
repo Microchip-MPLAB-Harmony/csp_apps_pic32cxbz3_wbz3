@@ -128,7 +128,7 @@ void CLK_Initialize( void )
     while((BTZBSYS_REGS -> BTZBSYS_SUBSYS_STATUS_REG1 & 0x03) != 0x03);
 
     /* OSWEN    = SWITCH    */
-    /* SOSCEN   = ON   */
+    /* SOSCEN   = OFF   */
     /* CF       = NO_FAILDET       */
     /* SLPEN    = IDLE    */
     /* CLKLOCK  = UNLOCKED  */
@@ -136,7 +136,7 @@ void CLK_Initialize( void )
     /* WAKE2SPD = FRC */
     /* DRMEN    = NO_EFFECT    */
     /* FRCDIV   = DIV_1   */
-    CRU_REGS->CRU_OSCCON = 0x200007;
+    CRU_REGS->CRU_OSCCON = 0x200107;
 
     CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_OSWEN_Msk;  /* request oscillator switch to occur */
 
