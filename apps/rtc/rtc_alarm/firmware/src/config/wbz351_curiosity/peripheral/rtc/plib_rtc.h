@@ -106,13 +106,11 @@ typedef enum
     BACKUP_REGISTER_6 = 6U,
     BACKUP_REGISTER_7 = 7U
 } BACKUP_REGISTER;
-typedef enum
-{
-    TAMPER_CHANNEL_0 = 0U,
-    TAMPER_CHANNEL_1 = 1U,
-    TAMPER_CHANNEL_2 = 2U,
-    TAMPER_CHANNEL_3 = 3U,
-} TAMPER_CHANNEL;
+ #define   TAMPER_CHANNEL_0  (0U)
+ #define   TAMPER_CHANNEL_1  (1U)
+ #define   TAMPER_CHANNEL_2  (2U)
+ #define   TAMPER_CHANNEL_3  (3U)
+typedef uint32_t TAMPER_CHANNEL;
 typedef void (*RTC_CALLBACK)( RTC_CLOCK_INT_MASK intCause, uintptr_t context );
 
 typedef struct
