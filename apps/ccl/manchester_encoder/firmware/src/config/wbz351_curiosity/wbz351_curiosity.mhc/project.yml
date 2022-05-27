@@ -6,20 +6,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9D5EE038B893127B787BC03DFA6B467F
-- generatedChecksum: 70D1CAC2DBF227CA96D5889EE6D462F5
+- generatedChecksum: 0ED52A88CEF81133D8D6DB36E3ACE6E8
   logicalPath: config/wbz351_curiosity
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 70D1CAC2DBF227CA96D5889EE6D462F5
-- generatedChecksum: 1FE2EA4A0365FCCE92121C6532C31816
+  userChecksum: 0ED52A88CEF81133D8D6DB36E3ACE6E8
+- generatedChecksum: 252E5929B93D646E1809B832CA36CE04
   logicalPath: config/wbz351_curiosity
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1FE2EA4A0365FCCE92121C6532C31816
+  userChecksum: 252E5929B93D646E1809B832CA36CE04
 - generatedChecksum: 2CDCA8CDF135BDEB85FDFC0A2A991C0B
   logicalPath: config/wbz351_curiosity
   name: libc_syscalls.c
@@ -62,20 +62,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C3ECDED3D6301DB0DE622293ED615D21
-- generatedChecksum: 960A65C90D05345A1A24F73960ED55F6
+- generatedChecksum: 7A9F56C03F49754C1189865430360F17
   logicalPath: config/wbz351_curiosity/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 960A65C90D05345A1A24F73960ED55F6
-- generatedChecksum: 9C38853D537131FF10391203B134A414
+  userChecksum: 7A9F56C03F49754C1189865430360F17
+- generatedChecksum: A55DD6A1F5AC73EACE87E06696ABE6E3
   logicalPath: config/wbz351_curiosity/peripheral/nvic
   name: plib_nvic.c
   physicalPath: peripheral/nvic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9C38853D537131FF10391203B134A414
+  userChecksum: A55DD6A1F5AC73EACE87E06696ABE6E3
 - generatedChecksum: D5413418EC86ED08122AD0407E210ADC
   logicalPath: config/wbz351_curiosity/peripheral/sercom/spi_master
   name: plib_sercom1_spi_master.c
@@ -83,90 +83,90 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D5413418EC86ED08122AD0407E210ADC
-- generatedChecksum: E0ECABBE86DC9F1D03544015F4B36ABB
+- generatedChecksum: 54C656A3ECFB6752ECB4B01A1E237872
   logicalPath: config/wbz351_curiosity
   name: startup_xc32.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E0ECABBE86DC9F1D03544015F4B36ABB
-- generatedChecksum: 5B56F6750D4FD0810FD93C92FD0D900F
+  userChecksum: 54C656A3ECFB6752ECB4B01A1E237872
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/wbz351_curiosity/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5B56F6750D4FD0810FD93C92FD0D900F
-- generatedChecksum: E4520FE07028BC2DFF41D0043CA8CEB4
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
+- generatedChecksum: 1719241044EFC190ABB78281918DA7AE
   logicalPath: packs/WBZ351_DFP/component
   name: ac.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: E4520FE07028BC2DFF41D0043CA8CEB4
-- generatedChecksum: 5E39D1DA4E92F2648B0421DCD3ACF106
+  userChecksum: 1719241044EFC190ABB78281918DA7AE
+- generatedChecksum: 946C326989E7C268AB972D82B8117A87
   logicalPath: packs/WBZ351_DFP/instance
   name: ac.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5E39D1DA4E92F2648B0421DCD3ACF106
-- generatedChecksum: 84E2CB8657F94788B763CB98A0D520A4
+  userChecksum: 946C326989E7C268AB972D82B8117A87
+- generatedChecksum: CDC73A1E1A61388BBD7B142DF0632DEC
   logicalPath: packs/WBZ351_DFP/component
   name: adchs.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 84E2CB8657F94788B763CB98A0D520A4
-- generatedChecksum: 32B93A82910767079B230FC5BE047E73
+  userChecksum: CDC73A1E1A61388BBD7B142DF0632DEC
+- generatedChecksum: 28EDF8DCF6353FDB8E3BE495AC0F380F
   logicalPath: packs/WBZ351_DFP/instance
   name: adchs.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 32B93A82910767079B230FC5BE047E73
-- generatedChecksum: 58931DB5A117FDFD9159871BB30C2F14
+  userChecksum: 28EDF8DCF6353FDB8E3BE495AC0F380F
+- generatedChecksum: 366BB7462A187A9ABB4639E1DB7860CA
   logicalPath: packs/WBZ351_DFP/component
   name: arb.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 58931DB5A117FDFD9159871BB30C2F14
-- generatedChecksum: B553DFA39D96EF93D8A57123930A7D3B
+  userChecksum: 366BB7462A187A9ABB4639E1DB7860CA
+- generatedChecksum: 5BB2FFEC5DD0C04FA70A2D7E3F6F3B15
   logicalPath: packs/WBZ351_DFP/instance
   name: arb.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B553DFA39D96EF93D8A57123930A7D3B
-- generatedChecksum: F4C2F6F968ADE6CC1B3DB20743216064
+  userChecksum: 5BB2FFEC5DD0C04FA70A2D7E3F6F3B15
+- generatedChecksum: F41255A6F7D16EDD5F214D0DD43A2B4E
   logicalPath: packs/WBZ351_DFP/component
   name: ble.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F4C2F6F968ADE6CC1B3DB20743216064
-- generatedChecksum: 38282E0A6A7D0C4979B1433C341A99CA
+  userChecksum: F41255A6F7D16EDD5F214D0DD43A2B4E
+- generatedChecksum: 64B1DDBA70FE4E7971BD6EA0E28AE621
   logicalPath: packs/WBZ351_DFP/instance
   name: ble.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 38282E0A6A7D0C4979B1433C341A99CA
-- generatedChecksum: F49447EE7AEC33ECDA8DD7970C9352AC
+  userChecksum: 64B1DDBA70FE4E7971BD6EA0E28AE621
+- generatedChecksum: D264F02020D3965FF6A1BF8224E488D1
   logicalPath: packs/WBZ351_DFP/component
   name: btzbsys.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F49447EE7AEC33ECDA8DD7970C9352AC
-- generatedChecksum: CAFD0C89557A8A26BE6AB4B8C8C40D09
+  userChecksum: D264F02020D3965FF6A1BF8224E488D1
+- generatedChecksum: C71701D2FE1E63F602D8FD87892FCFB7
   logicalPath: packs/WBZ351_DFP/instance
   name: btzbsys.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: CAFD0C89557A8A26BE6AB4B8C8C40D09
+  userChecksum: C71701D2FE1E63F602D8FD87892FCFB7
 - generatedChecksum: 14F1AD56D242EFD0AF76849C6ADFECC4
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cachel1_armv7.h
@@ -174,48 +174,48 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 14F1AD56D242EFD0AF76849C6ADFECC4
-- generatedChecksum: 261F37774967222C6C919A2C1EDC129C
+- generatedChecksum: E3F7D408348182376C64BD051CBD27FE
   logicalPath: packs/WBZ351_DFP/component
   name: ccl.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 261F37774967222C6C919A2C1EDC129C
-- generatedChecksum: 325D062988851A2F5E469C98CC811588
+  userChecksum: E3F7D408348182376C64BD051CBD27FE
+- generatedChecksum: E5AC21340782D39E4799E2F222BA786C
   logicalPath: packs/WBZ351_DFP/instance
   name: ccl.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 325D062988851A2F5E469C98CC811588
-- generatedChecksum: F79E743AC051B5654600CFDE544F1078
+  userChecksum: E5AC21340782D39E4799E2F222BA786C
+- generatedChecksum: 375D1070F2F3722E85FDB627F8DFCD97
   logicalPath: packs/WBZ351_DFP/component
   name: cfg.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F79E743AC051B5654600CFDE544F1078
-- generatedChecksum: C2E9DE358A5935A0B99E23E6B947E3FE
+  userChecksum: 375D1070F2F3722E85FDB627F8DFCD97
+- generatedChecksum: 4F432DBD63D2D933F8C1EF5250298126
   logicalPath: packs/WBZ351_DFP/instance
   name: cfg.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: C2E9DE358A5935A0B99E23E6B947E3FE
-- generatedChecksum: CC2AAEEA738DF92ED498A53E77F155C0
+  userChecksum: 4F432DBD63D2D933F8C1EF5250298126
+- generatedChecksum: 7AE1D6DB53A6F2760CDE5C3DFC63B0EC
   logicalPath: packs/WBZ351_DFP/component
   name: cmcc.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: CC2AAEEA738DF92ED498A53E77F155C0
-- generatedChecksum: 782DA20D678C15B4F607D866E5487636
+  userChecksum: 7AE1D6DB53A6F2760CDE5C3DFC63B0EC
+- generatedChecksum: C8512943333C512DA94793E1F706088B
   logicalPath: packs/WBZ351_DFP/instance
   name: cmcc.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 782DA20D678C15B4F607D866E5487636
+  userChecksum: C8512943333C512DA94793E1F706088B
 - generatedChecksum: B79C08E0901948AD04D944B4BCE1B60D
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_armcc.h
@@ -272,48 +272,48 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7EF1FAD7778FEEAC9467270306D7F7C0
-- generatedChecksum: 5C228C14E4BD44F77B3C81FE74BF50C7
+- generatedChecksum: CFDA02B9B4F2437BEAACF3FA4C78C490
   logicalPath: packs/WBZ351_DFP/component
   name: cru.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5C228C14E4BD44F77B3C81FE74BF50C7
-- generatedChecksum: 748FA03AC17AB318D8B722E6C448B4D1
+  userChecksum: CFDA02B9B4F2437BEAACF3FA4C78C490
+- generatedChecksum: 4E27103760CC25C561799450CFF12722
   logicalPath: packs/WBZ351_DFP/instance
   name: cru.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 748FA03AC17AB318D8B722E6C448B4D1
-- generatedChecksum: 8B5D5A477322F097C861C8AE2B60BB2D
+  userChecksum: 4E27103760CC25C561799450CFF12722
+- generatedChecksum: 69CB865F9A1916834BDFADAB488D4FA0
   logicalPath: packs/WBZ351_DFP/component
   name: cvd.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8B5D5A477322F097C861C8AE2B60BB2D
-- generatedChecksum: 19DE7F3F05311035048602DEEF9A8C47
+  userChecksum: 69CB865F9A1916834BDFADAB488D4FA0
+- generatedChecksum: E811E5A4878C5B17E3BDD0510B56605A
   logicalPath: packs/WBZ351_DFP/instance
   name: cvd.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 19DE7F3F05311035048602DEEF9A8C47
-- generatedChecksum: 0CF38C211EF52B8E5B27A6193523737E
+  userChecksum: E811E5A4878C5B17E3BDD0510B56605A
+- generatedChecksum: F1AD513540BF01976991CB3D64E594CF
   logicalPath: packs/WBZ351_DFP/component
   name: dac_ctrl.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0CF38C211EF52B8E5B27A6193523737E
-- generatedChecksum: DC4E2492A9F386D5C2E43C7459613D6F
+  userChecksum: F1AD513540BF01976991CB3D64E594CF
+- generatedChecksum: 0049E5B372091F759B63101C15E9D470
   logicalPath: packs/WBZ351_DFP/instance
   name: dac_ctrl.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: DC4E2492A9F386D5C2E43C7459613D6F
+  userChecksum: 0049E5B372091F759B63101C15E9D470
 - generatedChecksum: 66450378F5312FDDB49C81E7F8FE1030
   logicalPath: config/wbz351_curiosity
   name: definitions.h
@@ -342,188 +342,188 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: C75ABC7D91EEE00CE083BBC786CCA52E
-- generatedChecksum: 0835A90DC298A9DAC512C1A497E9084E
+- generatedChecksum: 3D603B548CAC49D05C6EFDE719CE4B3B
   logicalPath: packs/WBZ351_DFP/component
   name: dgi_spi.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0835A90DC298A9DAC512C1A497E9084E
-- generatedChecksum: DC763C51DACD5CBD4EF82EA3E9FB9504
+  userChecksum: 3D603B548CAC49D05C6EFDE719CE4B3B
+- generatedChecksum: F3F06798B3BDD279D00A4BBE205FC1D4
   logicalPath: packs/WBZ351_DFP/instance
   name: dgi_spi.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: DC763C51DACD5CBD4EF82EA3E9FB9504
-- generatedChecksum: 4D73D96A0A086D3147A81DB5FB80EE82
+  userChecksum: F3F06798B3BDD279D00A4BBE205FC1D4
+- generatedChecksum: B6959A73244D9A4445B4A551F8EA39D6
   logicalPath: packs/WBZ351_DFP/component
   name: dmac.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4D73D96A0A086D3147A81DB5FB80EE82
-- generatedChecksum: 34B278F8636FBC5D4801971F70E1F686
+  userChecksum: B6959A73244D9A4445B4A551F8EA39D6
+- generatedChecksum: A9DE1535A9B2FF1A9E89D392775F70E8
   logicalPath: packs/WBZ351_DFP/instance
   name: dmac.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 34B278F8636FBC5D4801971F70E1F686
-- generatedChecksum: A11D0195ABD3E33EDC2BED8918160D26
+  userChecksum: A9DE1535A9B2FF1A9E89D392775F70E8
+- generatedChecksum: A6EC1BE76F30F76D5C073E9201832159
   logicalPath: packs/WBZ351_DFP/component
   name: dmt.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: A11D0195ABD3E33EDC2BED8918160D26
-- generatedChecksum: B3140D254C5924A030D0D35FFAA5DDA1
+  userChecksum: A6EC1BE76F30F76D5C073E9201832159
+- generatedChecksum: 72FCC2DE8C4806809231B32CFA57F8D7
   logicalPath: packs/WBZ351_DFP/instance
   name: dmt.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B3140D254C5924A030D0D35FFAA5DDA1
-- generatedChecksum: CC084365D596424C01BBA1D4B65AB84E
+  userChecksum: 72FCC2DE8C4806809231B32CFA57F8D7
+- generatedChecksum: 98B19E8676A4744B56EA3A85B467BDEB
   logicalPath: packs/WBZ351_DFP/component
   name: dscon.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: CC084365D596424C01BBA1D4B65AB84E
-- generatedChecksum: BC8F3EC5533F7A9129F67752A048ECF0
+  userChecksum: 98B19E8676A4744B56EA3A85B467BDEB
+- generatedChecksum: F582374A706CBE29549244CFFEC84266
   logicalPath: packs/WBZ351_DFP/instance
   name: dscon.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: BC8F3EC5533F7A9129F67752A048ECF0
-- generatedChecksum: 06671F1865A323DA3E9E0851EE9DC9CA
+  userChecksum: F582374A706CBE29549244CFFEC84266
+- generatedChecksum: A439D872212E6AABAA3C906C3B6AF165
   logicalPath: packs/WBZ351_DFP/component
   name: dsu.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 06671F1865A323DA3E9E0851EE9DC9CA
-- generatedChecksum: 5F1E6051F1B07A26038BE11D8AC871C2
+  userChecksum: A439D872212E6AABAA3C906C3B6AF165
+- generatedChecksum: 630F6D0C1A37487DECC41EB02923AAE1
   logicalPath: packs/WBZ351_DFP/instance
   name: dsu.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5F1E6051F1B07A26038BE11D8AC871C2
-- generatedChecksum: 5193B3CAA382F795A77B0C2926FB8CB0
+  userChecksum: 630F6D0C1A37487DECC41EB02923AAE1
+- generatedChecksum: 46C5E2EBE7FE412A77C7943E6D8B72CC
   logicalPath: packs/WBZ351_DFP/component
   name: efuse.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5193B3CAA382F795A77B0C2926FB8CB0
-- generatedChecksum: E9DF9FC4CE448B98B56DE5C53352AF07
+  userChecksum: 46C5E2EBE7FE412A77C7943E6D8B72CC
+- generatedChecksum: 808BCC6FC0DF3616D4CBFD63E6CE02C7
   logicalPath: packs/WBZ351_DFP/instance
   name: efuse.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: E9DF9FC4CE448B98B56DE5C53352AF07
-- generatedChecksum: 8DCBBA01908F0BD2DF8D5B75A5C843D4
+  userChecksum: 808BCC6FC0DF3616D4CBFD63E6CE02C7
+- generatedChecksum: 25DCF325F8F2AE1E8665078C04635B26
   logicalPath: packs/WBZ351_DFP/component
   name: eic.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8DCBBA01908F0BD2DF8D5B75A5C843D4
-- generatedChecksum: B5B325C6E5627C7F1E9A9AEEA0481A94
+  userChecksum: 25DCF325F8F2AE1E8665078C04635B26
+- generatedChecksum: C0C49174A2C3BBACF4CCEA82BE793E6C
   logicalPath: packs/WBZ351_DFP/instance
   name: eic.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B5B325C6E5627C7F1E9A9AEEA0481A94
-- generatedChecksum: DDBE5DD2A84E3729A0C4D8A517DDCA06
+  userChecksum: C0C49174A2C3BBACF4CCEA82BE793E6C
+- generatedChecksum: 53503334BB29904B5CEDEC1DBA360356
   logicalPath: packs/WBZ351_DFP/component
   name: evsys.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: DDBE5DD2A84E3729A0C4D8A517DDCA06
-- generatedChecksum: 3FF3ECB849162C187A97070EEE3D74CD
+  userChecksum: 53503334BB29904B5CEDEC1DBA360356
+- generatedChecksum: B5968D5948333594308B55FF2789F09B
   logicalPath: packs/WBZ351_DFP/instance
   name: evsys.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3FF3ECB849162C187A97070EEE3D74CD
-- generatedChecksum: 414F0726533A7E4190AFD63A15F30934
+  userChecksum: B5968D5948333594308B55FF2789F09B
+- generatedChecksum: 9D39D4270E0A98FE33B0B6E145AB1F11
   logicalPath: packs/WBZ351_DFP/component
   name: freqm.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 414F0726533A7E4190AFD63A15F30934
-- generatedChecksum: 7E9140BEF26F4351326A89FAF1F97259
+  userChecksum: 9D39D4270E0A98FE33B0B6E145AB1F11
+- generatedChecksum: DE45779ACD92C6223FB7ADA82DA275C6
   logicalPath: packs/WBZ351_DFP/instance
   name: freqm.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7E9140BEF26F4351326A89FAF1F97259
-- generatedChecksum: D79F2C65051A9A9B955EDCBB8F71DA0C
+  userChecksum: DE45779ACD92C6223FB7ADA82DA275C6
+- generatedChecksum: 13F1FB66691134646264A6CDF5A4B957
   logicalPath: packs/WBZ351_DFP/component
   name: fuses.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D79F2C65051A9A9B955EDCBB8F71DA0C
-- generatedChecksum: 8FBAB97E30BEDD812A6575684CA85B91
+  userChecksum: 13F1FB66691134646264A6CDF5A4B957
+- generatedChecksum: 7F57CB18967D4B439D42A8B5505DB716
   logicalPath: packs/WBZ351_DFP/instance
   name: fuses.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8FBAB97E30BEDD812A6575684CA85B91
-- generatedChecksum: C5FDF06BA4FFBD599D813DA9B1B4D2E6
+  userChecksum: 7F57CB18967D4B439D42A8B5505DB716
+- generatedChecksum: F458B36C2CBB12E5219B1FF3C947782A
   logicalPath: packs/WBZ351_DFP/component
   name: gpio.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: C5FDF06BA4FFBD599D813DA9B1B4D2E6
-- generatedChecksum: 24C2D099EFFA8DE72484BE813A734B30
+  userChecksum: F458B36C2CBB12E5219B1FF3C947782A
+- generatedChecksum: 97E4F455393C44CE8FF80D6B53E55E1A
   logicalPath: packs/WBZ351_DFP/instance
   name: gpioa.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 24C2D099EFFA8DE72484BE813A734B30
-- generatedChecksum: CD3AB0573324BE058D54349BD04D88A7
+  userChecksum: 97E4F455393C44CE8FF80D6B53E55E1A
+- generatedChecksum: CE02FDA5A4A236BC7992311E83E47CCD
   logicalPath: packs/WBZ351_DFP/instance
   name: gpiob.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: CD3AB0573324BE058D54349BD04D88A7
-- generatedChecksum: 97669F09CC6DD34EC70118F8823479A5
+  userChecksum: CE02FDA5A4A236BC7992311E83E47CCD
+- generatedChecksum: 96E1D79F17AB0CD6383C1C26382475D8
   logicalPath: packs/WBZ351_DFP/component
   name: hmatrix2top.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 97669F09CC6DD34EC70118F8823479A5
-- generatedChecksum: B1BECAA9DAB1B02E155582FC453DB718
+  userChecksum: 96E1D79F17AB0CD6383C1C26382475D8
+- generatedChecksum: 2E33189BEFE13660C1F5B97FA3C0F162
   logicalPath: packs/WBZ351_DFP/instance
   name: hmatrix2top.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B1BECAA9DAB1B02E155582FC453DB718
-- generatedChecksum: 4CD810F13511E9A674D10295BF5A4474
+  userChecksum: 2E33189BEFE13660C1F5B97FA3C0F162
+- generatedChecksum: 464A9902D2F6DFA59E257883636EC38C
   logicalPath: config/wbz351_curiosity
   name: interrupts.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4CD810F13511E9A674D10295BF5A4474
+  userChecksum: 464A9902D2F6DFA59E257883636EC38C
 - generatedChecksum: 47E760D36E42A7B436306A9CB4E72A0E
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: mpu_armv7.h
@@ -531,62 +531,62 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 47E760D36E42A7B436306A9CB4E72A0E
-- generatedChecksum: CD8F34E2451A33129B0AD90BF3680FA7
+- generatedChecksum: 2FD43FC3B9262453E22D28EFC4EA5AC8
   logicalPath: packs/WBZ351_DFP/component
   name: nvm.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: CD8F34E2451A33129B0AD90BF3680FA7
-- generatedChecksum: A19A9F52780F65A2D80A2F0F62FB0A38
+  userChecksum: 2FD43FC3B9262453E22D28EFC4EA5AC8
+- generatedChecksum: 31F63955CE746BD8BB6E298F6C8F84C7
   logicalPath: packs/WBZ351_DFP/instance
   name: nvm.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: A19A9F52780F65A2D80A2F0F62FB0A38
-- generatedChecksum: 9DD140B7EE6017A61AE8A0CDB563CCA5
+  userChecksum: 31F63955CE746BD8BB6E298F6C8F84C7
+- generatedChecksum: 05935DC8623EE830EEF3F3E7BB53786F
   logicalPath: packs/WBZ351_DFP/component
   name: pac.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9DD140B7EE6017A61AE8A0CDB563CCA5
-- generatedChecksum: 2585156F5F113A12375B48968B5DD761
+  userChecksum: 05935DC8623EE830EEF3F3E7BB53786F
+- generatedChecksum: 645FBF6D9F21C7D789983D439ADF4978
   logicalPath: packs/WBZ351_DFP/instance
   name: pac.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2585156F5F113A12375B48968B5DD761
-- generatedChecksum: 9BD3B5BCF2108959A89F90A19CEA1ECD
+  userChecksum: 645FBF6D9F21C7D789983D439ADF4978
+- generatedChecksum: 3BC1ADBE9EEC94B3C2CBDF55D06F09FB
   logicalPath: packs/WBZ351_DFP/component
   name: pche.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9BD3B5BCF2108959A89F90A19CEA1ECD
-- generatedChecksum: 6820B08F65456F1C6E5CA1F1977FEEB8
+  userChecksum: 3BC1ADBE9EEC94B3C2CBDF55D06F09FB
+- generatedChecksum: EA807BED958147F0BA047EFD5BC28371
   logicalPath: packs/WBZ351_DFP/instance
   name: pche.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6820B08F65456F1C6E5CA1F1977FEEB8
-- generatedChecksum: 234AACC48F610DFD2DA304A7CEC70330
+  userChecksum: EA807BED958147F0BA047EFD5BC28371
+- generatedChecksum: 5C666EC8A11E4A92438082C0A292F556
   logicalPath: packs/WBZ351_DFP/component
   name: pfw.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 234AACC48F610DFD2DA304A7CEC70330
-- generatedChecksum: B59C1340E5F4535BEEECBCEF6A9F6580
+  userChecksum: 5C666EC8A11E4A92438082C0A292F556
+- generatedChecksum: 7C015E9A840E69DD019E4D604C85CB64
   logicalPath: packs/WBZ351_DFP/instance
   name: pfw.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B59C1340E5F4535BEEECBCEF6A9F6580
+  userChecksum: 7C015E9A840E69DD019E4D604C85CB64
 - generatedChecksum: 550622C61F7164B3DBB20D380B088BFC
   logicalPath: config/wbz351_curiosity/peripheral/ccl
   name: plib_ccl.h
@@ -615,13 +615,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: CCAEF942C66AF995876DFD85CEFF611F
-- generatedChecksum: B51797D62D63CC0A6374E587A9A03598
+- generatedChecksum: F6009548E687E4DAB52860FD326DC3E2
   logicalPath: config/wbz351_curiosity/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: B51797D62D63CC0A6374E587A9A03598
+  userChecksum: F6009548E687E4DAB52860FD326DC3E2
 - generatedChecksum: 55ECCC7FA71BD15B46EF80DC0515ED7A
   logicalPath: config/wbz351_curiosity/peripheral/nvic
   name: plib_nvic.h
@@ -643,237 +643,237 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BED7AF34A8D633C6994B780C19D7157F
-- generatedChecksum: A633332F5C8267C30D6B7306A5D6F645
+- generatedChecksum: 5100D9EFFD8888936243DAFD2F09B265
   logicalPath: packs/WBZ351_DFP/component
   name: pmu.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: A633332F5C8267C30D6B7306A5D6F645
-- generatedChecksum: 7C1BF1219C8AED37A1837DE646B811B4
+  userChecksum: 5100D9EFFD8888936243DAFD2F09B265
+- generatedChecksum: AA966053A8E819DAEF6C83DE3C2C0292
   logicalPath: packs/WBZ351_DFP/instance
   name: pmu.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7C1BF1219C8AED37A1837DE646B811B4
-- generatedChecksum: DA9076D477459D211A44C5CF7D046980
+  userChecksum: AA966053A8E819DAEF6C83DE3C2C0292
+- generatedChecksum: F7B13693D2D7D8BEB3D7541F31BDD02A
   logicalPath: packs/WBZ351_DFP/component
   name: pps.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: DA9076D477459D211A44C5CF7D046980
-- generatedChecksum: 6D5BD5FBFAC219021DBD085DAA964AA2
+  userChecksum: F7B13693D2D7D8BEB3D7541F31BDD02A
+- generatedChecksum: C5FBD26504F2B85F3165772DB96E976C
   logicalPath: packs/WBZ351_DFP/instance
   name: pps.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6D5BD5FBFAC219021DBD085DAA964AA2
-- generatedChecksum: 8C293B105154022B403D682970C672A3
+  userChecksum: C5FBD26504F2B85F3165772DB96E976C
+- generatedChecksum: 00C07ECDC724BE1BBBCC25F928C9DB1F
   logicalPath: packs/WBZ351_DFP/component
   name: qspi.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8C293B105154022B403D682970C672A3
-- generatedChecksum: 7FB5BB2D46C291A33418AECB05E8042B
+  userChecksum: 00C07ECDC724BE1BBBCC25F928C9DB1F
+- generatedChecksum: 950B807F4D9009F1F218802503112F93
   logicalPath: packs/WBZ351_DFP/instance
   name: qspi.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7FB5BB2D46C291A33418AECB05E8042B
-- generatedChecksum: 530B42C33B0CD590CA02399BD2DC7D80
+  userChecksum: 950B807F4D9009F1F218802503112F93
+- generatedChecksum: 765CC2DA539045B123C39CCD3199E174
   logicalPath: packs/WBZ351_DFP/component
   name: ramecc.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 530B42C33B0CD590CA02399BD2DC7D80
-- generatedChecksum: 13090F4B4D7C0526AD65D644A498D1D3
+  userChecksum: 765CC2DA539045B123C39CCD3199E174
+- generatedChecksum: 468A429FF3EC7F44E5CB62971971A5CE
   logicalPath: packs/WBZ351_DFP/instance
   name: ramecc.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 13090F4B4D7C0526AD65D644A498D1D3
-- generatedChecksum: 61802577AA8D6DA2A86561F4B23C19FD
+  userChecksum: 468A429FF3EC7F44E5CB62971971A5CE
+- generatedChecksum: AC4F1D035E970C58F8F785B1E58273B8
   logicalPath: packs/WBZ351_DFP/component
   name: rcon.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 61802577AA8D6DA2A86561F4B23C19FD
-- generatedChecksum: 77B5A277000C3DDEB8372A980812CB0B
+  userChecksum: AC4F1D035E970C58F8F785B1E58273B8
+- generatedChecksum: 6C1D3C02B376775C0A45B127478F3753
   logicalPath: packs/WBZ351_DFP/instance
   name: rcon.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 77B5A277000C3DDEB8372A980812CB0B
-- generatedChecksum: 93996B5567C9A16866EE97FB54637EA1
+  userChecksum: 6C1D3C02B376775C0A45B127478F3753
+- generatedChecksum: 37E18BDE85A6A3BDC22B08EC6956824D
   logicalPath: packs/WBZ351_DFP/component
   name: rot.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 93996B5567C9A16866EE97FB54637EA1
-- generatedChecksum: 26ADD5D7BA93A2F312B1FA75675B5CB2
+  userChecksum: 37E18BDE85A6A3BDC22B08EC6956824D
+- generatedChecksum: C2CA65FCE0A0DB268BC333BED49153C9
   logicalPath: packs/WBZ351_DFP/instance
   name: rot.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 26ADD5D7BA93A2F312B1FA75675B5CB2
-- generatedChecksum: 1C24FE0C79D3A6A7C64403A6A062783D
+  userChecksum: C2CA65FCE0A0DB268BC333BED49153C9
+- generatedChecksum: 77BD2B5917781DDE51B4F21E084C843D
   logicalPath: packs/WBZ351_DFP/component
   name: rtc.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1C24FE0C79D3A6A7C64403A6A062783D
-- generatedChecksum: 41153ED55C1B66510202AE88B0EE9EBE
+  userChecksum: 77BD2B5917781DDE51B4F21E084C843D
+- generatedChecksum: 4D314B9B385D091777CCB2071C34C8FD
   logicalPath: packs/WBZ351_DFP/instance
   name: rtc.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 41153ED55C1B66510202AE88B0EE9EBE
-- generatedChecksum: 7973228FD75965B8A9502AAADB2A3991
+  userChecksum: 4D314B9B385D091777CCB2071C34C8FD
+- generatedChecksum: 22B582114FBFE880A494B629E92B7AB6
   logicalPath: packs/WBZ351_DFP/component
   name: sercom.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7973228FD75965B8A9502AAADB2A3991
-- generatedChecksum: 9E357E284C761995ABBBD16D00DDE24F
+  userChecksum: 22B582114FBFE880A494B629E92B7AB6
+- generatedChecksum: 882DB90EA38648AFA8878A9506F517C2
   logicalPath: packs/WBZ351_DFP/instance
   name: sercom0.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9E357E284C761995ABBBD16D00DDE24F
-- generatedChecksum: F1AC1D909CEFD5B2D97C7AEBCDE97140
+  userChecksum: 882DB90EA38648AFA8878A9506F517C2
+- generatedChecksum: F11AFD23DA486AD91FA248F8882D2B16
   logicalPath: packs/WBZ351_DFP/instance
   name: sercom1.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: F1AC1D909CEFD5B2D97C7AEBCDE97140
-- generatedChecksum: E820B94E814691092B34B5A74E53E0E2
+  userChecksum: F11AFD23DA486AD91FA248F8882D2B16
+- generatedChecksum: 925D8CFE387DC2559DAD1F74D9CFA89A
   logicalPath: packs/WBZ351_DFP/instance
   name: sercom2.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: E820B94E814691092B34B5A74E53E0E2
-- generatedChecksum: 363B38BA118B5671007A2D056B975EA2
+  userChecksum: 925D8CFE387DC2559DAD1F74D9CFA89A
+- generatedChecksum: 9C41B3E2499C1090F583696DE7716A6F
   logicalPath: packs/WBZ351_DFP/component
   name: silex.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 363B38BA118B5671007A2D056B975EA2
-- generatedChecksum: 20F29E06AAEEBB283A7C6F18B5D78439
+  userChecksum: 9C41B3E2499C1090F583696DE7716A6F
+- generatedChecksum: 668FEB5C74DBA0E35B3210E01490D26D
   logicalPath: packs/WBZ351_DFP/instance
   name: silex.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 20F29E06AAEEBB283A7C6F18B5D78439
-- generatedChecksum: 8A427D467E7E189038EA1D3F0D73BB9B
+  userChecksum: 668FEB5C74DBA0E35B3210E01490D26D
+- generatedChecksum: C4F0FDB880DE3E1E7AF4BD4CE51003C0
   logicalPath: packs/WBZ351_DFP/component
   name: tc.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8A427D467E7E189038EA1D3F0D73BB9B
-- generatedChecksum: 0D04728B5E6904CE41C86F977A6CE8A7
+  userChecksum: C4F0FDB880DE3E1E7AF4BD4CE51003C0
+- generatedChecksum: 826B41EF8ACF971E4B7B8E945B034795
   logicalPath: packs/WBZ351_DFP/instance
   name: tc0.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0D04728B5E6904CE41C86F977A6CE8A7
-- generatedChecksum: A551D91D6C5CEA44B826ED0000659382
+  userChecksum: 826B41EF8ACF971E4B7B8E945B034795
+- generatedChecksum: 4D7CF055070D54169FAD8F527544AF63
   logicalPath: packs/WBZ351_DFP/instance
   name: tc1.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: A551D91D6C5CEA44B826ED0000659382
-- generatedChecksum: C0A51D76FA209469020E12488CB3487C
+  userChecksum: 4D7CF055070D54169FAD8F527544AF63
+- generatedChecksum: 270AC448FE5EEEE2404AC67C2B6FBBAF
   logicalPath: packs/WBZ351_DFP/instance
   name: tc2.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: C0A51D76FA209469020E12488CB3487C
-- generatedChecksum: 074011647A2AEDB4AD84B7BF76D30A61
+  userChecksum: 270AC448FE5EEEE2404AC67C2B6FBBAF
+- generatedChecksum: 1F2B8C5C7E61EFF1115B7FC297245C65
   logicalPath: packs/WBZ351_DFP/instance
   name: tc3.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 074011647A2AEDB4AD84B7BF76D30A61
-- generatedChecksum: 0F127FDFB31C06B6691F3125D5CB94E1
+  userChecksum: 1F2B8C5C7E61EFF1115B7FC297245C65
+- generatedChecksum: 9DF041C32A8B220963198605E51A35CD
   logicalPath: packs/WBZ351_DFP/instance
   name: tc4.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0F127FDFB31C06B6691F3125D5CB94E1
-- generatedChecksum: 1029C3D87DF83910415CBCAA55A1C946
+  userChecksum: 9DF041C32A8B220963198605E51A35CD
+- generatedChecksum: 8E1FB22C28FE724B90D7BB1D5B461504
   logicalPath: packs/WBZ351_DFP/instance
   name: tc5.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1029C3D87DF83910415CBCAA55A1C946
-- generatedChecksum: 919435C04BFE66F4FE6FA6F78E163DE6
+  userChecksum: 8E1FB22C28FE724B90D7BB1D5B461504
+- generatedChecksum: 76B18EA53A2995F3B24B837DB475610B
   logicalPath: packs/WBZ351_DFP/instance
   name: tc6.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 919435C04BFE66F4FE6FA6F78E163DE6
-- generatedChecksum: 84998027C4A0F0BF48B6FF5CF65D0595
+  userChecksum: 76B18EA53A2995F3B24B837DB475610B
+- generatedChecksum: 67F5F4247217409A51EED61BC57F5809
   logicalPath: packs/WBZ351_DFP/instance
   name: tc7.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 84998027C4A0F0BF48B6FF5CF65D0595
-- generatedChecksum: 319BD62190C083539CF4C10810974E06
+  userChecksum: 67F5F4247217409A51EED61BC57F5809
+- generatedChecksum: 2ED66B34ADEFF193169454D342A0CEA2
   logicalPath: packs/WBZ351_DFP/component
   name: tcc.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 319BD62190C083539CF4C10810974E06
-- generatedChecksum: 8D19EDBB2FA8272583CF655A4C1534EC
+  userChecksum: 2ED66B34ADEFF193169454D342A0CEA2
+- generatedChecksum: 264E8975F54473428A97B44BF9082762
   logicalPath: packs/WBZ351_DFP/instance
   name: tcc0.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8D19EDBB2FA8272583CF655A4C1534EC
-- generatedChecksum: 84D8EE871FD1FE64B5D5C3778B291DAF
+  userChecksum: 264E8975F54473428A97B44BF9082762
+- generatedChecksum: 6B2BED6FEAC31D03AD5BC56B687AEBDA
   logicalPath: packs/WBZ351_DFP/instance
   name: tcc1.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 84D8EE871FD1FE64B5D5C3778B291DAF
-- generatedChecksum: A6DB4C33C3BA9258621891A7AF8F1A93
+  userChecksum: 6B2BED6FEAC31D03AD5BC56B687AEBDA
+- generatedChecksum: 4D9CB89BFF34B2107991F9D330B1C7F9
   logicalPath: packs/WBZ351_DFP/instance
   name: tcc2.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: A6DB4C33C3BA9258621891A7AF8F1A93
+  userChecksum: 4D9CB89BFF34B2107991F9D330B1C7F9
 - generatedChecksum: 267E11FBC03D0FD88E7330DDB79B19FC
   logicalPath: config/wbz351_curiosity
   name: toolchain_specifics.h
@@ -881,55 +881,55 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 267E11FBC03D0FD88E7330DDB79B19FC
-- generatedChecksum: 354A4ECCC7BE6A5947E556A8558839F0
+- generatedChecksum: 7AA3C53D0DEA28EAD26494475EAEFB10
   logicalPath: packs/WBZ351_DFP
   name: wbz351.h
   physicalPath: ../../packs/WBZ351_DFP
   security: NON_SECURE
   type: HEADER
-  userChecksum: 354A4ECCC7BE6A5947E556A8558839F0
-- generatedChecksum: 2129EA9A68A8732846BFC36467ECF616
+  userChecksum: 7AA3C53D0DEA28EAD26494475EAEFB10
+- generatedChecksum: 0AC7FD68A19243D41BB8453F44798B4A
   logicalPath: packs/WBZ351_DFP/pio
   name: wbz351.h
   physicalPath: ../../packs/WBZ351_DFP/pio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2129EA9A68A8732846BFC36467ECF616
-- generatedChecksum: FBD923FF4B776504AF12698F0479EF8E
+  userChecksum: 0AC7FD68A19243D41BB8453F44798B4A
+- generatedChecksum: A3F6306713BE3D3D57A908BCD92F2846
   logicalPath: packs/WBZ351_DFP/component
   name: wdt.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FBD923FF4B776504AF12698F0479EF8E
-- generatedChecksum: 07B5151FFD12F4C9BA3D61F6B0932CAD
+  userChecksum: A3F6306713BE3D3D57A908BCD92F2846
+- generatedChecksum: 8B8269D39A384619DE7C395A810BA4C9
   logicalPath: packs/WBZ351_DFP/instance
   name: wdt.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 07B5151FFD12F4C9BA3D61F6B0932CAD
-- generatedChecksum: F400358E9BB52278EC552139DBD29E23
+  userChecksum: 8B8269D39A384619DE7C395A810BA4C9
+- generatedChecksum: 7C38F31D1CF19D53F2EAB139EB724703
   logicalPath: packs/WBZ351_DFP/component
   name: zigbee.h
   physicalPath: ../../packs/WBZ351_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F400358E9BB52278EC552139DBD29E23
-- generatedChecksum: 39AD2713179086A58868ACBE17FE666B
+  userChecksum: 7C38F31D1CF19D53F2EAB139EB724703
+- generatedChecksum: 08D1FB27C6740B3312094553F59645C7
   logicalPath: packs/WBZ351_DFP/instance
   name: zigbee.h
   physicalPath: ../../packs/WBZ351_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 39AD2713179086A58868ACBE17FE666B
-- generatedChecksum: F520F5101E5BD56BC7F99B394455BD50
+  userChecksum: 08D1FB27C6740B3312094553F59645C7
+- generatedChecksum: AAA601BF40E480BBFC372372A0C5DB43
   logicalPath: config/wbz351_curiosity
   name: WBZ351.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: F520F5101E5BD56BC7F99B394455BD50
+  userChecksum: AAA601BF40E480BBFC372372A0C5DB43
 format_version: v1.0
 libraries: []
 settings:
