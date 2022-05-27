@@ -20,29 +20,29 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_TCC0_INSTANCE_
 #define _WBZ35_TCC0_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TCC0 peripheral ========== */
-#define TCC0_INSTANCE_ID                         _UL_(13)   
-#define TCC0_SIZE                                _UL_(24)   
-#define TCC0_MASTER_SLAVE_MODE                   _UL_(1)    
-#define TCC0_CC_NUM                              _UL_(6)    
-#define TCC0_OW_NUM                              _UL_(6)    
-#define TCC0_DITHERING                           _UL_(16)   
-#define TCC0_OTMX                                _UL_(1)    
-#define TCC0_DTI                                 _UL_(2)    
-#define TCC0_SWAP                                _UL_(4)    
-#define TCC0_PG                                  _UL_(8)    
-#define TCC0_DMAC_ID_OVF                         _UL_(10)   
-#define TCC0_DMAC_ID_MC0                         _UL_(11)   
-#define TCC0_DMAC_ID_MC1                         _UL_(12)   
-#define TCC0_DMAC_ID_MC2                         _UL_(13)   
-#define TCC0_DMAC_ID_MC3                         _UL_(14)   
-#define TCC0_DMAC_ID_MC4                         _UL_(15)   
-#define TCC0_DMAC_ID_MC5                         _UL_(16)   
-#define TCC0_GCLK_ID                             _UL_(21)   
+#define TCC0_INSTANCE_ID                         (13)       
+#define TCC0_SIZE                                (24)       
+#define TCC0_MASTER_SLAVE_MODE                   (1)        
+#define TCC0_CC_NUM                              (6)        
+#define TCC0_OW_NUM                              (6)        
+#define TCC0_DITHERING                           (1)        
+#define TCC0_OTMX                                (1)        
+#define TCC0_DTI                                 (1)        
+#define TCC0_SWAP                                (1)        
+#define TCC0_PG                                  (1)        
+#define TCC0_DMAC_ID_OVF                         (10)       
+#define TCC0_DMAC_ID_MC0                         (11)       
+#define TCC0_DMAC_ID_MC1                         (12)       
+#define TCC0_DMAC_ID_MC2                         (13)       
+#define TCC0_DMAC_ID_MC3                         (14)       
+#define TCC0_DMAC_ID_MC4                         (15)       
+#define TCC0_DMAC_ID_MC5                         (16)       
+#define TCC0_GCLK_ID                             (21)       
 
 #endif /* _WBZ35_TCC0_INSTANCE_ */

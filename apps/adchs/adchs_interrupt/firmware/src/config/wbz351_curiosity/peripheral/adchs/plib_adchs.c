@@ -51,10 +51,11 @@
 // *****************************************************************************
 
 /* Object to hold callback function and context */
-ADCHS_CALLBACK_OBJECT ADCHS_CallbackObj[11];
+static ADCHS_CALLBACK_OBJECT ADCHS_CallbackObj[11];
 
 
-void ADCHS_Initialize()
+
+void ADCHS_Initialize(void)
 {
     ADCHS_REGS->ADCHS_ADCCON1 = 0;
 
@@ -81,14 +82,23 @@ void ADCHS_Initialize()
     ADCHS_REGS->ADCHS_ADCCSS1 = 0x0;
     
 
+
+
     /* Result interrupt enable */
     ADCHS_REGS->ADCHS_ADCGIRQEN1 = 0x20;
     
 
     /* Turn ON ADC */
     ADCHS_REGS->ADCHS_ADCCON1 |= ADCHS_ADCCON1_ON_Msk;
-    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_BGVRRDY_Msk) == ADCHS_ADCCON2_BGVRRDY_Msk); // Wait until the reference voltage is ready
-    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_REFFLT_Msk) == ADCHS_ADCCON2_REFFLT_Msk); // Wait if there is a fault with the reference voltage
+    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_BGVRRDY_Msk) == ADCHS_ADCCON2_BGVRRDY_Msk) 
+    {
+        // Wait until the reference voltage is ready
+    }
+    
+    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_REFFLT_Msk) == ADCHS_ADCCON2_REFFLT_Msk) 
+    {
+        // Wait if there is a fault with the reference voltage
+    }
 
     /* ADC 7 */
     ADCHS_REGS->ADCHS_ADCANCON |= ADCHS_ADCANCON_ANEN7_Msk;      // Enable the clock to analog bias
@@ -100,29 +110,29 @@ void ADCHS_Initialize()
 /* Enable ADCHS channels */
 void ADCHS_ModulesEnable (ADCHS_MODULE_MASK moduleMask)
 {
-    ADCHS_REGS->ADCHS_ADCCON3 |= (moduleMask << 16);
+    ADCHS_REGS->ADCHS_ADCCON3 |= ((uint32_t)moduleMask << 16U);
 }
 
 /* Disable ADCHS channels */
 void ADCHS_ModulesDisable (ADCHS_MODULE_MASK moduleMask)
 {
-    ADCHS_REGS->ADCHS_ADCCON3 &= ~(moduleMask << 16);
+    ADCHS_REGS->ADCHS_ADCCON3 &= ~((uint32_t)moduleMask << 16U);
 }
 
 
 void ADCHS_ChannelResultInterruptEnable (ADCHS_CHANNEL_NUM channel)
 {
-    if (channel < ADCHS_CHANNEL_32)
+    if ((uint32_t)channel < ADCHS_CHANNEL_32)
     {
-        ADCHS_REGS->ADCHS_ADCGIRQEN1 |= 0x01 << channel;
+        ADCHS_REGS->ADCHS_ADCGIRQEN1 |= 0x01UL << (uint32_t)channel;
     }
 }
 
 void ADCHS_ChannelResultInterruptDisable (ADCHS_CHANNEL_NUM channel)
 {
-    if (channel < ADCHS_CHANNEL_32)
+    if ((uint32_t)channel < ADCHS_CHANNEL_32)
     {
-        ADCHS_REGS->ADCHS_ADCGIRQEN1 &= ~(0x01 << channel);
+        ADCHS_REGS->ADCHS_ADCGIRQEN1 &= ~(0x01UL << (uint32_t)channel);
     }
 }
 
@@ -145,7 +155,7 @@ void ADCHS_GlobalLevelConversionStop(void)
 void ADCHS_ChannelConversionStart(ADCHS_CHANNEL_NUM channel)
 {
     ADCHS_REGS->ADCHS_ADCCON3 &= ~(ADCHS_ADCCON3_ADINSEL_Msk);
-    ADCHS_REGS->ADCHS_ADCCON3 |= ((channel << ADCHS_ADCCON3_ADINSEL_Pos) | ADCHS_ADCCON3_RQCNVRT_Msk);
+    ADCHS_REGS->ADCHS_ADCCON3 |= (((uint32_t)channel << ADCHS_ADCCON3_ADINSEL_Pos) | ADCHS_ADCCON3_RQCNVRT_Msk);
 }
 
 
@@ -153,9 +163,9 @@ void ADCHS_ChannelConversionStart(ADCHS_CHANNEL_NUM channel)
 bool ADCHS_ChannelResultIsReady(ADCHS_CHANNEL_NUM channel)
 {
     bool status = false;
-    if (channel < ADCHS_CHANNEL_32)
+    if ((uint32_t)channel < ADCHS_CHANNEL_32)
     {
-        status = (ADCHS_REGS->ADCHS_ADCDSTAT1 >> channel) & 0x01;
+        status = ((ADCHS_REGS->ADCHS_ADCDSTAT1 >> (uint32_t)channel) & 0x01U) != 0U;
     }
     return status;
 }
@@ -163,7 +173,8 @@ bool ADCHS_ChannelResultIsReady(ADCHS_CHANNEL_NUM channel)
 /* Read the conversion result */
 uint16_t ADCHS_ChannelResultGet(ADCHS_CHANNEL_NUM channel)
 {
-    return (uint16_t) (*((&ADCHS_REGS->ADCHS_ADCDATA0) + (channel << 2)));
+    uint32_t channel_addr = ADCHS_BASE_ADDRESS + ADCHS_ADCDATA0_REG_OFST + ((uint32_t)channel << 4U);
+	return (uint16_t)(*(uint32_t*)channel_addr);   
 }
 
 void ADCHS_CallbackRegister(ADCHS_CHANNEL_NUM channel, ADCHS_CALLBACK callback, uintptr_t context)
@@ -172,10 +183,12 @@ void ADCHS_CallbackRegister(ADCHS_CHANNEL_NUM channel, ADCHS_CALLBACK callback, 
     ADCHS_CallbackObj[channel].context = context;
 }
 
+
+
 bool ADCHS_EOSStatusGet(void)
 {
-    return (bool)((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_EOSRDY_Msk) 
-                    >> ADCHS_ADCCON2_EOSRDY_Pos);
+    return (bool)(((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_EOSRDY_Msk) 
+                    >> ADCHS_ADCCON2_EOSRDY_Pos) != 0U);
 }
 
 void ADCHS_InterruptHandler( void )
@@ -185,6 +198,7 @@ void ADCHS_InterruptHandler( void )
 
     status  = ADCHS_REGS->ADCHS_ADCDSTAT1;
     status &= ADCHS_REGS->ADCHS_ADCGIRQEN1;
+	
 
 
     /* Check pending events and call callback if registered */
@@ -195,4 +209,6 @@ void ADCHS_InterruptHandler( void )
             ADCHS_CallbackObj[i].callback_fn((ADCHS_CHANNEL_NUM)i, ADCHS_CallbackObj[i].context);
         }
     }
+	
+	
 }
