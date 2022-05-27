@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-02-03T13:54:44Z */
+/* file generated from device description version 2022-04-19T15:30:24Z */
 #ifndef _WBZ35_PAC_INSTANCE_
 #define _WBZ35_PAC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PAC peripheral ========== */
-#define PAC_INSTANCE_ID                          _UL_(0)    
-#define PAC_CHIP_PAC_PADDR_MSB                   _UL_(9)    
-#define PAC_CHIP_PAC_HMATRIX1_IMPLEMENTED        _UL_(0)    
-#define PAC_CHIP_PAC_HPB_NUM                     _UL_(3)    
-#define PAC_CHIP_PAC_HMATRIX0_SLAVE_SIZE         _UL_(12)   
-#define PAC_CHIP_PAC_HMATRIX1_SLAVE_SIZE         _UL_(0)    
+#define PAC_INSTANCE_ID                          (0)        
+#define PAC_CHIP_PAC_PADDR_MSB                   (9)        
+#define PAC_CHIP_PAC_HMATRIX1_IMPLEMENTED        (0)        
+#define PAC_CHIP_PAC_HPB_NUM                     (3)        
+#define PAC_CHIP_PAC_HMATRIX0_SLAVE_SIZE         (13)       
+#define PAC_CHIP_PAC_HMATRIX1_SLAVE_SIZE         (0)        
 
 #endif /* _WBZ35_PAC_INSTANCE_ */

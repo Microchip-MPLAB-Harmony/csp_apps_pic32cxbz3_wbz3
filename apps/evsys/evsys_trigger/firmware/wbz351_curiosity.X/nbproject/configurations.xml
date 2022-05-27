@@ -7,25 +7,25 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="wbz351_curiosity" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f2" displayName="ccl" projectFiles="true">
+            <logicalFolder name="f1" displayName="ccl" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/ccl/plib_ccl.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="clk" projectFiles="true">
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="cmcc" projectFiles="true">
+            <logicalFolder name="f3" displayName="cmcc" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/cmcc/plib_cmcc.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="eic" projectFiles="true">
+            <logicalFolder name="f4" displayName="eic" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/eic/plib_eic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="evsys" projectFiles="true">
+            <logicalFolder name="f5" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/evsys/plib_evsys.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f6" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
+            <logicalFolder name="f7" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/nvic/plib_nvic.h</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -38,7 +38,7 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
-        <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
+        <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
             <logicalFolder name="f1" displayName="Core" projectFiles="true">
               <logicalFolder name="f1" displayName="Include" projectFiles="true">
@@ -56,7 +56,7 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="f1" displayName="WBZ351_DFP" projectFiles="true">
+        <logicalFolder name="f2" displayName="WBZ351_DFP" projectFiles="true">
           <logicalFolder name="f1" displayName="component" projectFiles="true">
             <itemPath>../src/packs/WBZ351_DFP/component/ac.h</itemPath>
             <itemPath>../src/packs/WBZ351_DFP/component/adchs.h</itemPath>
@@ -160,6 +160,24 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="wbz351_curiosity.mhc" projectFiles="true">
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/ccl.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/core.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/eic.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/project.yml</itemPath>
+        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/settings.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/wbz351_curiosity/harmony-manifest-success.yml</itemPath>
+      <itemPath>evsys_trigger_wbz351_curiosity.mc3</itemPath>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -168,6 +186,8 @@
           <itemPath>../src/config/wbz351_curiosity/WBZ351.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="f3" displayName="Script Files" projectFiles="true">
     </logicalFolder>
     <logicalFolder name="ScriptFiles"
                    displayName="Script Files"
@@ -180,25 +200,25 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="wbz351_curiosity" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f2" displayName="ccl" projectFiles="true">
+            <logicalFolder name="f1" displayName="ccl" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/ccl/plib_ccl.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="clk" projectFiles="true">
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="cmcc" projectFiles="true">
+            <logicalFolder name="f3" displayName="cmcc" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/cmcc/plib_cmcc.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="eic" projectFiles="true">
+            <logicalFolder name="f4" displayName="eic" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/eic/plib_eic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="evsys" projectFiles="true">
+            <logicalFolder name="f5" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/evsys/plib_evsys.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f6" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
+            <logicalFolder name="f7" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/wbz351_curiosity/peripheral/nvic/plib_nvic.c</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -214,23 +234,6 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1" displayName="wbz351_curiosity.mhc" projectFiles="true">
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/ccl.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/core.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/eic.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/evsys.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/project.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/settings.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/wbz351_curiosity/harmony-manifest-success.yml</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -245,11 +248,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.00</languageToolchainVersion>
+        <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CX-BZ3_DFP" vendor="Microchip" version="1.0.24"/>
+        <pack name="PIC32CX-BZ3_DFP" vendor="Microchip" version="1.0.34"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
@@ -282,6 +285,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -338,6 +342,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -377,6 +382,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -405,6 +411,7 @@
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
       <C32Global>
+        <property key="appendMe" value=""/>
         <property key="common-include-directories" value=""/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
@@ -599,6 +606,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1000000-20017fff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/microchip/harmony/h3/csp_apps_pic32cxbz3_wbz3/apps/evsys/evsys_trigger/firmware/wbz351_curiosity.X/debug/wbz351_curiosity/wbz351_curiosity_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
