@@ -1,0 +1,81 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cxbz3_wbz3_tcc_synchronous_pwm_channels",
+		"version": "3.0.0",
+		"displayName": "TCC PWM generation Example for PIC32CX BZ3 Family",
+		"projectName": "tcc_synchronous_pwm_channels_wbz351_curiosity",
+		"shortDescription": "This example application shows how to use the TCC to generate a 2 or 3 phase PWM signals for motor control with dead time.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.0.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.1.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-BZ3_DFP",
+			"semverRange": "^1.0.44"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.5"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "WBZ351",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"WBZ351 Curiosity"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"TCC"
+			],
+			[
+				"Peripherals",
+				"TCC"
+			]
+		],
+		"peripherals": [
+			"TCC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"WBZ351",
+			"PIC32CX BZ3 Family",
+			"TC",
+			"TCC",
+			"TMR",
+			"Timer",
+			"Counter"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
