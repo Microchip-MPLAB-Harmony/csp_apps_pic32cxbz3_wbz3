@@ -93,9 +93,6 @@ void CCL_Initialize(void)
     /* SEQSEL = 0x0 */
     CCL_REGS->CCL_SEQCTRL[0] = 0x0U;
 
-    /* SEQSEL = 0x0 */
-    CCL_REGS->CCL_SEQCTRL[1] = 0x0U;
-
     /* ENABLE  = true */
     /* FILTSEL = 0   */
     /* EDGESEL = 1   */

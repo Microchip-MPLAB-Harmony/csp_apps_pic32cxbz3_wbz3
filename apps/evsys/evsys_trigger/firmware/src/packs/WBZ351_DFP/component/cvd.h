@@ -1,7 +1,7 @@
 /*
  * Component description for CVD
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_CVD_COMPONENT_H_
 #define _WBZ35_CVD_COMPONENT_H_
 
@@ -226,42 +226,6 @@
 #define CVD_CVDSD0C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD0C1) Register Mask  */
 
 
-/* -------- CVD_CVDSD1C1 : (CVD Offset: 0x110) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER -------- */
-#define CVD_CVDSD1C1_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER  Reset Value */
-
-#define CVD_CVDSD1C1_SDOVRSAMP_Pos            _UINT32_(0)                                          /* (CVD_CVDSD1C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Position */
-#define CVD_CVDSD1C1_SDOVRSAMP_Msk            (_UINT32_(0x7F) << CVD_CVDSD1C1_SDOVRSAMP_Pos)       /* (CVD_CVDSD1C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Mask */
-#define CVD_CVDSD1C1_SDOVRSAMP(value)         (CVD_CVDSD1C1_SDOVRSAMP_Msk & (_UINT32_(value) << CVD_CVDSD1C1_SDOVRSAMP_Pos)) /* Assigment of value for SDOVRSAMP in the CVD_CVDSD1C1 register */
-#define CVD_CVDSD1C1_SDTH_Pos                 _UINT32_(8)                                          /* (CVD_CVDSD1C1) Scan Descriptor Threshold. Position */
-#define CVD_CVDSD1C1_SDTH_Msk                 (_UINT32_(0xFFFFFF) << CVD_CVDSD1C1_SDTH_Pos)        /* (CVD_CVDSD1C1) Scan Descriptor Threshold. Mask */
-#define CVD_CVDSD1C1_SDTH(value)              (CVD_CVDSD1C1_SDTH_Msk & (_UINT32_(value) << CVD_CVDSD1C1_SDTH_Pos)) /* Assigment of value for SDTH in the CVD_CVDSD1C1 register */
-#define CVD_CVDSD1C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD1C1) Register Mask  */
-
-
-/* -------- CVD_CVDSD2C1 : (CVD Offset: 0x120) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER -------- */
-#define CVD_CVDSD2C1_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD2C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER  Reset Value */
-
-#define CVD_CVDSD2C1_SDOVRSAMP_Pos            _UINT32_(0)                                          /* (CVD_CVDSD2C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Position */
-#define CVD_CVDSD2C1_SDOVRSAMP_Msk            (_UINT32_(0x7F) << CVD_CVDSD2C1_SDOVRSAMP_Pos)       /* (CVD_CVDSD2C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Mask */
-#define CVD_CVDSD2C1_SDOVRSAMP(value)         (CVD_CVDSD2C1_SDOVRSAMP_Msk & (_UINT32_(value) << CVD_CVDSD2C1_SDOVRSAMP_Pos)) /* Assigment of value for SDOVRSAMP in the CVD_CVDSD2C1 register */
-#define CVD_CVDSD2C1_SDTH_Pos                 _UINT32_(8)                                          /* (CVD_CVDSD2C1) Scan Descriptor Threshold. Position */
-#define CVD_CVDSD2C1_SDTH_Msk                 (_UINT32_(0xFFFFFF) << CVD_CVDSD2C1_SDTH_Pos)        /* (CVD_CVDSD2C1) Scan Descriptor Threshold. Mask */
-#define CVD_CVDSD2C1_SDTH(value)              (CVD_CVDSD2C1_SDTH_Msk & (_UINT32_(value) << CVD_CVDSD2C1_SDTH_Pos)) /* Assigment of value for SDTH in the CVD_CVDSD2C1 register */
-#define CVD_CVDSD2C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD2C1) Register Mask  */
-
-
-/* -------- CVD_CVDSD3C1 : (CVD Offset: 0x130) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER -------- */
-#define CVD_CVDSD3C1_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD3C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER  Reset Value */
-
-#define CVD_CVDSD3C1_SDOVRSAMP_Pos            _UINT32_(0)                                          /* (CVD_CVDSD3C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Position */
-#define CVD_CVDSD3C1_SDOVRSAMP_Msk            (_UINT32_(0x7F) << CVD_CVDSD3C1_SDOVRSAMP_Pos)       /* (CVD_CVDSD3C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Mask */
-#define CVD_CVDSD3C1_SDOVRSAMP(value)         (CVD_CVDSD3C1_SDOVRSAMP_Msk & (_UINT32_(value) << CVD_CVDSD3C1_SDOVRSAMP_Pos)) /* Assigment of value for SDOVRSAMP in the CVD_CVDSD3C1 register */
-#define CVD_CVDSD3C1_SDTH_Pos                 _UINT32_(8)                                          /* (CVD_CVDSD3C1) Scan Descriptor Threshold. Position */
-#define CVD_CVDSD3C1_SDTH_Msk                 (_UINT32_(0xFFFFFF) << CVD_CVDSD3C1_SDTH_Pos)        /* (CVD_CVDSD3C1) Scan Descriptor Threshold. Mask */
-#define CVD_CVDSD3C1_SDTH(value)              (CVD_CVDSD3C1_SDTH_Msk & (_UINT32_(value) << CVD_CVDSD3C1_SDTH_Pos)) /* Assigment of value for SDTH in the CVD_CVDSD3C1 register */
-#define CVD_CVDSD3C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD3C1) Register Mask  */
-
-
 /* -------- CVD_CVDSD0C2 : (CVD Offset: 0x104) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
 #define CVD_CVDSD0C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD0C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
 
@@ -290,96 +254,6 @@
 #define CVD_CVDSD0C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD0C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD0C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
 #define CVD_CVDSD0C2_SDTXSTRIDE1(value)       (CVD_CVDSD0C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD0C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD0C2 register */
 #define CVD_CVDSD0C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD0C2) Register Mask  */
-
-
-/* -------- CVD_CVDSD1C2 : (CVD Offset: 0x114) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
-#define CVD_CVDSD1C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
-
-#define CVD_CVDSD1C2_SDRXBEG_Pos              _UINT32_(0)                                          /* (CVD_CVDSD1C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Position */
-#define CVD_CVDSD1C2_SDRXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDRXBEG_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Mask */
-#define CVD_CVDSD1C2_SDRXBEG(value)           (CVD_CVDSD1C2_SDRXBEG_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXBEG_Pos)) /* Assigment of value for SDRXBEG in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDRXSTRIDE0_Pos          _UINT32_(6)                                          /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
-#define CVD_CVDSD1C2_SDRXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDRXSTRIDE0_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
-#define CVD_CVDSD1C2_SDRXSTRIDE0(value)       (CVD_CVDSD1C2_SDRXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXSTRIDE0_Pos)) /* Assigment of value for SDRXSTRIDE0 in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDRXEND_Pos              _UINT32_(8)                                          /* (CVD_CVDSD1C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Position */
-#define CVD_CVDSD1C2_SDRXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDRXEND_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Mask */
-#define CVD_CVDSD1C2_SDRXEND(value)           (CVD_CVDSD1C2_SDRXEND_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXEND_Pos)) /* Assigment of value for SDRXEND in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDRXSTRIDE1_Pos          _UINT32_(14)                                         /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
-#define CVD_CVDSD1C2_SDRXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDRXSTRIDE1_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
-#define CVD_CVDSD1C2_SDRXSTRIDE1(value)       (CVD_CVDSD1C2_SDRXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXSTRIDE1_Pos)) /* Assigment of value for SDRXSTRIDE1 in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDTXBEG_Pos              _UINT32_(16)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Position */
-#define CVD_CVDSD1C2_SDTXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDTXBEG_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Mask */
-#define CVD_CVDSD1C2_SDTXBEG(value)           (CVD_CVDSD1C2_SDTXBEG_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXBEG_Pos)) /* Assigment of value for SDTXBEG in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDTXSTRIDE0_Pos          _UINT32_(22)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
-#define CVD_CVDSD1C2_SDTXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDTXSTRIDE0_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
-#define CVD_CVDSD1C2_SDTXSTRIDE0(value)       (CVD_CVDSD1C2_SDTXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXSTRIDE0_Pos)) /* Assigment of value for SDTXSTRIDE0 in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDTXEND_Pos              _UINT32_(24)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Position */
-#define CVD_CVDSD1C2_SDTXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDTXEND_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Mask */
-#define CVD_CVDSD1C2_SDTXEND(value)           (CVD_CVDSD1C2_SDTXEND_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXEND_Pos)) /* Assigment of value for SDTXEND in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_SDTXSTRIDE1_Pos          _UINT32_(30)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
-#define CVD_CVDSD1C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
-#define CVD_CVDSD1C2_SDTXSTRIDE1(value)       (CVD_CVDSD1C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD1C2 register */
-#define CVD_CVDSD1C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD1C2) Register Mask  */
-
-
-/* -------- CVD_CVDSD2C2 : (CVD Offset: 0x124) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
-#define CVD_CVDSD2C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD2C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
-
-#define CVD_CVDSD2C2_SDRXBEG_Pos              _UINT32_(0)                                          /* (CVD_CVDSD2C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Position */
-#define CVD_CVDSD2C2_SDRXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDRXBEG_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Mask */
-#define CVD_CVDSD2C2_SDRXBEG(value)           (CVD_CVDSD2C2_SDRXBEG_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXBEG_Pos)) /* Assigment of value for SDRXBEG in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDRXSTRIDE0_Pos          _UINT32_(6)                                          /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
-#define CVD_CVDSD2C2_SDRXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDRXSTRIDE0_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
-#define CVD_CVDSD2C2_SDRXSTRIDE0(value)       (CVD_CVDSD2C2_SDRXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXSTRIDE0_Pos)) /* Assigment of value for SDRXSTRIDE0 in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDRXEND_Pos              _UINT32_(8)                                          /* (CVD_CVDSD2C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Position */
-#define CVD_CVDSD2C2_SDRXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDRXEND_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Mask */
-#define CVD_CVDSD2C2_SDRXEND(value)           (CVD_CVDSD2C2_SDRXEND_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXEND_Pos)) /* Assigment of value for SDRXEND in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDRXSTRIDE1_Pos          _UINT32_(14)                                         /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
-#define CVD_CVDSD2C2_SDRXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDRXSTRIDE1_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
-#define CVD_CVDSD2C2_SDRXSTRIDE1(value)       (CVD_CVDSD2C2_SDRXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXSTRIDE1_Pos)) /* Assigment of value for SDRXSTRIDE1 in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDTXBEG_Pos              _UINT32_(16)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Position */
-#define CVD_CVDSD2C2_SDTXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDTXBEG_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Mask */
-#define CVD_CVDSD2C2_SDTXBEG(value)           (CVD_CVDSD2C2_SDTXBEG_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXBEG_Pos)) /* Assigment of value for SDTXBEG in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDTXSTRIDE0_Pos          _UINT32_(22)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
-#define CVD_CVDSD2C2_SDTXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDTXSTRIDE0_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
-#define CVD_CVDSD2C2_SDTXSTRIDE0(value)       (CVD_CVDSD2C2_SDTXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXSTRIDE0_Pos)) /* Assigment of value for SDTXSTRIDE0 in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDTXEND_Pos              _UINT32_(24)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Position */
-#define CVD_CVDSD2C2_SDTXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDTXEND_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Mask */
-#define CVD_CVDSD2C2_SDTXEND(value)           (CVD_CVDSD2C2_SDTXEND_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXEND_Pos)) /* Assigment of value for SDTXEND in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_SDTXSTRIDE1_Pos          _UINT32_(30)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
-#define CVD_CVDSD2C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
-#define CVD_CVDSD2C2_SDTXSTRIDE1(value)       (CVD_CVDSD2C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD2C2 register */
-#define CVD_CVDSD2C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD2C2) Register Mask  */
-
-
-/* -------- CVD_CVDSD3C2 : (CVD Offset: 0x134) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
-#define CVD_CVDSD3C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD3C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
-
-#define CVD_CVDSD3C2_SDRXBEG_Pos              _UINT32_(0)                                          /* (CVD_CVDSD3C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Position */
-#define CVD_CVDSD3C2_SDRXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDRXBEG_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Mask */
-#define CVD_CVDSD3C2_SDRXBEG(value)           (CVD_CVDSD3C2_SDRXBEG_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXBEG_Pos)) /* Assigment of value for SDRXBEG in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDRXSTRIDE0_Pos          _UINT32_(6)                                          /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
-#define CVD_CVDSD3C2_SDRXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDRXSTRIDE0_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
-#define CVD_CVDSD3C2_SDRXSTRIDE0(value)       (CVD_CVDSD3C2_SDRXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXSTRIDE0_Pos)) /* Assigment of value for SDRXSTRIDE0 in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDRXEND_Pos              _UINT32_(8)                                          /* (CVD_CVDSD3C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Position */
-#define CVD_CVDSD3C2_SDRXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDRXEND_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Mask */
-#define CVD_CVDSD3C2_SDRXEND(value)           (CVD_CVDSD3C2_SDRXEND_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXEND_Pos)) /* Assigment of value for SDRXEND in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDRXSTRIDE1_Pos          _UINT32_(14)                                         /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
-#define CVD_CVDSD3C2_SDRXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDRXSTRIDE1_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
-#define CVD_CVDSD3C2_SDRXSTRIDE1(value)       (CVD_CVDSD3C2_SDRXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXSTRIDE1_Pos)) /* Assigment of value for SDRXSTRIDE1 in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDTXBEG_Pos              _UINT32_(16)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Position */
-#define CVD_CVDSD3C2_SDTXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDTXBEG_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Mask */
-#define CVD_CVDSD3C2_SDTXBEG(value)           (CVD_CVDSD3C2_SDTXBEG_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXBEG_Pos)) /* Assigment of value for SDTXBEG in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDTXSTRIDE0_Pos          _UINT32_(22)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
-#define CVD_CVDSD3C2_SDTXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDTXSTRIDE0_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
-#define CVD_CVDSD3C2_SDTXSTRIDE0(value)       (CVD_CVDSD3C2_SDTXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXSTRIDE0_Pos)) /* Assigment of value for SDTXSTRIDE0 in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDTXEND_Pos              _UINT32_(24)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Position */
-#define CVD_CVDSD3C2_SDTXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDTXEND_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Mask */
-#define CVD_CVDSD3C2_SDTXEND(value)           (CVD_CVDSD3C2_SDTXEND_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXEND_Pos)) /* Assigment of value for SDTXEND in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_SDTXSTRIDE1_Pos          _UINT32_(30)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
-#define CVD_CVDSD3C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
-#define CVD_CVDSD3C2_SDTXSTRIDE1(value)       (CVD_CVDSD3C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD3C2 register */
-#define CVD_CVDSD3C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD3C2) Register Mask  */
 
 
 /* -------- CVD_CVDSD0C3 : (CVD Offset: 0x108) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER -------- */
@@ -415,6 +289,66 @@
 #define CVD_CVDSD0C3_Msk                      _UINT32_(0xCF0F7F7F)                                 /* (CVD_CVDSD0C3) Register Mask  */
 
 
+/* -------- CVD_CVDSD0T2 : (CVD Offset: 0x10C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
+#define CVD_CVDSD0T2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD0T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER  Reset Value */
+
+#define CVD_CVDSD0T2_SDCONTIME_Pos            _UINT32_(0)                                          /* (CVD_CVDSD0T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Position */
+#define CVD_CVDSD0T2_SDCONTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDCONTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Mask */
+#define CVD_CVDSD0T2_SDCONTIME(value)         (CVD_CVDSD0T2_SDCONTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDCONTIME_Pos)) /* Assigment of value for SDCONTIME in the CVD_CVDSD0T2 register */
+#define CVD_CVDSD0T2_SDPOLTIME_Pos            _UINT32_(8)                                          /* (CVD_CVDSD0T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Position */
+#define CVD_CVDSD0T2_SDPOLTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDPOLTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Mask */
+#define CVD_CVDSD0T2_SDPOLTIME(value)         (CVD_CVDSD0T2_SDPOLTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDPOLTIME_Pos)) /* Assigment of value for SDPOLTIME in the CVD_CVDSD0T2 register */
+#define CVD_CVDSD0T2_SDOVRTIME_Pos            _UINT32_(16)                                         /* (CVD_CVDSD0T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Position */
+#define CVD_CVDSD0T2_SDOVRTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDOVRTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Mask */
+#define CVD_CVDSD0T2_SDOVRTIME(value)         (CVD_CVDSD0T2_SDOVRTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDOVRTIME_Pos)) /* Assigment of value for SDOVRTIME in the CVD_CVDSD0T2 register */
+#define CVD_CVDSD0T2_SDCHNTIME_Pos            _UINT32_(24)                                         /* (CVD_CVDSD0T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Position */
+#define CVD_CVDSD0T2_SDCHNTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDCHNTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Mask */
+#define CVD_CVDSD0T2_SDCHNTIME(value)         (CVD_CVDSD0T2_SDCHNTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDCHNTIME_Pos)) /* Assigment of value for SDCHNTIME in the CVD_CVDSD0T2 register */
+#define CVD_CVDSD0T2_Msk                      _UINT32_(0x7F7F7F7F)                                 /* (CVD_CVDSD0T2) Register Mask  */
+
+
+/* -------- CVD_CVDSD1C1 : (CVD Offset: 0x110) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER -------- */
+#define CVD_CVDSD1C1_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER  Reset Value */
+
+#define CVD_CVDSD1C1_SDOVRSAMP_Pos            _UINT32_(0)                                          /* (CVD_CVDSD1C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Position */
+#define CVD_CVDSD1C1_SDOVRSAMP_Msk            (_UINT32_(0x7F) << CVD_CVDSD1C1_SDOVRSAMP_Pos)       /* (CVD_CVDSD1C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Mask */
+#define CVD_CVDSD1C1_SDOVRSAMP(value)         (CVD_CVDSD1C1_SDOVRSAMP_Msk & (_UINT32_(value) << CVD_CVDSD1C1_SDOVRSAMP_Pos)) /* Assigment of value for SDOVRSAMP in the CVD_CVDSD1C1 register */
+#define CVD_CVDSD1C1_SDTH_Pos                 _UINT32_(8)                                          /* (CVD_CVDSD1C1) Scan Descriptor Threshold. Position */
+#define CVD_CVDSD1C1_SDTH_Msk                 (_UINT32_(0xFFFFFF) << CVD_CVDSD1C1_SDTH_Pos)        /* (CVD_CVDSD1C1) Scan Descriptor Threshold. Mask */
+#define CVD_CVDSD1C1_SDTH(value)              (CVD_CVDSD1C1_SDTH_Msk & (_UINT32_(value) << CVD_CVDSD1C1_SDTH_Pos)) /* Assigment of value for SDTH in the CVD_CVDSD1C1 register */
+#define CVD_CVDSD1C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD1C1) Register Mask  */
+
+
+/* -------- CVD_CVDSD1C2 : (CVD Offset: 0x114) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
+#define CVD_CVDSD1C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
+
+#define CVD_CVDSD1C2_SDRXBEG_Pos              _UINT32_(0)                                          /* (CVD_CVDSD1C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Position */
+#define CVD_CVDSD1C2_SDRXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDRXBEG_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Mask */
+#define CVD_CVDSD1C2_SDRXBEG(value)           (CVD_CVDSD1C2_SDRXBEG_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXBEG_Pos)) /* Assigment of value for SDRXBEG in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDRXSTRIDE0_Pos          _UINT32_(6)                                          /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
+#define CVD_CVDSD1C2_SDRXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDRXSTRIDE0_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
+#define CVD_CVDSD1C2_SDRXSTRIDE0(value)       (CVD_CVDSD1C2_SDRXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXSTRIDE0_Pos)) /* Assigment of value for SDRXSTRIDE0 in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDRXEND_Pos              _UINT32_(8)                                          /* (CVD_CVDSD1C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Position */
+#define CVD_CVDSD1C2_SDRXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDRXEND_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Mask */
+#define CVD_CVDSD1C2_SDRXEND(value)           (CVD_CVDSD1C2_SDRXEND_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXEND_Pos)) /* Assigment of value for SDRXEND in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDRXSTRIDE1_Pos          _UINT32_(14)                                         /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
+#define CVD_CVDSD1C2_SDRXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDRXSTRIDE1_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
+#define CVD_CVDSD1C2_SDRXSTRIDE1(value)       (CVD_CVDSD1C2_SDRXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDRXSTRIDE1_Pos)) /* Assigment of value for SDRXSTRIDE1 in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDTXBEG_Pos              _UINT32_(16)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Position */
+#define CVD_CVDSD1C2_SDTXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDTXBEG_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Mask */
+#define CVD_CVDSD1C2_SDTXBEG(value)           (CVD_CVDSD1C2_SDTXBEG_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXBEG_Pos)) /* Assigment of value for SDTXBEG in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDTXSTRIDE0_Pos          _UINT32_(22)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
+#define CVD_CVDSD1C2_SDTXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDTXSTRIDE0_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
+#define CVD_CVDSD1C2_SDTXSTRIDE0(value)       (CVD_CVDSD1C2_SDTXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXSTRIDE0_Pos)) /* Assigment of value for SDTXSTRIDE0 in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDTXEND_Pos              _UINT32_(24)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Position */
+#define CVD_CVDSD1C2_SDTXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD1C2_SDTXEND_Pos)         /* (CVD_CVDSD1C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Mask */
+#define CVD_CVDSD1C2_SDTXEND(value)           (CVD_CVDSD1C2_SDTXEND_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXEND_Pos)) /* Assigment of value for SDTXEND in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_SDTXSTRIDE1_Pos          _UINT32_(30)                                         /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
+#define CVD_CVDSD1C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD1C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD1C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
+#define CVD_CVDSD1C2_SDTXSTRIDE1(value)       (CVD_CVDSD1C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD1C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD1C2 register */
+#define CVD_CVDSD1C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD1C2) Register Mask  */
+
+
 /* -------- CVD_CVDSD1C3 : (CVD Offset: 0x118) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER -------- */
 #define CVD_CVDSD1C3_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER  Reset Value */
 
@@ -446,6 +380,66 @@
 #define CVD_CVDSD1C3_SDEN_Msk                 (_UINT32_(0x3) << CVD_CVDSD1C3_SDEN_Pos)             /* (CVD_CVDSD1C3) Scan Descriptor Enable Mode00= Scan Descriptor Disabled01= Execute Scan Descriptor one time only, then clear the enable.10= Execute the Scan Descriptor, but keep enabled. Move on to next enabled descriptors.11= Execute the Scan Descriptor in a loop until a threshold match is detected, then clear the enable and move on tonext enabled descriptors. Mask */
 #define CVD_CVDSD1C3_SDEN(value)              (CVD_CVDSD1C3_SDEN_Msk & (_UINT32_(value) << CVD_CVDSD1C3_SDEN_Pos)) /* Assigment of value for SDEN in the CVD_CVDSD1C3 register */
 #define CVD_CVDSD1C3_Msk                      _UINT32_(0xCF0F7F7F)                                 /* (CVD_CVDSD1C3) Register Mask  */
+
+
+/* -------- CVD_CVDSD1T2 : (CVD Offset: 0x11C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
+#define CVD_CVDSD1T2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER  Reset Value */
+
+#define CVD_CVDSD1T2_SDCONTIME_Pos            _UINT32_(0)                                          /* (CVD_CVDSD1T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Position */
+#define CVD_CVDSD1T2_SDCONTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDCONTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Mask */
+#define CVD_CVDSD1T2_SDCONTIME(value)         (CVD_CVDSD1T2_SDCONTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDCONTIME_Pos)) /* Assigment of value for SDCONTIME in the CVD_CVDSD1T2 register */
+#define CVD_CVDSD1T2_SDPOLTIME_Pos            _UINT32_(8)                                          /* (CVD_CVDSD1T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Position */
+#define CVD_CVDSD1T2_SDPOLTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDPOLTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Mask */
+#define CVD_CVDSD1T2_SDPOLTIME(value)         (CVD_CVDSD1T2_SDPOLTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDPOLTIME_Pos)) /* Assigment of value for SDPOLTIME in the CVD_CVDSD1T2 register */
+#define CVD_CVDSD1T2_SDOVRTIME_Pos            _UINT32_(16)                                         /* (CVD_CVDSD1T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Position */
+#define CVD_CVDSD1T2_SDOVRTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDOVRTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Mask */
+#define CVD_CVDSD1T2_SDOVRTIME(value)         (CVD_CVDSD1T2_SDOVRTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDOVRTIME_Pos)) /* Assigment of value for SDOVRTIME in the CVD_CVDSD1T2 register */
+#define CVD_CVDSD1T2_SDCHNTIME_Pos            _UINT32_(24)                                         /* (CVD_CVDSD1T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Position */
+#define CVD_CVDSD1T2_SDCHNTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDCHNTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Mask */
+#define CVD_CVDSD1T2_SDCHNTIME(value)         (CVD_CVDSD1T2_SDCHNTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDCHNTIME_Pos)) /* Assigment of value for SDCHNTIME in the CVD_CVDSD1T2 register */
+#define CVD_CVDSD1T2_Msk                      _UINT32_(0x7F7F7F7F)                                 /* (CVD_CVDSD1T2) Register Mask  */
+
+
+/* -------- CVD_CVDSD2C1 : (CVD Offset: 0x120) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER -------- */
+#define CVD_CVDSD2C1_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD2C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER  Reset Value */
+
+#define CVD_CVDSD2C1_SDOVRSAMP_Pos            _UINT32_(0)                                          /* (CVD_CVDSD2C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Position */
+#define CVD_CVDSD2C1_SDOVRSAMP_Msk            (_UINT32_(0x7F) << CVD_CVDSD2C1_SDOVRSAMP_Pos)       /* (CVD_CVDSD2C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Mask */
+#define CVD_CVDSD2C1_SDOVRSAMP(value)         (CVD_CVDSD2C1_SDOVRSAMP_Msk & (_UINT32_(value) << CVD_CVDSD2C1_SDOVRSAMP_Pos)) /* Assigment of value for SDOVRSAMP in the CVD_CVDSD2C1 register */
+#define CVD_CVDSD2C1_SDTH_Pos                 _UINT32_(8)                                          /* (CVD_CVDSD2C1) Scan Descriptor Threshold. Position */
+#define CVD_CVDSD2C1_SDTH_Msk                 (_UINT32_(0xFFFFFF) << CVD_CVDSD2C1_SDTH_Pos)        /* (CVD_CVDSD2C1) Scan Descriptor Threshold. Mask */
+#define CVD_CVDSD2C1_SDTH(value)              (CVD_CVDSD2C1_SDTH_Msk & (_UINT32_(value) << CVD_CVDSD2C1_SDTH_Pos)) /* Assigment of value for SDTH in the CVD_CVDSD2C1 register */
+#define CVD_CVDSD2C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD2C1) Register Mask  */
+
+
+/* -------- CVD_CVDSD2C2 : (CVD Offset: 0x124) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
+#define CVD_CVDSD2C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD2C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
+
+#define CVD_CVDSD2C2_SDRXBEG_Pos              _UINT32_(0)                                          /* (CVD_CVDSD2C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Position */
+#define CVD_CVDSD2C2_SDRXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDRXBEG_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Mask */
+#define CVD_CVDSD2C2_SDRXBEG(value)           (CVD_CVDSD2C2_SDRXBEG_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXBEG_Pos)) /* Assigment of value for SDRXBEG in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDRXSTRIDE0_Pos          _UINT32_(6)                                          /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
+#define CVD_CVDSD2C2_SDRXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDRXSTRIDE0_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
+#define CVD_CVDSD2C2_SDRXSTRIDE0(value)       (CVD_CVDSD2C2_SDRXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXSTRIDE0_Pos)) /* Assigment of value for SDRXSTRIDE0 in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDRXEND_Pos              _UINT32_(8)                                          /* (CVD_CVDSD2C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Position */
+#define CVD_CVDSD2C2_SDRXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDRXEND_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Mask */
+#define CVD_CVDSD2C2_SDRXEND(value)           (CVD_CVDSD2C2_SDRXEND_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXEND_Pos)) /* Assigment of value for SDRXEND in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDRXSTRIDE1_Pos          _UINT32_(14)                                         /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
+#define CVD_CVDSD2C2_SDRXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDRXSTRIDE1_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
+#define CVD_CVDSD2C2_SDRXSTRIDE1(value)       (CVD_CVDSD2C2_SDRXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDRXSTRIDE1_Pos)) /* Assigment of value for SDRXSTRIDE1 in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDTXBEG_Pos              _UINT32_(16)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Position */
+#define CVD_CVDSD2C2_SDTXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDTXBEG_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Mask */
+#define CVD_CVDSD2C2_SDTXBEG(value)           (CVD_CVDSD2C2_SDTXBEG_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXBEG_Pos)) /* Assigment of value for SDTXBEG in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDTXSTRIDE0_Pos          _UINT32_(22)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
+#define CVD_CVDSD2C2_SDTXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDTXSTRIDE0_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
+#define CVD_CVDSD2C2_SDTXSTRIDE0(value)       (CVD_CVDSD2C2_SDTXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXSTRIDE0_Pos)) /* Assigment of value for SDTXSTRIDE0 in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDTXEND_Pos              _UINT32_(24)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Position */
+#define CVD_CVDSD2C2_SDTXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD2C2_SDTXEND_Pos)         /* (CVD_CVDSD2C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Mask */
+#define CVD_CVDSD2C2_SDTXEND(value)           (CVD_CVDSD2C2_SDTXEND_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXEND_Pos)) /* Assigment of value for SDTXEND in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_SDTXSTRIDE1_Pos          _UINT32_(30)                                         /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
+#define CVD_CVDSD2C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD2C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD2C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
+#define CVD_CVDSD2C2_SDTXSTRIDE1(value)       (CVD_CVDSD2C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD2C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD2C2 register */
+#define CVD_CVDSD2C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD2C2) Register Mask  */
 
 
 /* -------- CVD_CVDSD2C3 : (CVD Offset: 0x128) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER -------- */
@@ -481,6 +475,66 @@
 #define CVD_CVDSD2C3_Msk                      _UINT32_(0xCF0F7F7F)                                 /* (CVD_CVDSD2C3) Register Mask  */
 
 
+/* -------- CVD_CVDSD2T2 : (CVD Offset: 0x12C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
+#define CVD_CVDSD2T2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD2T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER  Reset Value */
+
+#define CVD_CVDSD2T2_SDCONTIME_Pos            _UINT32_(0)                                          /* (CVD_CVDSD2T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Position */
+#define CVD_CVDSD2T2_SDCONTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDCONTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Mask */
+#define CVD_CVDSD2T2_SDCONTIME(value)         (CVD_CVDSD2T2_SDCONTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDCONTIME_Pos)) /* Assigment of value for SDCONTIME in the CVD_CVDSD2T2 register */
+#define CVD_CVDSD2T2_SDPOLTIME_Pos            _UINT32_(8)                                          /* (CVD_CVDSD2T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Position */
+#define CVD_CVDSD2T2_SDPOLTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDPOLTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Mask */
+#define CVD_CVDSD2T2_SDPOLTIME(value)         (CVD_CVDSD2T2_SDPOLTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDPOLTIME_Pos)) /* Assigment of value for SDPOLTIME in the CVD_CVDSD2T2 register */
+#define CVD_CVDSD2T2_SDOVRTIME_Pos            _UINT32_(16)                                         /* (CVD_CVDSD2T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Position */
+#define CVD_CVDSD2T2_SDOVRTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDOVRTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Mask */
+#define CVD_CVDSD2T2_SDOVRTIME(value)         (CVD_CVDSD2T2_SDOVRTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDOVRTIME_Pos)) /* Assigment of value for SDOVRTIME in the CVD_CVDSD2T2 register */
+#define CVD_CVDSD2T2_SDCHNTIME_Pos            _UINT32_(24)                                         /* (CVD_CVDSD2T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Position */
+#define CVD_CVDSD2T2_SDCHNTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDCHNTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Mask */
+#define CVD_CVDSD2T2_SDCHNTIME(value)         (CVD_CVDSD2T2_SDCHNTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDCHNTIME_Pos)) /* Assigment of value for SDCHNTIME in the CVD_CVDSD2T2 register */
+#define CVD_CVDSD2T2_Msk                      _UINT32_(0x7F7F7F7F)                                 /* (CVD_CVDSD2T2) Register Mask  */
+
+
+/* -------- CVD_CVDSD3C1 : (CVD Offset: 0x130) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER -------- */
+#define CVD_CVDSD3C1_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD3C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER  Reset Value */
+
+#define CVD_CVDSD3C1_SDOVRSAMP_Pos            _UINT32_(0)                                          /* (CVD_CVDSD3C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Position */
+#define CVD_CVDSD3C1_SDOVRSAMP_Msk            (_UINT32_(0x7F) << CVD_CVDSD3C1_SDOVRSAMP_Pos)       /* (CVD_CVDSD3C1) Scan Descriptor Over Sampling0= One measurement1= Two measurements accumulated...127= 128 measurements accumulated Mask */
+#define CVD_CVDSD3C1_SDOVRSAMP(value)         (CVD_CVDSD3C1_SDOVRSAMP_Msk & (_UINT32_(value) << CVD_CVDSD3C1_SDOVRSAMP_Pos)) /* Assigment of value for SDOVRSAMP in the CVD_CVDSD3C1 register */
+#define CVD_CVDSD3C1_SDTH_Pos                 _UINT32_(8)                                          /* (CVD_CVDSD3C1) Scan Descriptor Threshold. Position */
+#define CVD_CVDSD3C1_SDTH_Msk                 (_UINT32_(0xFFFFFF) << CVD_CVDSD3C1_SDTH_Pos)        /* (CVD_CVDSD3C1) Scan Descriptor Threshold. Mask */
+#define CVD_CVDSD3C1_SDTH(value)              (CVD_CVDSD3C1_SDTH_Msk & (_UINT32_(value) << CVD_CVDSD3C1_SDTH_Pos)) /* Assigment of value for SDTH in the CVD_CVDSD3C1 register */
+#define CVD_CVDSD3C1_Msk                      _UINT32_(0xFFFFFF7F)                                 /* (CVD_CVDSD3C1) Register Mask  */
+
+
+/* -------- CVD_CVDSD3C2 : (CVD Offset: 0x134) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER -------- */
+#define CVD_CVDSD3C2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD3C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER  Reset Value */
+
+#define CVD_CVDSD3C2_SDRXBEG_Pos              _UINT32_(0)                                          /* (CVD_CVDSD3C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Position */
+#define CVD_CVDSD3C2_SDRXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDRXBEG_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor RX Index StartDetermines the first RX index to include in a scan. Mask */
+#define CVD_CVDSD3C2_SDRXBEG(value)           (CVD_CVDSD3C2_SDRXBEG_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXBEG_Pos)) /* Assigment of value for SDRXBEG in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDRXSTRIDE0_Pos          _UINT32_(6)                                          /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
+#define CVD_CVDSD3C2_SDRXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDRXSTRIDE0_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
+#define CVD_CVDSD3C2_SDRXSTRIDE0(value)       (CVD_CVDSD3C2_SDRXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXSTRIDE0_Pos)) /* Assigment of value for SDRXSTRIDE0 in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDRXEND_Pos              _UINT32_(8)                                          /* (CVD_CVDSD3C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Position */
+#define CVD_CVDSD3C2_SDRXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDRXEND_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor RX Index EndDetermines the last RX index to include in a scan.One the RX index pointer, which is incremented by the SDnRXSTRIDE+1 value, meets or exceeds this value, the RXloop of the scan is complete. Mask */
+#define CVD_CVDSD3C2_SDRXEND(value)           (CVD_CVDSD3C2_SDRXEND_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXEND_Pos)) /* Assigment of value for SDRXEND in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDRXSTRIDE1_Pos          _UINT32_(14)                                         /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Position */
+#define CVD_CVDSD3C2_SDRXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDRXSTRIDE1_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor RX Index StrideDetermines the number of RX Indexes included in a single measurement4'h0= One RX Index4'hF= 16 TX Indexes Mask */
+#define CVD_CVDSD3C2_SDRXSTRIDE1(value)       (CVD_CVDSD3C2_SDRXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDRXSTRIDE1_Pos)) /* Assigment of value for SDRXSTRIDE1 in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDTXBEG_Pos              _UINT32_(16)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Position */
+#define CVD_CVDSD3C2_SDTXBEG_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDTXBEG_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StartDetermines the first TX index to include in a scan. Mask */
+#define CVD_CVDSD3C2_SDTXBEG(value)           (CVD_CVDSD3C2_SDTXBEG_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXBEG_Pos)) /* Assigment of value for SDTXBEG in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDTXSTRIDE0_Pos          _UINT32_(22)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
+#define CVD_CVDSD3C2_SDTXSTRIDE0_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDTXSTRIDE0_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
+#define CVD_CVDSD3C2_SDTXSTRIDE0(value)       (CVD_CVDSD3C2_SDTXSTRIDE0_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXSTRIDE0_Pos)) /* Assigment of value for SDTXSTRIDE0 in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDTXEND_Pos              _UINT32_(24)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Position */
+#define CVD_CVDSD3C2_SDTXEND_Msk              (_UINT32_(0x3F) << CVD_CVDSD3C2_SDTXEND_Pos)         /* (CVD_CVDSD3C2) Scan Descriptor TX Index EndDetermines the last TX index to include in a scan.One the TX index pointer, which is incremented by the SDnTXSTRIDE+1 value, meets or exceeds this value, the TXloop of the scan is complete. Mask */
+#define CVD_CVDSD3C2_SDTXEND(value)           (CVD_CVDSD3C2_SDTXEND_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXEND_Pos)) /* Assigment of value for SDTXEND in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_SDTXSTRIDE1_Pos          _UINT32_(30)                                         /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Position */
+#define CVD_CVDSD3C2_SDTXSTRIDE1_Msk          (_UINT32_(0x3) << CVD_CVDSD3C2_SDTXSTRIDE1_Pos)      /* (CVD_CVDSD3C2) Scan Descriptor TX Index StrideDetermines the number of TX Indexes included in a single measurement.4'h0= One TX Index4'bF= 16TX Indexes Mask */
+#define CVD_CVDSD3C2_SDTXSTRIDE1(value)       (CVD_CVDSD3C2_SDTXSTRIDE1_Msk & (_UINT32_(value) << CVD_CVDSD3C2_SDTXSTRIDE1_Pos)) /* Assigment of value for SDTXSTRIDE1 in the CVD_CVDSD3C2 register */
+#define CVD_CVDSD3C2_Msk                      _UINT32_(0xFFFFFFFF)                                 /* (CVD_CVDSD3C2) Register Mask  */
+
+
 /* -------- CVD_CVDSD3C3 : (CVD Offset: 0x138) (R/W 32) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER -------- */
 #define CVD_CVDSD3C3_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD3C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER  Reset Value */
 
@@ -512,60 +566,6 @@
 #define CVD_CVDSD3C3_SDEN_Msk                 (_UINT32_(0x3) << CVD_CVDSD3C3_SDEN_Pos)             /* (CVD_CVDSD3C3) Scan Descriptor Enable Mode00= Scan Descriptor Disabled01= Execute Scan Descriptor one time only, then clear the enable.10= Execute the Scan Descriptor, but keep enabled. Move on to next enabled descriptors.11= Execute the Scan Descriptor in a loop until a threshold match is detected, then clear the enable and move on tonext enabled descriptors. Mask */
 #define CVD_CVDSD3C3_SDEN(value)              (CVD_CVDSD3C3_SDEN_Msk & (_UINT32_(value) << CVD_CVDSD3C3_SDEN_Pos)) /* Assigment of value for SDEN in the CVD_CVDSD3C3 register */
 #define CVD_CVDSD3C3_Msk                      _UINT32_(0xCF0F7F7F)                                 /* (CVD_CVDSD3C3) Register Mask  */
-
-
-/* -------- CVD_CVDSD0T2 : (CVD Offset: 0x10C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
-#define CVD_CVDSD0T2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD0T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER  Reset Value */
-
-#define CVD_CVDSD0T2_SDCONTIME_Pos            _UINT32_(0)                                          /* (CVD_CVDSD0T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Position */
-#define CVD_CVDSD0T2_SDCONTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDCONTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Mask */
-#define CVD_CVDSD0T2_SDCONTIME(value)         (CVD_CVDSD0T2_SDCONTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDCONTIME_Pos)) /* Assigment of value for SDCONTIME in the CVD_CVDSD0T2 register */
-#define CVD_CVDSD0T2_SDPOLTIME_Pos            _UINT32_(8)                                          /* (CVD_CVDSD0T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Position */
-#define CVD_CVDSD0T2_SDPOLTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDPOLTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Mask */
-#define CVD_CVDSD0T2_SDPOLTIME(value)         (CVD_CVDSD0T2_SDPOLTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDPOLTIME_Pos)) /* Assigment of value for SDPOLTIME in the CVD_CVDSD0T2 register */
-#define CVD_CVDSD0T2_SDOVRTIME_Pos            _UINT32_(16)                                         /* (CVD_CVDSD0T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Position */
-#define CVD_CVDSD0T2_SDOVRTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDOVRTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Mask */
-#define CVD_CVDSD0T2_SDOVRTIME(value)         (CVD_CVDSD0T2_SDOVRTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDOVRTIME_Pos)) /* Assigment of value for SDOVRTIME in the CVD_CVDSD0T2 register */
-#define CVD_CVDSD0T2_SDCHNTIME_Pos            _UINT32_(24)                                         /* (CVD_CVDSD0T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Position */
-#define CVD_CVDSD0T2_SDCHNTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD0T2_SDCHNTIME_Pos)       /* (CVD_CVDSD0T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Mask */
-#define CVD_CVDSD0T2_SDCHNTIME(value)         (CVD_CVDSD0T2_SDCHNTIME_Msk & (_UINT32_(value) << CVD_CVDSD0T2_SDCHNTIME_Pos)) /* Assigment of value for SDCHNTIME in the CVD_CVDSD0T2 register */
-#define CVD_CVDSD0T2_Msk                      _UINT32_(0x7F7F7F7F)                                 /* (CVD_CVDSD0T2) Register Mask  */
-
-
-/* -------- CVD_CVDSD1T2 : (CVD Offset: 0x11C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
-#define CVD_CVDSD1T2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD1T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER  Reset Value */
-
-#define CVD_CVDSD1T2_SDCONTIME_Pos            _UINT32_(0)                                          /* (CVD_CVDSD1T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Position */
-#define CVD_CVDSD1T2_SDCONTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDCONTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Mask */
-#define CVD_CVDSD1T2_SDCONTIME(value)         (CVD_CVDSD1T2_SDCONTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDCONTIME_Pos)) /* Assigment of value for SDCONTIME in the CVD_CVDSD1T2 register */
-#define CVD_CVDSD1T2_SDPOLTIME_Pos            _UINT32_(8)                                          /* (CVD_CVDSD1T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Position */
-#define CVD_CVDSD1T2_SDPOLTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDPOLTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Mask */
-#define CVD_CVDSD1T2_SDPOLTIME(value)         (CVD_CVDSD1T2_SDPOLTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDPOLTIME_Pos)) /* Assigment of value for SDPOLTIME in the CVD_CVDSD1T2 register */
-#define CVD_CVDSD1T2_SDOVRTIME_Pos            _UINT32_(16)                                         /* (CVD_CVDSD1T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Position */
-#define CVD_CVDSD1T2_SDOVRTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDOVRTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Mask */
-#define CVD_CVDSD1T2_SDOVRTIME(value)         (CVD_CVDSD1T2_SDOVRTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDOVRTIME_Pos)) /* Assigment of value for SDOVRTIME in the CVD_CVDSD1T2 register */
-#define CVD_CVDSD1T2_SDCHNTIME_Pos            _UINT32_(24)                                         /* (CVD_CVDSD1T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Position */
-#define CVD_CVDSD1T2_SDCHNTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD1T2_SDCHNTIME_Pos)       /* (CVD_CVDSD1T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Mask */
-#define CVD_CVDSD1T2_SDCHNTIME(value)         (CVD_CVDSD1T2_SDCHNTIME_Msk & (_UINT32_(value) << CVD_CVDSD1T2_SDCHNTIME_Pos)) /* Assigment of value for SDCHNTIME in the CVD_CVDSD1T2 register */
-#define CVD_CVDSD1T2_Msk                      _UINT32_(0x7F7F7F7F)                                 /* (CVD_CVDSD1T2) Register Mask  */
-
-
-/* -------- CVD_CVDSD2T2 : (CVD Offset: 0x12C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
-#define CVD_CVDSD2T2_RESETVALUE               _UINT32_(0x00)                                       /*  (CVD_CVDSD2T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER  Reset Value */
-
-#define CVD_CVDSD2T2_SDCONTIME_Pos            _UINT32_(0)                                          /* (CVD_CVDSD2T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Position */
-#define CVD_CVDSD2T2_SDCONTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDCONTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Charge TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the CONVERT statewaiting for the ADC sample data. It must be ensured that the ADC will assert End-Of-Convert (EOC) before the CONVERT state timer expires. Mask */
-#define CVD_CVDSD2T2_SDCONTIME(value)         (CVD_CVDSD2T2_SDCONTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDCONTIME_Pos)) /* Assigment of value for SDCONTIME in the CVD_CVDSD2T2 register */
-#define CVD_CVDSD2T2_SDPOLTIME_Pos            _UINT32_(8)                                          /* (CVD_CVDSD2T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Position */
-#define CVD_CVDSD2T2_SDPOLTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDPOLTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Polarity TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the POLARITY statebefore taking the second polarity measurement of an RX/TX pair Mask */
-#define CVD_CVDSD2T2_SDPOLTIME(value)         (CVD_CVDSD2T2_SDPOLTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDPOLTIME_Pos)) /* Assigment of value for SDPOLTIME in the CVD_CVDSD2T2 register */
-#define CVD_CVDSD2T2_SDOVRTIME_Pos            _UINT32_(16)                                         /* (CVD_CVDSD2T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Position */
-#define CVD_CVDSD2T2_SDOVRTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDOVRTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Oversample TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the OVERSAMPstate before taking the next oversampling measurement of an RX/TX pair. Mask */
-#define CVD_CVDSD2T2_SDOVRTIME(value)         (CVD_CVDSD2T2_SDOVRTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDOVRTIME_Pos)) /* Assigment of value for SDOVRTIME in the CVD_CVDSD2T2 register */
-#define CVD_CVDSD2T2_SDCHNTIME_Pos            _UINT32_(24)                                         /* (CVD_CVDSD2T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Position */
-#define CVD_CVDSD2T2_SDCHNTIME_Msk            (_UINT32_(0x7F) << CVD_CVDSD2T2_SDCHNTIME_Pos)       /* (CVD_CVDSD2T2) Scan Descriptor Channel TimeControls the number of cycles (clock based on CVDCON.CLKSEL[1:0]) the state machine waits in the RXCHAN orTXCHAN state before moving to the next RX/TX pair Mask */
-#define CVD_CVDSD2T2_SDCHNTIME(value)         (CVD_CVDSD2T2_SDCHNTIME_Msk & (_UINT32_(value) << CVD_CVDSD2T2_SDCHNTIME_Pos)) /* Assigment of value for SDCHNTIME in the CVD_CVDSD2T2 register */
-#define CVD_CVDSD2T2_Msk                      _UINT32_(0x7F7F7F7F)                                 /* (CVD_CVDSD2T2) Register Mask  */
 
 
 /* -------- CVD_CVDSD3T2 : (CVD Offset: 0x13C) (R/W 32) CVD SCAN DESCRIPTOR N TIME2 REGISTER -------- */
@@ -612,20 +612,20 @@
 #define CVD_CVDTX0_REG_OFST            _UINT32_(0xC0)      /* (CVD_CVDTX0) CVD TRANSMIT INDEX NCONFIGURATION Offset */
 #define CVD_CVDTX1_REG_OFST            _UINT32_(0xC4)      /* (CVD_CVDTX1) CVD TRANSMIT INDEX NCONFIGURATION Offset */
 #define CVD_CVDSD0C1_REG_OFST          _UINT32_(0x100)     /* (CVD_CVDSD0C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
-#define CVD_CVDSD1C1_REG_OFST          _UINT32_(0x110)     /* (CVD_CVDSD1C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
-#define CVD_CVDSD2C1_REG_OFST          _UINT32_(0x120)     /* (CVD_CVDSD2C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
-#define CVD_CVDSD3C1_REG_OFST          _UINT32_(0x130)     /* (CVD_CVDSD3C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
 #define CVD_CVDSD0C2_REG_OFST          _UINT32_(0x104)     /* (CVD_CVDSD0C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
-#define CVD_CVDSD1C2_REG_OFST          _UINT32_(0x114)     /* (CVD_CVDSD1C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
-#define CVD_CVDSD2C2_REG_OFST          _UINT32_(0x124)     /* (CVD_CVDSD2C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
-#define CVD_CVDSD3C2_REG_OFST          _UINT32_(0x134)     /* (CVD_CVDSD3C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
 #define CVD_CVDSD0C3_REG_OFST          _UINT32_(0x108)     /* (CVD_CVDSD0C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
-#define CVD_CVDSD1C3_REG_OFST          _UINT32_(0x118)     /* (CVD_CVDSD1C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
-#define CVD_CVDSD2C3_REG_OFST          _UINT32_(0x128)     /* (CVD_CVDSD2C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
-#define CVD_CVDSD3C3_REG_OFST          _UINT32_(0x138)     /* (CVD_CVDSD3C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
 #define CVD_CVDSD0T2_REG_OFST          _UINT32_(0x10C)     /* (CVD_CVDSD0T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER Offset */
+#define CVD_CVDSD1C1_REG_OFST          _UINT32_(0x110)     /* (CVD_CVDSD1C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
+#define CVD_CVDSD1C2_REG_OFST          _UINT32_(0x114)     /* (CVD_CVDSD1C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
+#define CVD_CVDSD1C3_REG_OFST          _UINT32_(0x118)     /* (CVD_CVDSD1C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
 #define CVD_CVDSD1T2_REG_OFST          _UINT32_(0x11C)     /* (CVD_CVDSD1T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER Offset */
+#define CVD_CVDSD2C1_REG_OFST          _UINT32_(0x120)     /* (CVD_CVDSD2C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
+#define CVD_CVDSD2C2_REG_OFST          _UINT32_(0x124)     /* (CVD_CVDSD2C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
+#define CVD_CVDSD2C3_REG_OFST          _UINT32_(0x128)     /* (CVD_CVDSD2C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
 #define CVD_CVDSD2T2_REG_OFST          _UINT32_(0x12C)     /* (CVD_CVDSD2T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER Offset */
+#define CVD_CVDSD3C1_REG_OFST          _UINT32_(0x130)     /* (CVD_CVDSD3C1) CVD SCAN DESCRIPTOR N CONTROL1 REGISTER Offset */
+#define CVD_CVDSD3C2_REG_OFST          _UINT32_(0x134)     /* (CVD_CVDSD3C2) CVD SCAN DESCRIPTOR N CONTROL2 REGISTER Offset */
+#define CVD_CVDSD3C3_REG_OFST          _UINT32_(0x138)     /* (CVD_CVDSD3C3) CVD SCAN DESCRIPTOR N CONTROL3 REGISTER Offset */
 #define CVD_CVDSD3T2_REG_OFST          _UINT32_(0x13C)     /* (CVD_CVDSD3T2) CVD SCAN DESCRIPTOR N TIME2 REGISTER Offset */
 #define CVD_CVDBG_REG_OFST             _UINT32_(0x200)     /* (CVD_CVDBG) CVD DEBUG REGISTER Offset */
 
