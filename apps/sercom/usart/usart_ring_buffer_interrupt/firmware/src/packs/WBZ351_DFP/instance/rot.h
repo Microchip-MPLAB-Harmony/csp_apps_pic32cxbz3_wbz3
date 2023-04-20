@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,15 +20,15 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_ROT_INSTANCE_
 #define _WBZ35_ROT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ROT peripheral ========== */
-#define ROT_ROM_SIZE                             (64)       
-#define ROT_NUM_FUSE_BLKS                        (3)        /* CAL bits and die info a part of the NVR region */
 #define ROT_CAL_NUM                              (0)        
+#define ROT_NUM_FUSE_BLKS                        (3)        /* CAL bits and die info a part of the NVR region */
+#define ROT_ROM_SIZE                             (64)       
 #define ROT_SYMMETRIC_SECURE_BOOT                (0)        /* Secure boot using ECCDSA authentication */
 
 #endif /* _WBZ35_ROT_INSTANCE_ */

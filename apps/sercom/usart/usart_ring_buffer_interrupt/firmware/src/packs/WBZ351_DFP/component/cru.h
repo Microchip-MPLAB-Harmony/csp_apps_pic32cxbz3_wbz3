@@ -1,7 +1,7 @@
 /*
  * Component description for CRU
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_CRU_COMPONENT_H_
 #define _WBZ35_CRU_COMPONENT_H_
 
@@ -29,7 +29,7 @@
 /* ************************************************************************** */
 
 /* -------- CRU_OSCCON : (CRU Offset: 0x00) (R/W 32) CRU OSCILLATOR CONTROL REGISTER -------- */
-#define CRU_OSCCON_RESETVALUE                 _UINT32_(0x200007)                                   /*  (CRU_OSCCON) CRU OSCILLATOR CONTROL REGISTER  Reset Value */
+#define CRU_OSCCON_RESETVALUE                 _UINT32_(0x200005)                                   /*  (CRU_OSCCON) CRU OSCILLATOR CONTROL REGISTER  Reset Value */
 
 #define CRU_OSCCON_OSWEN_Pos                  _UINT32_(0)                                          /* (CRU_OSCCON) Oscillator Switch Enable bit Position */
 #define CRU_OSCCON_OSWEN_Msk                  (_UINT32_(0x1) << CRU_OSCCON_OSWEN_Pos)              /* (CRU_OSCCON) Oscillator Switch Enable bit Mask */
@@ -1160,6 +1160,24 @@
 #define CRU_PB1DIV_Msk                        _UINT32_(0x0000887F)                                 /* (CRU_PB1DIV) Register Mask  */
 
 
+/* -------- CRU_PB1DIVCLR : (CRU Offset: 0x134) (R/W 32)  -------- */
+#define CRU_PB1DIVCLR_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB1DIVCLR)   Reset Value */
+
+#define CRU_PB1DIVCLR_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB1DIVCLR) Register Mask  */
+
+
+/* -------- CRU_PB1DIVSET : (CRU Offset: 0x138) (R/W 32)  -------- */
+#define CRU_PB1DIVSET_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB1DIVSET)   Reset Value */
+
+#define CRU_PB1DIVSET_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB1DIVSET) Register Mask  */
+
+
+/* -------- CRU_PB1DIVINV : (CRU Offset: 0x13C) (R/W 32)  -------- */
+#define CRU_PB1DIVINV_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB1DIVINV)   Reset Value */
+
+#define CRU_PB1DIVINV_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB1DIVINV) Register Mask  */
+
+
 /* -------- CRU_PB2DIV : (CRU Offset: 0x140) (R/W 32) PB2 CLOCK DIVISOR CONTROL REGISTER -------- */
 #define CRU_PB2DIV_RESETVALUE                 _UINT32_(0x8800)                                     /*  (CRU_PB2DIV) PB2 CLOCK DIVISOR CONTROL REGISTER  Reset Value */
 
@@ -1197,6 +1215,24 @@
 #define CRU_PB2DIV_Msk                        _UINT32_(0x0000887F)                                 /* (CRU_PB2DIV) Register Mask  */
 
 
+/* -------- CRU_PB2DIVCLR : (CRU Offset: 0x144) (R/W 32)  -------- */
+#define CRU_PB2DIVCLR_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB2DIVCLR)   Reset Value */
+
+#define CRU_PB2DIVCLR_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB2DIVCLR) Register Mask  */
+
+
+/* -------- CRU_PB2DIVSET : (CRU Offset: 0x148) (R/W 32)  -------- */
+#define CRU_PB2DIVSET_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB2DIVSET)   Reset Value */
+
+#define CRU_PB2DIVSET_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB2DIVSET) Register Mask  */
+
+
+/* -------- CRU_PB2DIVINV : (CRU Offset: 0x14C) (R/W 32)  -------- */
+#define CRU_PB2DIVINV_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB2DIVINV)   Reset Value */
+
+#define CRU_PB2DIVINV_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB2DIVINV) Register Mask  */
+
+
 /* -------- CRU_PB3DIV : (CRU Offset: 0x150) (R/W 32) PB3 CLOCK DIVISOR CONTROL REGISTER -------- */
 #define CRU_PB3DIV_RESETVALUE                 _UINT32_(0x8809)                                     /*  (CRU_PB3DIV) PB3 CLOCK DIVISOR CONTROL REGISTER  Reset Value */
 
@@ -1232,42 +1268,6 @@
 #define CRU_PB3DIV_PBDIVON_PB3ON              (CRU_PB3DIV_PBDIVON_PB3ON_Val << CRU_PB3DIV_PBDIVON_Pos) /* (CRU_PB3DIV) PB3 Output clock is enabled Position  */
 #define CRU_PB3DIV_PBDIVON_PB3OFF             (CRU_PB3DIV_PBDIVON_PB3OFF_Val << CRU_PB3DIV_PBDIVON_Pos) /* (CRU_PB3DIV) PB3 Output clock is disabled Position  */
 #define CRU_PB3DIV_Msk                        _UINT32_(0x0000887F)                                 /* (CRU_PB3DIV) Register Mask  */
-
-
-/* -------- CRU_PB1DIVCLR : (CRU Offset: 0x134) (R/W 32)  -------- */
-#define CRU_PB1DIVCLR_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB1DIVCLR)   Reset Value */
-
-#define CRU_PB1DIVCLR_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB1DIVCLR) Register Mask  */
-
-
-/* -------- CRU_PB1DIVSET : (CRU Offset: 0x138) (R/W 32)  -------- */
-#define CRU_PB1DIVSET_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB1DIVSET)   Reset Value */
-
-#define CRU_PB1DIVSET_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB1DIVSET) Register Mask  */
-
-
-/* -------- CRU_PB1DIVINV : (CRU Offset: 0x13C) (R/W 32)  -------- */
-#define CRU_PB1DIVINV_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB1DIVINV)   Reset Value */
-
-#define CRU_PB1DIVINV_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB1DIVINV) Register Mask  */
-
-
-/* -------- CRU_PB2DIVCLR : (CRU Offset: 0x144) (R/W 32)  -------- */
-#define CRU_PB2DIVCLR_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB2DIVCLR)   Reset Value */
-
-#define CRU_PB2DIVCLR_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB2DIVCLR) Register Mask  */
-
-
-/* -------- CRU_PB2DIVSET : (CRU Offset: 0x148) (R/W 32)  -------- */
-#define CRU_PB2DIVSET_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB2DIVSET)   Reset Value */
-
-#define CRU_PB2DIVSET_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB2DIVSET) Register Mask  */
-
-
-/* -------- CRU_PB2DIVINV : (CRU Offset: 0x14C) (R/W 32)  -------- */
-#define CRU_PB2DIVINV_RESETVALUE              _UINT32_(0x00)                                       /*  (CRU_PB2DIVINV)   Reset Value */
-
-#define CRU_PB2DIVINV_Msk                     _UINT32_(0x00000000)                                 /* (CRU_PB2DIVINV) Register Mask  */
 
 
 /* -------- CRU_PB3DIVCLR : (CRU Offset: 0x154) (R/W 32)  -------- */
@@ -1453,21 +1453,21 @@
 #define   CRU_CLKSTAT_SOSCRDY_RDY_Val         _UINT32_(0x1)                                        /* (CRU_CLKSTAT) SOSC is stable and ready  */
 #define CRU_CLKSTAT_SOSCRDY_NOTRDY            (CRU_CLKSTAT_SOSCRDY_NOTRDY_Val << CRU_CLKSTAT_SOSCRDY_Pos) /* (CRU_CLKSTAT) SOSC is not stable and not ready Position  */
 #define CRU_CLKSTAT_SOSCRDY_RDY               (CRU_CLKSTAT_SOSCRDY_RDY_Val << CRU_CLKSTAT_SOSCRDY_Pos) /* (CRU_CLKSTAT) SOSC is stable and ready Position  */
-#define CRU_CLKSTAT_LPRCRDY_Pos               _UINT32_(5)                                          /* (CRU_CLKSTAT) LPRC Ready Status value Position */
+#define CRU_CLKSTAT_LPRCRDY_Pos               _UINT32_(4)                                          /* (CRU_CLKSTAT) LPRC Ready Status value Position */
 #define CRU_CLKSTAT_LPRCRDY_Msk               (_UINT32_(0x1) << CRU_CLKSTAT_LPRCRDY_Pos)           /* (CRU_CLKSTAT) LPRC Ready Status value Mask */
 #define CRU_CLKSTAT_LPRCRDY(value)            (CRU_CLKSTAT_LPRCRDY_Msk & (_UINT32_(value) << CRU_CLKSTAT_LPRCRDY_Pos)) /* Assigment of value for LPRCRDY in the CRU_CLKSTAT register */
 #define   CRU_CLKSTAT_LPRCRDY_NOTRDY_Val      _UINT32_(0x0)                                        /* (CRU_CLKSTAT) LPRC is not stable and not ready  */
 #define   CRU_CLKSTAT_LPRCRDY_RDY_Val         _UINT32_(0x1)                                        /* (CRU_CLKSTAT) LPRC is stable and ready  */
 #define CRU_CLKSTAT_LPRCRDY_NOTRDY            (CRU_CLKSTAT_LPRCRDY_NOTRDY_Val << CRU_CLKSTAT_LPRCRDY_Pos) /* (CRU_CLKSTAT) LPRC is not stable and not ready Position  */
 #define CRU_CLKSTAT_LPRCRDY_RDY               (CRU_CLKSTAT_LPRCRDY_RDY_Val << CRU_CLKSTAT_LPRCRDY_Pos) /* (CRU_CLKSTAT) LPRC is stable and ready Position  */
-#define CRU_CLKSTAT_SPLL3RDY_Pos              _UINT32_(9)                                          /* (CRU_CLKSTAT) System PLL3 Ready Status value Position */
+#define CRU_CLKSTAT_SPLL3RDY_Pos              _UINT32_(5)                                          /* (CRU_CLKSTAT) System PLL3 Ready Status value Position */
 #define CRU_CLKSTAT_SPLL3RDY_Msk              (_UINT32_(0x1) << CRU_CLKSTAT_SPLL3RDY_Pos)          /* (CRU_CLKSTAT) System PLL3 Ready Status value Mask */
 #define CRU_CLKSTAT_SPLL3RDY(value)           (CRU_CLKSTAT_SPLL3RDY_Msk & (_UINT32_(value) << CRU_CLKSTAT_SPLL3RDY_Pos)) /* Assigment of value for SPLL3RDY in the CRU_CLKSTAT register */
 #define   CRU_CLKSTAT_SPLL3RDY_NOTRDY_Val     _UINT32_(0x0)                                        /* (CRU_CLKSTAT) SPLL3 Output is not stable and not ready  */
 #define   CRU_CLKSTAT_SPLL3RDY_RDY_Val        _UINT32_(0x1)                                        /* (CRU_CLKSTAT) SPLL3 Output is stable and ready  */
 #define CRU_CLKSTAT_SPLL3RDY_NOTRDY           (CRU_CLKSTAT_SPLL3RDY_NOTRDY_Val << CRU_CLKSTAT_SPLL3RDY_Pos) /* (CRU_CLKSTAT) SPLL3 Output is not stable and not ready Position  */
 #define CRU_CLKSTAT_SPLL3RDY_RDY              (CRU_CLKSTAT_SPLL3RDY_RDY_Val << CRU_CLKSTAT_SPLL3RDY_Pos) /* (CRU_CLKSTAT) SPLL3 Output is stable and ready Position  */
-#define CRU_CLKSTAT_Msk                       _UINT32_(0x0000022F)                                 /* (CRU_CLKSTAT) Register Mask  */
+#define CRU_CLKSTAT_Msk                       _UINT32_(0x0000003F)                                 /* (CRU_CLKSTAT) Register Mask  */
 
 
 /* -------- CRU_CLKDIAG : (CRU Offset: 0x190) (R/W 32) USER CLK DIAGNOSTICS CONTROL REGISTER -------- */
@@ -1508,14 +1508,7 @@
 #define   CRU_CLKDIAG_SPLL1STOP_STOP_Val      _UINT32_(0x1)                                        /* (CRU_CLKDIAG) SPLL1 clock source is stopped  */
 #define CRU_CLKDIAG_SPLL1STOP_NORM            (CRU_CLKDIAG_SPLL1STOP_NORM_Val << CRU_CLKDIAG_SPLL1STOP_Pos) /* (CRU_CLKDIAG) SPLL1 clock source runs as normal Position  */
 #define CRU_CLKDIAG_SPLL1STOP_STOP            (CRU_CLKDIAG_SPLL1STOP_STOP_Val << CRU_CLKDIAG_SPLL1STOP_Pos) /* (CRU_CLKDIAG) SPLL1 clock source is stopped Position  */
-#define CRU_CLKDIAG_SPLL2STOP_Pos             _UINT32_(5)                                          /* (CRU_CLKDIAG) SPLL2 Clock Stop Control value Position */
-#define CRU_CLKDIAG_SPLL2STOP_Msk             (_UINT32_(0x1) << CRU_CLKDIAG_SPLL2STOP_Pos)         /* (CRU_CLKDIAG) SPLL2 Clock Stop Control value Mask */
-#define CRU_CLKDIAG_SPLL2STOP(value)          (CRU_CLKDIAG_SPLL2STOP_Msk & (_UINT32_(value) << CRU_CLKDIAG_SPLL2STOP_Pos)) /* Assigment of value for SPLL2STOP in the CRU_CLKDIAG register */
-#define   CRU_CLKDIAG_SPLL2STOP_NORM_Val      _UINT32_(0x0)                                        /* (CRU_CLKDIAG) SPLL2 clock source runs as normal  */
-#define   CRU_CLKDIAG_SPLL2STOP_STOP_Val      _UINT32_(0x1)                                        /* (CRU_CLKDIAG) SPLL2 clock source is stopped  */
-#define CRU_CLKDIAG_SPLL2STOP_NORM            (CRU_CLKDIAG_SPLL2STOP_NORM_Val << CRU_CLKDIAG_SPLL2STOP_Pos) /* (CRU_CLKDIAG) SPLL2 clock source runs as normal Position  */
-#define CRU_CLKDIAG_SPLL2STOP_STOP            (CRU_CLKDIAG_SPLL2STOP_STOP_Val << CRU_CLKDIAG_SPLL2STOP_Pos) /* (CRU_CLKDIAG) SPLL2 clock source is stopped Position  */
-#define CRU_CLKDIAG_SPLL3STOP_Pos             _UINT32_(6)                                          /* (CRU_CLKDIAG) SPLL3 Clock Stop Control value Position */
+#define CRU_CLKDIAG_SPLL3STOP_Pos             _UINT32_(5)                                          /* (CRU_CLKDIAG) SPLL3 Clock Stop Control value Position */
 #define CRU_CLKDIAG_SPLL3STOP_Msk             (_UINT32_(0x1) << CRU_CLKDIAG_SPLL3STOP_Pos)         /* (CRU_CLKDIAG) SPLL3 Clock Stop Control value Mask */
 #define CRU_CLKDIAG_SPLL3STOP(value)          (CRU_CLKDIAG_SPLL3STOP_Msk & (_UINT32_(value) << CRU_CLKDIAG_SPLL3STOP_Pos)) /* Assigment of value for SPLL3STOP in the CRU_CLKDIAG register */
 #define   CRU_CLKDIAG_SPLL3STOP_NORM_Val      _UINT32_(0x0)                                        /* (CRU_CLKDIAG) SPLL3 clock source runs as normal  */
@@ -1525,7 +1518,7 @@
 #define CRU_CLKDIAG_NMICNT_Pos                _UINT32_(16)                                         /* (CRU_CLKDIAG) NMI Counter value Position */
 #define CRU_CLKDIAG_NMICNT_Msk                (_UINT32_(0xFFFF) << CRU_CLKDIAG_NMICNT_Pos)         /* (CRU_CLKDIAG) NMI Counter value Mask */
 #define CRU_CLKDIAG_NMICNT(value)             (CRU_CLKDIAG_NMICNT_Msk & (_UINT32_(value) << CRU_CLKDIAG_NMICNT_Pos)) /* Assigment of value for NMICNT in the CRU_CLKDIAG register */
-#define CRU_CLKDIAG_Msk                       _UINT32_(0xFFFF007F)                                 /* (CRU_CLKDIAG) Register Mask  */
+#define CRU_CLKDIAG_Msk                       _UINT32_(0xFFFF003F)                                 /* (CRU_CLKDIAG) Register Mask  */
 
 
 /** \brief CRU register offsets definitions */
@@ -1590,14 +1583,14 @@
 #define CRU_REFO6TRIMSET_REG_OFST      _UINT32_(0x128)     /* (CRU_REFO6TRIMSET)  Offset */
 #define CRU_REFO6TRIMINV_REG_OFST      _UINT32_(0x12C)     /* (CRU_REFO6TRIMINV)  Offset */
 #define CRU_PB1DIV_REG_OFST            _UINT32_(0x130)     /* (CRU_PB1DIV) PB1 CLOCK DIVISOR CONTROL REGISTER Offset */
-#define CRU_PB2DIV_REG_OFST            _UINT32_(0x140)     /* (CRU_PB2DIV) PB2 CLOCK DIVISOR CONTROL REGISTER Offset */
-#define CRU_PB3DIV_REG_OFST            _UINT32_(0x150)     /* (CRU_PB3DIV) PB3 CLOCK DIVISOR CONTROL REGISTER Offset */
 #define CRU_PB1DIVCLR_REG_OFST         _UINT32_(0x134)     /* (CRU_PB1DIVCLR)  Offset */
 #define CRU_PB1DIVSET_REG_OFST         _UINT32_(0x138)     /* (CRU_PB1DIVSET)  Offset */
 #define CRU_PB1DIVINV_REG_OFST         _UINT32_(0x13C)     /* (CRU_PB1DIVINV)  Offset */
+#define CRU_PB2DIV_REG_OFST            _UINT32_(0x140)     /* (CRU_PB2DIV) PB2 CLOCK DIVISOR CONTROL REGISTER Offset */
 #define CRU_PB2DIVCLR_REG_OFST         _UINT32_(0x144)     /* (CRU_PB2DIVCLR)  Offset */
 #define CRU_PB2DIVSET_REG_OFST         _UINT32_(0x148)     /* (CRU_PB2DIVSET)  Offset */
 #define CRU_PB2DIVINV_REG_OFST         _UINT32_(0x14C)     /* (CRU_PB2DIVINV)  Offset */
+#define CRU_PB3DIV_REG_OFST            _UINT32_(0x150)     /* (CRU_PB3DIV) PB3 CLOCK DIVISOR CONTROL REGISTER Offset */
 #define CRU_PB3DIVCLR_REG_OFST         _UINT32_(0x154)     /* (CRU_PB3DIVCLR)  Offset */
 #define CRU_PB3DIVSET_REG_OFST         _UINT32_(0x158)     /* (CRU_PB3DIVSET)  Offset */
 #define CRU_PB3DIVINV_REG_OFST         _UINT32_(0x15C)     /* (CRU_PB3DIVINV)  Offset */
