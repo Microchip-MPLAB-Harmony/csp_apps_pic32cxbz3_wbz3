@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,20 +20,19 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_SERCOM2_INSTANCE_
 #define _WBZ35_SERCOM2_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SERCOM2 peripheral ========== */
-#define SERCOM2_SPI                              (0)        
-#define SERCOM2_USART                            (0)        
-#define SERCOM2_INSTANCE_ID                      (67)       
-#define SERCOM2_CHIP_SERCOM_PADDR_MSB            (31)       
 #define SERCOM2_CHIP_SERCOM_CLK_REDUCTION        (1)        
+#define SERCOM2_CHIP_SERCOM_DLY_COMPENSATION     (1)        
 #define SERCOM2_CHIP_SERCOM_DMA                  (1)        
 #define SERCOM2_CHIP_SERCOM_FIFO_DEPTH_POWER     (1)        
+#define SERCOM2_CHIP_SERCOM_PADDR_MSB            (31)       
 #define SERCOM2_CHIP_SERCOM_RETENTION_SUPPORT    (0)        
+#define SERCOM2_CHIP_SERCOM_SE_CNT               (1)        
 #define SERCOM2_CHIP_SERCOM_SPI                  (0)        
 #define SERCOM2_CHIP_SERCOM_SPI_HW_SS_CTRL       (0)        
 #define SERCOM2_CHIP_SERCOM_SPI_ICSPACE_EXT      (0)        
@@ -63,11 +62,12 @@
 #define SERCOM2_CHIP_SERCOM_USART_RS485          (0)        
 #define SERCOM2_CHIP_SERCOM_USART_SAMPA_EXT      (0)        
 #define SERCOM2_CHIP_SERCOM_USART_SAMPR_EXT      (0)        
-#define SERCOM2_CHIP_SERCOM_DLY_COMPENSATION     (1)        
-#define SERCOM2_CHIP_SERCOM_SE_CNT               (1)        
 #define SERCOM2_DMAC_ID_RX                       (8)        
 #define SERCOM2_DMAC_ID_TX                       (9)        
-#define SERCOM2_GCLK_ID_SLOW                     (4)        
 #define SERCOM2_GCLK_ID_CORE                     (4)        
+#define SERCOM2_GCLK_ID_SLOW                     (4)        
+#define SERCOM2_INSTANCE_ID                      (65)       
+#define SERCOM2_SPI                              (0)        
+#define SERCOM2_USART                            (0)        
 
 #endif /* _WBZ35_SERCOM2_INSTANCE_ */
