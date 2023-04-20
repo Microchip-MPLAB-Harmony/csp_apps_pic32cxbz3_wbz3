@@ -41,6 +41,7 @@
 // DOM-IGNORE-END
 #include "device.h"
 #include "plib_adchs.h"
+#include "interrupts.h"
 
 #define ADCHS_CHANNEL_32  (32U)
 
@@ -51,7 +52,7 @@
 // *****************************************************************************
 
 /* Object to hold callback function and context */
-static ADCHS_CALLBACK_OBJECT ADCHS_CallbackObj[11];
+volatile static ADCHS_CALLBACK_OBJECT ADCHS_CallbackObj[11];
 
 
 
@@ -90,19 +91,22 @@ void ADCHS_Initialize(void)
 
     /* Turn ON ADC */
     ADCHS_REGS->ADCHS_ADCCON1 |= ADCHS_ADCCON1_ON_Msk;
-    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_BGVRRDY_Msk) == ADCHS_ADCCON2_BGVRRDY_Msk) 
+    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_BGVRRDY_Msk) == ADCHS_ADCCON2_BGVRRDY_Msk)
     {
         // Wait until the reference voltage is ready
     }
-    
-    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_REFFLT_Msk) == ADCHS_ADCCON2_REFFLT_Msk) 
+
+    while((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_REFFLT_Msk) == ADCHS_ADCCON2_REFFLT_Msk)
     {
         // Wait if there is a fault with the reference voltage
     }
 
     /* ADC 7 */
     ADCHS_REGS->ADCHS_ADCANCON |= ADCHS_ADCANCON_ANEN7_Msk;      // Enable the clock to analog bias
-    while(!((ADCHS_REGS->ADCHS_ADCANCON & ADCHS_ADCANCON_WKRDY7_Msk))); // Wait until ADC is ready
+    while(((ADCHS_REGS->ADCHS_ADCANCON & ADCHS_ADCANCON_WKRDY7_Msk)) == 0U) // Wait until ADC is ready
+    {
+        /* Nothing to do */
+    }
     ADCHS_REGS->ADCHS_ADCCON3 |= ADCHS_ADCCON3_DIGEN7_Msk;       // Enable ADC
 }
 
@@ -174,7 +178,7 @@ bool ADCHS_ChannelResultIsReady(ADCHS_CHANNEL_NUM channel)
 uint16_t ADCHS_ChannelResultGet(ADCHS_CHANNEL_NUM channel)
 {
     uint32_t channel_addr = ADCHS_BASE_ADDRESS + ADCHS_ADCDATA0_REG_OFST + ((uint32_t)channel << 4U);
-	return (uint16_t)(*(uint32_t*)channel_addr);   
+    return (uint16_t)(*(uint32_t*)channel_addr);
 }
 
 void ADCHS_CallbackRegister(ADCHS_CHANNEL_NUM channel, ADCHS_CALLBACK callback, uintptr_t context)
@@ -187,28 +191,31 @@ void ADCHS_CallbackRegister(ADCHS_CHANNEL_NUM channel, ADCHS_CALLBACK callback, 
 
 bool ADCHS_EOSStatusGet(void)
 {
-    return (bool)(((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_EOSRDY_Msk) 
+    return (bool)(((ADCHS_REGS->ADCHS_ADCCON2 & ADCHS_ADCCON2_EOSRDY_Msk)
                     >> ADCHS_ADCCON2_EOSRDY_Pos) != 0U);
 }
 
-void ADCHS_InterruptHandler( void )
+void __attribute__((used)) ADCHS_InterruptHandler( void )
 {
     uint8_t i;
     uint32_t status;
 
     status  = ADCHS_REGS->ADCHS_ADCDSTAT1;
     status &= ADCHS_REGS->ADCHS_ADCGIRQEN1;
-	
+
+    
+    uintptr_t context;
 
 
     /* Check pending events and call callback if registered */
-    for(i = 0; i < 12; i++)
+    for(i = 0U; i < 11U; i++)
     {
-        if((status & (1 << i)) && (ADCHS_CallbackObj[i].callback_fn != NULL))
+        if((ADCHS_CallbackObj[i].callback_fn != NULL) && ((status & (1UL << i)) != 0U))
         {
-            ADCHS_CallbackObj[i].callback_fn((ADCHS_CHANNEL_NUM)i, ADCHS_CallbackObj[i].context);
+            context = ADCHS_CallbackObj[i].context;
+            ADCHS_CallbackObj[i].callback_fn((ADCHS_CHANNEL_NUM)i, context);
         }
     }
-	
-	
+
+
 }
