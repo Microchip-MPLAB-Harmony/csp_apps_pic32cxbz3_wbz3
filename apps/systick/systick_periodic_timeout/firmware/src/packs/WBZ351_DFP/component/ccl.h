@@ -1,7 +1,7 @@
 /*
  * Component description for CCL
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_CCL_COMPONENT_H_
 #define _WBZ35_CCL_COMPONENT_H_
 
@@ -212,7 +212,6 @@
 #define CCL_CTRL_REG_OFST              _UINT32_(0x00)      /* (CCL_CTRL) Control Offset */
 #define CCL_SEQCTRL_REG_OFST           _UINT32_(0x04)      /* (CCL_SEQCTRL) SEQ Control x Offset */
 #define CCL_SEQCTRL0_REG_OFST          _UINT32_(0x04)      /* (CCL_SEQCTRL0) SEQ Control x Offset */
-#define CCL_SEQCTRL1_REG_OFST          _UINT32_(0x05)      /* (CCL_SEQCTRL1) SEQ Control x Offset */
 #define CCL_LUTCTRL_REG_OFST           _UINT32_(0x08)      /* (CCL_LUTCTRL) LUT Control x Offset */
 #define CCL_LUTCTRL0_REG_OFST          _UINT32_(0x08)      /* (CCL_LUTCTRL0) LUT Control x Offset */
 #define CCL_LUTCTRL1_REG_OFST          _UINT32_(0x0C)      /* (CCL_LUTCTRL1) LUT Control x Offset */
@@ -223,8 +222,8 @@ typedef struct
 {  /* Configurable Custom Logic */
   __IO  uint8_t                        CCL_CTRL;           /**< Offset: 0x00 (R/W  8) Control */
   __I   uint8_t                        Reserved1[0x03];
-  __IO  uint8_t                        CCL_SEQCTRL[2];     /**< Offset: 0x04 (R/W  8) SEQ Control x */
-  __I   uint8_t                        Reserved2[0x02];
+  __IO  uint8_t                        CCL_SEQCTRL[1];     /**< Offset: 0x04 (R/W  8) SEQ Control x */
+  __I   uint8_t                        Reserved2[0x03];
   __IO  uint32_t                       CCL_LUTCTRL[2];     /**< Offset: 0x08 (R/W  32) LUT Control x */
 } ccl_registers_t;
 
