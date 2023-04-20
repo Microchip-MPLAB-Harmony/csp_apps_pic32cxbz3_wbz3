@@ -44,5 +44,5 @@ Refer below table for LED and Switch names
 
 | Board | Switch Name |LED Name |
 |-----|-----|-----|
-|[PIC32CX WBZ351 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)|SW2|Green LED|
+|[PIC32CX WBZ351 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)|SW3|Green LED|
 
