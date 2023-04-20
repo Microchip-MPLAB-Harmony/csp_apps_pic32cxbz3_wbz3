@@ -93,27 +93,32 @@
 void CLK_Initialize( void )
 {
     //check CLDO ready
-    while ((CFG_REGS->CFG_MISCSTAT & CFG_MISCSTAT_CLDORDY_Msk) == 0);    
+    while ((CFG_REGS->CFG_MISCSTAT & CFG_MISCSTAT_CLDORDY_Msk) == 0U)
+    {
+        /* Nothing to do */
+    }        
     
     //programming 4ms delay -  programming subsys_xtal_ready_delay
     //check xtal spec for delay required
     BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG1 = ((BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG1 & ~BTZBSYS_SUBSYS_CNTRL_REG1_subsys_xtal_ready_delay_Msk)
-                                                | ((0x02) << BTZBSYS_SUBSYS_CNTRL_REG1_subsys_xtal_ready_delay_Pos)); 
+                                                | ((0x01UL) << BTZBSYS_SUBSYS_CNTRL_REG1_subsys_xtal_ready_delay_Pos)); 
     //wait for crystal ready
-    while((BTZBSYS_REGS->BTZBSYS_SUBSYS_STATUS_REG1 & BTZBSYS_SUBSYS_STATUS_REG1_xtal_ready_out_Msk) != BTZBSYS_SUBSYS_STATUS_REG1_xtal_ready_out_Msk);
-
+    while((BTZBSYS_REGS->BTZBSYS_SUBSYS_STATUS_REG1 & BTZBSYS_SUBSYS_STATUS_REG1_xtal_ready_out_Msk) != BTZBSYS_SUBSYS_STATUS_REG1_xtal_ready_out_Msk)
+    {
+        /* Nothing to do */
+    }
     // set PLL_enable
-    BLE_REGS->BLE_DPLL_RG2 &= ~(0x02);
+    BLE_REGS->BLE_DPLL_RG2 &= ~((uint16_t)0x02U);
 
     //programming delay for pll lock - 500 us
     //32 us steps - check pll spec for final value 
     BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG3 = ((BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG3 & ~BTZBSYS_SUBSYS_CNTRL_REG3_subsys_pll_ready_delay_Msk )
-                                                   | ((0x10) << BTZBSYS_SUBSYS_CNTRL_REG3_subsys_pll_ready_delay_Pos));
+                                                   | ((0x02UL) << BTZBSYS_SUBSYS_CNTRL_REG3_subsys_pll_ready_delay_Pos));
 
     /* Unlock system for clock configuration */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
 
     /* SPLLPWDN     = 0x1     */
@@ -122,10 +127,13 @@ void CLK_Initialize( void )
     /* SPLLPOSTDIV1 = 1 */
     /* SPLLPOSTDIV2 = 0x1 */    
     /* SPLL_BYP     = 0x3     */
-    CRU_REGS->CRU_SPLLCON = 0xc0010028;
+    CRU_REGS->CRU_SPLLCON = 0xc0010028U;
 
     //wait for PLL Lock
-    while((BTZBSYS_REGS -> BTZBSYS_SUBSYS_STATUS_REG1 & 0x03) != 0x03);
+    while((BTZBSYS_REGS -> BTZBSYS_SUBSYS_STATUS_REG1 & 0x03U) != 0x03U)
+    {
+        /* Nothing to do */
+    }
 
     /* OSWEN    = SWITCH    */
     /* SOSCEN   = OFF   */
@@ -140,8 +148,10 @@ void CLK_Initialize( void )
 
     CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_OSWEN_Msk;  /* request oscillator switch to occur */
 
-    while(CRU_REGS->CRU_OSCCON & CRU_OSCCON_OSWEN_Msk);        /* wait for indication of successful clock change before proceeding */
-
+    while((CRU_REGS->CRU_OSCCON & CRU_OSCCON_OSWEN_Msk) != 0U)       /* wait for indication of successful clock change before proceeding */
+    {
+        /* Nothing to do */
+    }
     /* Peripheral Bus 3 is by default enabled, set its divisor */
     /* PBDIV = 10 */
     CRU_REGS->CRU_PB3DIV = CRU_PB3DIV_PBDIVON_Msk | CRU_PB3DIV_PBDIV(9);
@@ -170,17 +180,17 @@ void CLK_Initialize( void )
     /* Peripheral Module Disable Configuration */
 
 
-    CFG_REGS->CFG_PMD1 = 0x200103cf;
+    CFG_REGS->CFG_PMD1 = 0x208103cf;
     CFG_REGS->CFG_PMD2 = 0x0;
     CFG_REGS->CFG_PMD3 = 0x7ffb;
 
 
     /* Lock system since done with clock configuration */
-    CFG_REGS->CFG_SYSKEY = 0x33333333;
+    CFG_REGS->CFG_SYSKEY = 0x33333333U;
 
     // Change src_clk source to PLL CLK
-    BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG1 |= 0x00000010;
+    BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG1 |= 0x00000010U;
 
     // set aclb_reset_n[24]
-    BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG0 |= 0x01000000;
+    BTZBSYS_REGS->BTZBSYS_SUBSYS_CNTRL_REG0 |= 0x01000000U;
 }
