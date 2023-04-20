@@ -1,7 +1,7 @@
 /*
  * Component description for PPS
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_PPS_COMPONENT_H_
 #define _WBZ35_PPS_COMPONENT_H_
 
@@ -2421,23 +2421,23 @@
 #define   PPS_RPA1G4R_RPA1G4R_TCC1WO1_Val     _UINT32_(0xB)                                        /* (PPS_RPA1G4R) TCC1/WO1  */
 #define   PPS_RPA1G4R_RPA1G4R_TCC1WO5_Val     _UINT32_(0xC)                                        /* (PPS_RPA1G4R) TCC1/WO5  */
 #define   PPS_RPA1G4R_RPA1G4R_TCC2WO1_Val     _UINT32_(0xD)                                        /* (PPS_RPA1G4R) TCC2/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC0WO0_Val      _UINT32_(0xE)                                        /* (PPS_RPA1G4R) TC0/WO0  */
-#define   PPS_RPA1G4R_RPA1G4R_TC1WO1_Val      _UINT32_(0xF)                                        /* (PPS_RPA1G4R) TC1/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC2WO1_Val      _UINT32_(0x10)                                       /* (PPS_RPA1G4R) TC2/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC3WO1_Val      _UINT32_(0x11)                                       /* (PPS_RPA1G4R) TC3/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC4WO1_Val      _UINT32_(0x12)                                       /* (PPS_RPA1G4R) TC4/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC5WO1_Val      _UINT32_(0x13)                                       /* (PPS_RPA1G4R) TC5/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC6WO1_Val      _UINT32_(0x14)                                       /* (PPS_RPA1G4R) TC6/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_TC7WO1_Val      _UINT32_(0x15)                                       /* (PPS_RPA1G4R) TC7/WO1  */
-#define   PPS_RPA1G4R_RPA1G4R_QCS_Val         _UINT32_(0x16)                                       /* (PPS_RPA1G4R) QCS  */
-#define   PPS_RPA1G4R_RPA1G4R_QD2_Val         _UINT32_(0x17)                                       /* (PPS_RPA1G4R) QD2  */
-#define   PPS_RPA1G4R_RPA1G4R_QD1_Val         _UINT32_(0x18)                                       /* (PPS_RPA1G4R) QD1  */
-#define   PPS_RPA1G4R_RPA1G4R_QD0_Val         _UINT32_(0x19)                                       /* (PPS_RPA1G4R) QD0  */
-#define   PPS_RPA1G4R_RPA1G4R_CCLOUT1_Val     _UINT32_(0x1A)                                       /* (PPS_RPA1G4R) CCLOUT1  */
-#define   PPS_RPA1G4R_RPA1G4R_TSTBUS2_Val     _UINT32_(0x1B)                                       /* (PPS_RPA1G4R) TSTBUS2  */
-#define   PPS_RPA1G4R_RPA1G4R_TSTBUS5_Val     _UINT32_(0x1C)                                       /* (PPS_RPA1G4R) TSTBUS5  */
-#define   PPS_RPA1G4R_RPA1G4R_TSTBUS8_Val     _UINT32_(0x1D)                                       /* (PPS_RPA1G4R) TSTBUS8  */
-#define   PPS_RPA1G4R_RPA1G4R_TSTBUS11_Val    _UINT32_(0x1E)                                       /* (PPS_RPA1G4R) TSTBUS11  */
+#define   PPS_RPA1G4R_RPA1G4R_TC0WO0_Val      _UINT32_(0xF)                                        /* (PPS_RPA1G4R) TC0/WO0  */
+#define   PPS_RPA1G4R_RPA1G4R_TC1WO1_Val      _UINT32_(0x10)                                       /* (PPS_RPA1G4R) TC1/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_TC2WO1_Val      _UINT32_(0x11)                                       /* (PPS_RPA1G4R) TC2/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_TC3WO1_Val      _UINT32_(0x12)                                       /* (PPS_RPA1G4R) TC3/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_TC4WO1_Val      _UINT32_(0x13)                                       /* (PPS_RPA1G4R) TC4/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_TC5WO1_Val      _UINT32_(0x14)                                       /* (PPS_RPA1G4R) TC5/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_TC6WO1_Val      _UINT32_(0x15)                                       /* (PPS_RPA1G4R) TC6/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_TC7WO1_Val      _UINT32_(0x16)                                       /* (PPS_RPA1G4R) TC7/WO1  */
+#define   PPS_RPA1G4R_RPA1G4R_QCS_Val         _UINT32_(0x17)                                       /* (PPS_RPA1G4R) QCS  */
+#define   PPS_RPA1G4R_RPA1G4R_QD2_Val         _UINT32_(0x18)                                       /* (PPS_RPA1G4R) QD2  */
+#define   PPS_RPA1G4R_RPA1G4R_QD1_Val         _UINT32_(0x19)                                       /* (PPS_RPA1G4R) QD1  */
+#define   PPS_RPA1G4R_RPA1G4R_QD0_Val         _UINT32_(0x1A)                                       /* (PPS_RPA1G4R) QD0  */
+#define   PPS_RPA1G4R_RPA1G4R_CCLOUT1_Val     _UINT32_(0x1B)                                       /* (PPS_RPA1G4R) CCLOUT1  */
+#define   PPS_RPA1G4R_RPA1G4R_TSTBUS2_Val     _UINT32_(0x1C)                                       /* (PPS_RPA1G4R) TSTBUS2  */
+#define   PPS_RPA1G4R_RPA1G4R_TSTBUS5_Val     _UINT32_(0x1D)                                       /* (PPS_RPA1G4R) TSTBUS5  */
+#define   PPS_RPA1G4R_RPA1G4R_TSTBUS8_Val     _UINT32_(0x1E)                                       /* (PPS_RPA1G4R) TSTBUS8  */
+#define   PPS_RPA1G4R_RPA1G4R_TSTBUS11_Val    _UINT32_(0x1F)                                       /* (PPS_RPA1G4R) TSTBUS11  */
 #define PPS_RPA1G4R_RPA1G4R_OFF               (PPS_RPA1G4R_RPA1G4R_OFF_Val << PPS_RPA1G4R_RPA1G4R_Pos) /* (PPS_RPA1G4R) OFF Position  */
 #define PPS_RPA1G4R_RPA1G4R_SCOM0P2           (PPS_RPA1G4R_RPA1G4R_SCOM0P2_Val << PPS_RPA1G4R_RPA1G4R_Pos) /* (PPS_RPA1G4R) SERCOM0/PAD2 Position  */
 #define PPS_RPA1G4R_RPA1G4R_SCOM0P0           (PPS_RPA1G4R_RPA1G4R_SCOM0P0_Val << PPS_RPA1G4R_RPA1G4R_Pos) /* (PPS_RPA1G4R) SERCOM0/PAD0 Position  */
