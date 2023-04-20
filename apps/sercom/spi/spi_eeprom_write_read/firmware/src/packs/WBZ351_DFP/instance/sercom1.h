@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,16 +20,16 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_SERCOM1_INSTANCE_
 #define _WBZ35_SERCOM1_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SERCOM1 peripheral ========== */
-#define SERCOM1_INSTANCE_ID                      (4)        
 #define SERCOM1_DMAC_ID_RX                       (6)        
 #define SERCOM1_DMAC_ID_TX                       (7)        
-#define SERCOM1_GCLK_ID_SLOW                     (3)        
 #define SERCOM1_GCLK_ID_CORE                     (3)        
+#define SERCOM1_GCLK_ID_SLOW                     (3)        
+#define SERCOM1_INSTANCE_ID                      (4)        
 
 #endif /* _WBZ35_SERCOM1_INSTANCE_ */
