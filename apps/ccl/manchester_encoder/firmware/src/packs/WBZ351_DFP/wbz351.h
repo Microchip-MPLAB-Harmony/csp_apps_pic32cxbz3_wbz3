@@ -1,7 +1,7 @@
 /*
  * Header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* File generated from device description version 2022-04-19T15:30:24Z */
+/* File generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ351_H_
 #define _WBZ351_H_
 
@@ -266,7 +266,6 @@ void BT_LC_Handler                 ( void );
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 /* Configuration of the CORTEX-M4 Processor and Core Peripherals */
-#define __ARCH_ARM                         1
 #define __CM4_REV                     0x0001
 #define __DEBUG_LVL                        3
 #define __FPU_PRESENT                      1
@@ -274,7 +273,6 @@ void BT_LC_Handler                 ( void );
 #define __NVIC_PRIO_BITS                   3
 #define __TRACE_LVL                        2
 #define __VTOR_PRESENT                     1
-#define __ARCH_ARM_CORTEX_M                1
 
 /* CMSIS includes */
 #include "core_cm4.h"
@@ -301,7 +299,6 @@ void BT_LC_Handler                 ( void );
 #include "component/dmt.h"
 #include "component/dscon.h"
 #include "component/dsu.h"
-#include "component/efuse.h"
 #include "component/eic.h"
 #include "component/evsys.h"
 #include "component/freqm.h"
@@ -345,7 +342,6 @@ void BT_LC_Handler                 ( void );
 #include "instance/dmt.h"
 #include "instance/dscon.h"
 #include "instance/dsu.h"
-#include "instance/efuse.h"
 #include "instance/eic.h"
 #include "instance/evsys.h"
 #include "instance/freqm.h"
@@ -406,7 +402,7 @@ void BT_LC_Handler                 ( void );
 #define ID_EVSYS         ( 35) /* Event System Interface (EVSYS) */
 #define ID_RAMECC        ( 36) /* RAM ECC (RAMECC) */
 #define ID_QSPI          ( 64) /* Quad SPI interface (QSPI) */
-#define ID_SERCOM2       ( 67) /* Serial Communication Interface (SERCOM2) */
+#define ID_SERCOM2       ( 65) /* Serial Communication Interface (SERCOM2) */
 #define ID_CCL           ( 70) /* Configurable Custom Logic (CCL) */
 #define ID_AC            ( 71) /* Analog Comparators (AC) */
 #define ID_HMATRIX2TOP   ( 73) /* HSB Matrix (HMATRIX2TOP) */
@@ -434,7 +430,6 @@ void BT_LC_Handler                 ( void );
 #define DSCON_REGS                       ((dscon_registers_t*)0x42011000)              /* DSCON Registers Address      */
 #define DSU_REGS                         ((dsu_registers_t*)0x41000000)                /* DSU Registers Address        */
 #define EIC_REGS                         ((eic_registers_t*)0x40000800)                /* EIC Registers Address        */
-#define EFUSE_REGS                       ((efuse_registers_t*)0x00000000)              /* EFUSE Registers Address      */
 #define EVSYS_REGS                       ((evsys_registers_t*)0x41006000)              /* EVSYS Registers Address      */
 #define FREQM_REGS                       ((freqm_registers_t*)0x40000400)              /* FREQM Registers Address      */
 #define FUSES_DEVICECFG_REGS             ((fuses_devicecfg_registers_t*)0x00805e80)    /* FUSES Registers Address      */
@@ -491,7 +486,6 @@ void BT_LC_Handler                 ( void );
 #define DSCON_BASE_ADDRESS               _UINT32_(0x42011000)                          /* DSCON Base Address */
 #define DSU_BASE_ADDRESS                 _UINT32_(0x41000000)                          /* DSU Base Address */
 #define EIC_BASE_ADDRESS                 _UINT32_(0x40000800)                          /* EIC Base Address */
-#define EFUSE_BASE_ADDRESS               _UINT32_(0x00000000)                          /* EFUSE Base Address */
 #define EVSYS_BASE_ADDRESS               _UINT32_(0x41006000)                          /* EVSYS Base Address */
 #define FREQM_BASE_ADDRESS               _UINT32_(0x40000400)                          /* FREQM Base Address */
 #define FUSES_DEVICECFG_BASE_ADDRESS     _UINT32_(0x00805e80)                          /* FUSES Base Address */
@@ -580,7 +574,6 @@ void BT_LC_Handler                 ( void );
 #define PBPIC_BRIDGE_ADDR              _UINT32_(0x44000000)    /* PBPIC_BRIDGE base address (type: io)*/
 #define MCROM_ROM_ADDR                 _UINT32_(0x45000000)    /* MCROM_ROM base address (type: rom)*/
 #define SYSTEM_CM4F_SYSTEM_REGISTERS_ADDR _UINT32_(0xe0000000)    /* SYSTEM_CM4F_SYSTEM_REGISTERS base address (type: io)*/
-#define EFUSE_ADDR                     _UINT32_(0x00000000)    /* EFUSE base address (type: fuses)*/
 
 /* ************************************************************************** */
 /*   DEVICE SIGNATURES FOR WBZ351                                             */
