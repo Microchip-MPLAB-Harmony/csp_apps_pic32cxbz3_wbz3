@@ -1,7 +1,7 @@
 /*
  * Component description for PAC
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-03-01T12:15:13Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_PAC_COMPONENT_H_
 #define _WBZ35_PAC_COMPONENT_H_
 
@@ -210,7 +210,7 @@
 #define PAC_INTFLAGC_QSPI_Pos                 _UINT32_(0)                                          /* (PAC_INTFLAGC) QSPI Position */
 #define PAC_INTFLAGC_QSPI_Msk                 (_UINT32_(0x1) << PAC_INTFLAGC_QSPI_Pos)             /* (PAC_INTFLAGC) QSPI Mask */
 #define PAC_INTFLAGC_QSPI(value)              (PAC_INTFLAGC_QSPI_Msk & (_UINT32_(value) << PAC_INTFLAGC_QSPI_Pos)) /* Assigment of value for QSPI in the PAC_INTFLAGC register */
-#define PAC_INTFLAGC_SERCOM2_Pos              _UINT32_(3)                                          /* (PAC_INTFLAGC) SERCOM2 Position */
+#define PAC_INTFLAGC_SERCOM2_Pos              _UINT32_(1)                                          /* (PAC_INTFLAGC) SERCOM2 Position */
 #define PAC_INTFLAGC_SERCOM2_Msk              (_UINT32_(0x1) << PAC_INTFLAGC_SERCOM2_Pos)          /* (PAC_INTFLAGC) SERCOM2 Mask */
 #define PAC_INTFLAGC_SERCOM2(value)           (PAC_INTFLAGC_SERCOM2_Msk & (_UINT32_(value) << PAC_INTFLAGC_SERCOM2_Pos)) /* Assigment of value for SERCOM2 in the PAC_INTFLAGC register */
 #define PAC_INTFLAGC_CCL_Pos                  _UINT32_(6)                                          /* (PAC_INTFLAGC) CCL Position */
@@ -219,9 +219,9 @@
 #define PAC_INTFLAGC_AC_Pos                   _UINT32_(7)                                          /* (PAC_INTFLAGC) AC Position */
 #define PAC_INTFLAGC_AC_Msk                   (_UINT32_(0x1) << PAC_INTFLAGC_AC_Pos)               /* (PAC_INTFLAGC) AC Mask */
 #define PAC_INTFLAGC_AC(value)                (PAC_INTFLAGC_AC_Msk & (_UINT32_(value) << PAC_INTFLAGC_AC_Pos)) /* Assigment of value for AC in the PAC_INTFLAGC register */
-#define PAC_INTFLAGC_Msk                      _UINT32_(0x000000C9)                                 /* (PAC_INTFLAGC) Register Mask  */
+#define PAC_INTFLAGC_Msk                      _UINT32_(0x000000C3)                                 /* (PAC_INTFLAGC) Register Mask  */
 
-#define PAC_INTFLAGC_SERCOM_Pos               _UINT32_(3)                                          /* (PAC_INTFLAGC Position) SERCOM2 */
+#define PAC_INTFLAGC_SERCOM_Pos               _UINT32_(1)                                          /* (PAC_INTFLAGC Position) SERCOM2 */
 #define PAC_INTFLAGC_SERCOM_Msk               (_UINT32_(0x1) << PAC_INTFLAGC_SERCOM_Pos)           /* (PAC_INTFLAGC Mask) SERCOM */
 #define PAC_INTFLAGC_SERCOM(value)            (PAC_INTFLAGC_SERCOM_Msk & (_UINT32_(value) << PAC_INTFLAGC_SERCOM_Pos)) 
 
@@ -312,7 +312,7 @@
 #define PAC_STATUSC_QSPI_Pos                  _UINT32_(0)                                          /* (PAC_STATUSC) QSPI APB Protect Enable Position */
 #define PAC_STATUSC_QSPI_Msk                  (_UINT32_(0x1) << PAC_STATUSC_QSPI_Pos)              /* (PAC_STATUSC) QSPI APB Protect Enable Mask */
 #define PAC_STATUSC_QSPI(value)               (PAC_STATUSC_QSPI_Msk & (_UINT32_(value) << PAC_STATUSC_QSPI_Pos)) /* Assigment of value for QSPI in the PAC_STATUSC register */
-#define PAC_STATUSC_SERCOM2_Pos               _UINT32_(3)                                          /* (PAC_STATUSC) SERCOM2 APB Protect Enable Position */
+#define PAC_STATUSC_SERCOM2_Pos               _UINT32_(1)                                          /* (PAC_STATUSC) SERCOM2 APB Protect Enable Position */
 #define PAC_STATUSC_SERCOM2_Msk               (_UINT32_(0x1) << PAC_STATUSC_SERCOM2_Pos)           /* (PAC_STATUSC) SERCOM2 APB Protect Enable Mask */
 #define PAC_STATUSC_SERCOM2(value)            (PAC_STATUSC_SERCOM2_Msk & (_UINT32_(value) << PAC_STATUSC_SERCOM2_Pos)) /* Assigment of value for SERCOM2 in the PAC_STATUSC register */
 #define PAC_STATUSC_CCL_Pos                   _UINT32_(6)                                          /* (PAC_STATUSC) CCL APB Protect Enable Position */
@@ -321,9 +321,9 @@
 #define PAC_STATUSC_AC_Pos                    _UINT32_(7)                                          /* (PAC_STATUSC) AC APB Protect Enable Position */
 #define PAC_STATUSC_AC_Msk                    (_UINT32_(0x1) << PAC_STATUSC_AC_Pos)                /* (PAC_STATUSC) AC APB Protect Enable Mask */
 #define PAC_STATUSC_AC(value)                 (PAC_STATUSC_AC_Msk & (_UINT32_(value) << PAC_STATUSC_AC_Pos)) /* Assigment of value for AC in the PAC_STATUSC register */
-#define PAC_STATUSC_Msk                       _UINT32_(0x000000C9)                                 /* (PAC_STATUSC) Register Mask  */
+#define PAC_STATUSC_Msk                       _UINT32_(0x000000C3)                                 /* (PAC_STATUSC) Register Mask  */
 
-#define PAC_STATUSC_SERCOM_Pos                _UINT32_(3)                                          /* (PAC_STATUSC Position) SERCOM2 APB Protect Enable */
+#define PAC_STATUSC_SERCOM_Pos                _UINT32_(1)                                          /* (PAC_STATUSC Position) SERCOM2 APB Protect Enable */
 #define PAC_STATUSC_SERCOM_Msk                (_UINT32_(0x1) << PAC_STATUSC_SERCOM_Pos)            /* (PAC_STATUSC Mask) SERCOM */
 #define PAC_STATUSC_SERCOM(value)             (PAC_STATUSC_SERCOM_Msk & (_UINT32_(value) << PAC_STATUSC_SERCOM_Pos)) 
 

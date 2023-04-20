@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,35 +20,35 @@
  *
  */
 
-/* file generated from device description version 2022-03-01T12:15:13Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_EVSYS_INSTANCE_
 #define _WBZ35_EVSYS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for EVSYS peripheral ========== */
-#define EVSYS_INSTANCE_ID                        _UINT32_(35) 
-#define EVSYS_CHIP_EVSYS_PADDR_MSB               _UINT32_(12) 
-#define EVSYS_CHIP_EVSYS_EXTEVT_NUM              _UINT32_(0) 
-#define EVSYS_CHIP_EVSYS_ASYNCHRONOUS_CHANNELS   _UINT32_(0xFFFFF000) 
-#define EVSYS_CHIP_EVSYS_CHANNELS                _UINT32_(32) 
-#define EVSYS_CHIP_EVSYS_GENERATORS              _UINT32_(81) 
-#define EVSYS_CHIP_EVSYS_SYNCH_NUM               _UINT32_(12) 
-#define EVSYS_CHIP_EVSYS_USERS                   _UINT32_(57) 
-#define EVSYS_CHIP_EVSYS_CHANNELS_BITS           _UINT32_(5) 
-#define EVSYS_CHIP_EVSYS_GENERATORS_BITS         _UINT32_(7) 
-#define EVSYS_CHIP_EVSYS_SYNCH_NUM_BITS          _UINT32_(4) 
-#define EVSYS_CHIP_EVSYS_USERS_BITS              _UINT32_(6) 
-#define EVSYS_GCLK_ID_0                          _UINT32_(8) 
-#define EVSYS_GCLK_ID_1                          _UINT32_(9) 
-#define EVSYS_GCLK_ID_2                          _UINT32_(10) 
-#define EVSYS_GCLK_ID_3                          _UINT32_(11) 
-#define EVSYS_GCLK_ID_4                          _UINT32_(12) 
-#define EVSYS_GCLK_ID_5                          _UINT32_(13) 
-#define EVSYS_GCLK_ID_6                          _UINT32_(14) 
-#define EVSYS_GCLK_ID_7                          _UINT32_(15) 
-#define EVSYS_GCLK_ID_8                          _UINT32_(16) 
-#define EVSYS_GCLK_ID_9                          _UINT32_(17) 
-#define EVSYS_GCLK_ID_10                         _UINT32_(18) 
-#define EVSYS_GCLK_ID_11                         _UINT32_(19) 
+#define EVSYS_CHIP_EVSYS_ASYNCHRONOUS_CHANNELS   (0xFFFFF000) 
+#define EVSYS_CHIP_EVSYS_CHANNELS                (32)       
+#define EVSYS_CHIP_EVSYS_CHANNELS_BITS           (5)        
+#define EVSYS_CHIP_EVSYS_EXTEVT_NUM              (0)        
+#define EVSYS_CHIP_EVSYS_GENERATORS              (81)       
+#define EVSYS_CHIP_EVSYS_GENERATORS_BITS         (7)        
+#define EVSYS_CHIP_EVSYS_PADDR_MSB               (12)       
+#define EVSYS_CHIP_EVSYS_SYNCH_NUM               (12)       
+#define EVSYS_CHIP_EVSYS_SYNCH_NUM_BITS          (4)        
+#define EVSYS_CHIP_EVSYS_USERS                   (57)       
+#define EVSYS_CHIP_EVSYS_USERS_BITS              (6)        
+#define EVSYS_GCLK_ID_0                          (8)        
+#define EVSYS_GCLK_ID_1                          (9)        
+#define EVSYS_GCLK_ID_10                         (18)       
+#define EVSYS_GCLK_ID_11                         (19)       
+#define EVSYS_GCLK_ID_2                          (10)       
+#define EVSYS_GCLK_ID_3                          (11)       
+#define EVSYS_GCLK_ID_4                          (12)       
+#define EVSYS_GCLK_ID_5                          (13)       
+#define EVSYS_GCLK_ID_6                          (14)       
+#define EVSYS_GCLK_ID_7                          (15)       
+#define EVSYS_GCLK_ID_8                          (16)       
+#define EVSYS_GCLK_ID_9                          (17)       
+#define EVSYS_INSTANCE_ID                        (35)       
 
 #endif /* _WBZ35_EVSYS_INSTANCE_ */

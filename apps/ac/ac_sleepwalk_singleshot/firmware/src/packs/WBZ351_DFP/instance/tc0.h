@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,17 +20,17 @@
  *
  */
 
-/* file generated from device description version 2022-03-01T12:15:13Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_TC0_INSTANCE_
 #define _WBZ35_TC0_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC0 peripheral ========== */
-#define TC0_INSTANCE_ID                          _UINT32_(5) 
-#define TC0_DMAC_ID_OVF                          _UINT32_(27) 
-#define TC0_DMAC_ID_MC0                          _UINT32_(28) 
-#define TC0_DMAC_ID_MC1                          _UINT32_(29) 
-#define TC0_MASTER_SLAVE_MODE                    _UINT32_(1) 
-#define TC0_GCLK_ID                              _UINT32_(24) 
+#define TC0_DMAC_ID_MC0                          (28)       
+#define TC0_DMAC_ID_MC1                          (29)       
+#define TC0_DMAC_ID_OVF                          (27)       
+#define TC0_GCLK_ID                              (24)       
+#define TC0_INSTANCE_ID                          (5)        
+#define TC0_MASTER_SLAVE_MODE                    (1)        
 
 #endif /* _WBZ35_TC0_INSTANCE_ */

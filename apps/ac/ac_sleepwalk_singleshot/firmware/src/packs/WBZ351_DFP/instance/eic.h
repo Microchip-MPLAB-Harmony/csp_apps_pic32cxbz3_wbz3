@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,20 +20,20 @@
  *
  */
 
-/* file generated from device description version 2022-03-01T12:15:13Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_EIC_INSTANCE_
 #define _WBZ35_EIC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for EIC peripheral ========== */
-#define EIC_INSTANCE_ID                          _UINT32_(2) 
-#define EIC_CHIP_EIC_PADDR_MSB                   _UINT32_(9) 
-#define EIC_CHIP_EIC_EXTINT_NUM                  _UINT32_(4) 
-#define EIC_CHIP_EIC_NMISENSE_DEFAULT_VALUE      _UINT32_(0) 
-#define EIC_CHIP_EIC_NMI_FORCE_DETECTION         _UINT32_(0) 
-#define EIC_CHIP_EIC_NUMBER_OF_CONFIG_REGS       _UINT32_(1) /* (CHIP_EIC_EXTINT_NUM+7)/8 */
-#define EIC_CHIP_EIC_NUMBER_OF_DPRESCALER_REGS   _UINT32_(1) /* (CHIP_EIC_EXTINT_NUM+7)/8 */
-#define EIC_CHIP_EIC_NUMBER_OF_INTERRUPTS        _UINT32_(4) /* CHIP_EIC_EXTINT_NUM */
-#define EIC_GCLK_ID                              _UINT32_(0) 
+#define EIC_CHIP_EIC_EXTINT_NUM                  (4)        
+#define EIC_CHIP_EIC_NMISENSE_DEFAULT_VALUE      (0)        
+#define EIC_CHIP_EIC_NMI_FORCE_DETECTION         (0)        
+#define EIC_CHIP_EIC_NUMBER_OF_CONFIG_REGS       (1)        /* (CHIP_EIC_EXTINT_NUM+7)/8 */
+#define EIC_CHIP_EIC_NUMBER_OF_DPRESCALER_REGS   (1)        /* (CHIP_EIC_EXTINT_NUM+7)/8 */
+#define EIC_CHIP_EIC_NUMBER_OF_INTERRUPTS        (4)        /* CHIP_EIC_EXTINT_NUM */
+#define EIC_CHIP_EIC_PADDR_MSB                   (9)        
+#define EIC_GCLK_ID                              (0)        
+#define EIC_INSTANCE_ID                          (2)        
 
 #endif /* _WBZ35_EIC_INSTANCE_ */

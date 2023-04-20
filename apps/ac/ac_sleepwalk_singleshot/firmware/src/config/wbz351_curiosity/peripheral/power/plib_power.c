@@ -62,12 +62,12 @@
 void POWER_Initialize( void )
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
-    DSCON_REGS->DSCON_DSCON = 0x0;
-    DSCON_REGS->DSCON_DSCON = 0x0;
+    DSCON_REGS->DSCON_DSCON = 0x0U;
+    DSCON_REGS->DSCON_DSCON = 0x0U;
 
     /* Lock System */
     CFG_REGS->CFG_SYSKEY = 0;
@@ -75,9 +75,10 @@ void POWER_Initialize( void )
 void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
+    bool enterLPMode = true;
 
     switch(mode)
     {
@@ -87,14 +88,14 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
         case LOW_POWER_SLEEP_MODE:
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
                         // Set BT to enter in low power mode
-                        Power_Down_Control_register_ll |= 0x20;
-                        Power_Down_Control_register_ll |= 0x80;
+                        Power_Down_Control_register_ll |= 0x20U;
+                        Power_Down_Control_register_ll |= 0x80U;
                         break;
         case LOW_POWER_DREAM_MODE:
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk | CRU_OSCCON_DRMEN_Msk;
                         // Set BT to enter in low power mode
-                        Power_Down_Control_register_ll |= 0x20;
-                        Power_Down_Control_register_ll |= 0x80;
+                        Power_Down_Control_register_ll |= 0x20U;
+                        Power_Down_Control_register_ll |= 0x80U;
                         break;
         case LOW_POWER_DEEP_SLEEP_MODE:
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
@@ -102,14 +103,18 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
                         DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
                         break;
         default: 
-                        return;
+                        enterLPMode = false;
+                        break;
     }
+    
+    if (enterLPMode)
+    {
+        /* Lock System */
+        CFG_REGS->CFG_SYSKEY = 0;
 
-    /* Lock System */
-    CFG_REGS->CFG_SYSKEY = 0;
-
-    /* enter into selected low power mode */
-    __WFI();
+        /* enter into selected low power mode */
+        __WFI();
+    }
 }
 
 POWER_DS_WAKEUP_SOURCE POWER_DS_WakeupSourceGet( void )
@@ -120,9 +125,9 @@ POWER_DS_WAKEUP_SOURCE POWER_DS_WakeupSourceGet( void )
 void POWER_DS_SoftwareRestore(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON &= ~DSCON_DSCON_DSSR_Msk;
     DSCON_REGS->DSCON_DSCON &= ~DSCON_DSCON_DSSR_Msk;
@@ -134,15 +139,15 @@ void POWER_DS_SoftwareRestore(void)
 // DSCON.RELEASE must be 0 before calling this
 void POWER_DS_WakeupSourceClear( POWER_DS_WAKEUP_SOURCE wakeupSource )
 {
-    DSCON_REGS->DSCON_DSWAKE &= ~wakeupSource;
+    DSCON_REGS->DSCON_DSWAKE &= ~((uint32_t)wakeupSource);
 }
 
 void POWER_DS_ExtendedSemaphoreEnable(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_XSEMAEN_Msk;
     DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_XSEMAEN_Msk;
@@ -153,9 +158,9 @@ void POWER_DS_ExtendedSemaphoreEnable(void)
 void POWER_DS_ExtendedSemaphoreDisable(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_XSEMAEN_Msk);
     DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_XSEMAEN_Msk);
@@ -166,9 +171,9 @@ void POWER_DS_ExtendedSemaphoreDisable(void)
 void POWER_DS_RTCC_PowerEnable(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCPWREQ_Msk;
     DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCPWREQ_Msk;
@@ -179,9 +184,9 @@ void POWER_DS_RTCC_PowerEnable(void)
 void POWER_DS_RTCC_PowerDisable(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCPWREQ_Msk);
     DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCPWREQ_Msk);
@@ -192,9 +197,9 @@ void POWER_DS_RTCC_PowerDisable(void)
 void POWER_DS_RTCC_WakeupEnable(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCCWDIS_Msk);
     DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCCWDIS_Msk);
@@ -205,9 +210,9 @@ void POWER_DS_RTCC_WakeupEnable(void)
 void POWER_DS_RTCC_WakeupDisable(void)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
 
     DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCCWDIS_Msk;
     DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCCWDIS_Msk;
@@ -219,9 +224,9 @@ void POWER_DS_RTCC_WakeupDisable(void)
 void POWER_DS_SemaphoreWrite(POWER_DS_SEMAPHORE sema, uint32_t semaValue)
 {
     /* Unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
+    CFG_REGS->CFG_SYSKEY = 0x00000000U;
+    CFG_REGS->CFG_SYSKEY = 0xAA996655U;
+    CFG_REGS->CFG_SYSKEY = 0x556699AAU;
     
     if (sema == POWER_DS_SEMAPHORE_1)
     {

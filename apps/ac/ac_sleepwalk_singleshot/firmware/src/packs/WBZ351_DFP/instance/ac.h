@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,23 +20,23 @@
  *
  */
 
-/* file generated from device description version 2022-03-01T12:15:13Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_AC_INSTANCE_
 #define _WBZ35_AC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for AC peripheral ========== */
-#define AC_INSTANCE_ID                           _UINT32_(71) 
-#define AC_CHIP_AC_PADDR_MSB                     _UINT32_(9) 
-#define AC_CHIP_AC_IMPLEMENTS_VDBLR              _UINT32_(0) 
-#define AC_CHIP_AC_PAIRS                         _UINT32_(1) 
-#define AC_CHIP_AC_NUM_CMP                       _UINT32_(2) 
-#define AC_CHIP_AC_FUSES_DATA_MSB                _UINT32_(127) 
-#define AC_CHIP_AC_FUSES_RDY_MSB                 _UINT32_(3) 
-#define AC_CHIP_AC_FUSES_BIAS0_ROWID             _UINT32_(4) 
-#define AC_CHIP_AC_FUSES_BIAS0_START             _UINT32_(0) 
-#define AC_CHIP_AC_FUSES_BIAS0_SIZE              _UINT32_(2) 
-#define AC_GCLK_ID                               _UINT32_(20) 
-#define AC_LOAD_CALIB                            _UINT32_(0) 
+#define AC_CHIP_AC_FUSES_BIAS0_ROWID             (4)        
+#define AC_CHIP_AC_FUSES_BIAS0_SIZE              (2)        
+#define AC_CHIP_AC_FUSES_BIAS0_START             (0)        
+#define AC_CHIP_AC_FUSES_DATA_MSB                (127)      
+#define AC_CHIP_AC_FUSES_RDY_MSB                 (3)        
+#define AC_CHIP_AC_IMPLEMENTS_VDBLR              (0)        
+#define AC_CHIP_AC_NUM_CMP                       (2)        
+#define AC_CHIP_AC_PADDR_MSB                     (9)        
+#define AC_CHIP_AC_PAIRS                         (1)        
+#define AC_GCLK_ID                               (20)       
+#define AC_INSTANCE_ID                           (71)       
+#define AC_LOAD_CALIB                            (0)        
 
 #endif /* _WBZ35_AC_INSTANCE_ */

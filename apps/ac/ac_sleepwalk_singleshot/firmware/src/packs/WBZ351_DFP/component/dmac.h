@@ -1,7 +1,7 @@
 /*
  * Component description for DMAC
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-03-01T12:15:13Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_DMAC_COMPONENT_H_
 #define _WBZ35_DMAC_COMPONENT_H_
 
@@ -353,9 +353,6 @@
 #define DMAC_CTRL_DMAENABLE_Pos               _UINT16_(1)                                          /* (DMAC_CTRL) DMA Enable Position */
 #define DMAC_CTRL_DMAENABLE_Msk               (_UINT16_(0x1) << DMAC_CTRL_DMAENABLE_Pos)           /* (DMAC_CTRL) DMA Enable Mask */
 #define DMAC_CTRL_DMAENABLE(value)            (DMAC_CTRL_DMAENABLE_Msk & (_UINT16_(value) << DMAC_CTRL_DMAENABLE_Pos)) /* Assigment of value for DMAENABLE in the DMAC_CTRL register */
-#define DMAC_CTRL_CRCENABLE_Pos               _UINT16_(2)                                          /* (DMAC_CTRL) CRC Enable Position */
-#define DMAC_CTRL_CRCENABLE_Msk               (_UINT16_(0x1) << DMAC_CTRL_CRCENABLE_Pos)           /* (DMAC_CTRL) CRC Enable Mask */
-#define DMAC_CTRL_CRCENABLE(value)            (DMAC_CTRL_CRCENABLE_Msk & (_UINT16_(value) << DMAC_CTRL_CRCENABLE_Pos)) /* Assigment of value for CRCENABLE in the DMAC_CTRL register */
 #define DMAC_CTRL_LVLEN0_Pos                  _UINT16_(8)                                          /* (DMAC_CTRL) Priority Level 0 Enable Position */
 #define DMAC_CTRL_LVLEN0_Msk                  (_UINT16_(0x1) << DMAC_CTRL_LVLEN0_Pos)              /* (DMAC_CTRL) Priority Level 0 Enable Mask */
 #define DMAC_CTRL_LVLEN0(value)               (DMAC_CTRL_LVLEN0_Msk & (_UINT16_(value) << DMAC_CTRL_LVLEN0_Pos)) /* Assigment of value for LVLEN0 in the DMAC_CTRL register */
@@ -368,7 +365,7 @@
 #define DMAC_CTRL_LVLEN3_Pos                  _UINT16_(11)                                         /* (DMAC_CTRL) Priority Level 3 Enable Position */
 #define DMAC_CTRL_LVLEN3_Msk                  (_UINT16_(0x1) << DMAC_CTRL_LVLEN3_Pos)              /* (DMAC_CTRL) Priority Level 3 Enable Mask */
 #define DMAC_CTRL_LVLEN3(value)               (DMAC_CTRL_LVLEN3_Msk & (_UINT16_(value) << DMAC_CTRL_LVLEN3_Pos)) /* Assigment of value for LVLEN3 in the DMAC_CTRL register */
-#define DMAC_CTRL_Msk                         _UINT16_(0x0F07)                                     /* (DMAC_CTRL) Register Mask  */
+#define DMAC_CTRL_Msk                         _UINT16_(0x0F03)                                     /* (DMAC_CTRL) Register Mask  */
 
 #define DMAC_CTRL_LVLEN_Pos                   _UINT16_(8)                                          /* (DMAC_CTRL Position) Priority Level 3 Enable */
 #define DMAC_CTRL_LVLEN_Msk                   (_UINT16_(0xF) << DMAC_CTRL_LVLEN_Pos)               /* (DMAC_CTRL Mask) LVLEN */

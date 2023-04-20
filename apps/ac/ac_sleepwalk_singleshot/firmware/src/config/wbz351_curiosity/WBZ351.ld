@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------------------
  * MPLAB XC32 Compiler -  WBZ351 linker script
  * 
- * Copyright (c) 2022, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ * Copyright (c) 2023, Microchip Technology Inc. and its subsidiaries ("Microchip")
  * All rights reserved.
  * 
  * This software is developed by Microchip Technology Inc. and its
@@ -65,9 +65,9 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
 #  define ROM_ORIGIN 0x1000200
 #endif
 #ifndef ROM_LENGTH
-#  define ROM_LENGTH 0x80000
-#elif (ROM_LENGTH > 0x80000)
-#  error ROM_LENGTH is greater than the max size of 0x80000
+#  define ROM_LENGTH 0x7fe00
+#elif (ROM_LENGTH > 0x7fe00)
+#  error ROM_LENGTH is greater than the max size of 0x7fe00
 #endif
 #ifndef RAM_ORIGIN
 #  define RAM_ORIGIN 0x20000000
@@ -79,6 +79,7 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
 #endif
 
 
+
 /*************************************************************************
  * Memory-Region Definitions
  * The MEMORY command describes the location and size of blocks of memory
@@ -88,30 +89,6 @@ MEMORY
 {
   rom (LRX) : ORIGIN = ROM_ORIGIN, LENGTH = ROM_LENGTH
   ram (WX!R) : ORIGIN = RAM_ORIGIN, LENGTH = RAM_LENGTH
-  config_D0805F80 : ORIGIN = 0xD0805F80, LENGTH = 0x4
-  config_D0805E80 : ORIGIN = 0xD0805E80, LENGTH = 0x4
-  config_D0805F84 : ORIGIN = 0xD0805F84, LENGTH = 0x4
-  config_D0805F88 : ORIGIN = 0xD0805F88, LENGTH = 0x4
-  config_D0805E8C : ORIGIN = 0xD0805E8C, LENGTH = 0x4
-  config_D0805E90 : ORIGIN = 0xD0805E90, LENGTH = 0x4
-  config_D0805F98 : ORIGIN = 0xD0805F98, LENGTH = 0x4
-  config_D0805F94 : ORIGIN = 0xD0805F94, LENGTH = 0x4
-  config_D0805E98 : ORIGIN = 0xD0805E98, LENGTH = 0x4
-  config_D0805E84 : ORIGIN = 0xD0805E84, LENGTH = 0x4
-  config_D0805E9C : ORIGIN = 0xD0805E9C, LENGTH = 0x4
-  config_D0805EB0 : ORIGIN = 0xD0805EB0, LENGTH = 0x4
-  config_D0805F9C : ORIGIN = 0xD0805F9C, LENGTH = 0x4
-  config_D0805FB0 : ORIGIN = 0xD0805FB0, LENGTH = 0x4
-  config_D0805E88 : ORIGIN = 0xD0805E88, LENGTH = 0x4
-  config_D0805EB4 : ORIGIN = 0xD0805EB4, LENGTH = 0x4
-  config_D0805FB8 : ORIGIN = 0xD0805FB8, LENGTH = 0x4
-  config_D0805FB4 : ORIGIN = 0xD0805FB4, LENGTH = 0x4
-  config_D0805FBC : ORIGIN = 0xD0805FBC, LENGTH = 0x4
-  config_D0805F8C : ORIGIN = 0xD0805F8C, LENGTH = 0x4
-  config_D0805EB8 : ORIGIN = 0xD0805EB8, LENGTH = 0x4
-  config_D0805F90 : ORIGIN = 0xD0805F90, LENGTH = 0x4
-  config_D0805EBC : ORIGIN = 0xD0805EBC, LENGTH = 0x4
-  config_D0805E94 : ORIGIN = 0xD0805E94, LENGTH = 0x4
 
 }
 /*************************************************************************
@@ -122,6 +99,9 @@ MEMORY
  * 
  * CODE_REGION defaults to 'rom', if rom is present (non-zero length),
  * and 'ram' otherwise.
+ * N.B. The BFA will still allocate code to any MEMORY named 'rom' regardless
+ * of CODE_REGION's value. If you wish to use rom for something else please
+ * rename the MEMORY entry.
  * DATA_REGION defaults to 'ram', which must be present.
  * VECTOR_REGION defaults to CODE_REGION, unless 'boot_rom' is present.
  */
@@ -136,7 +116,7 @@ MEMORY
 # define DATA_REGION ram
 #endif 
 #ifndef VECTOR_REGION
-# define VECTOR_REGION rom
+# define VECTOR_REGION CODE_REGION
 #endif
 
 __rom_end = ORIGIN(rom) + LENGTH(rom);
@@ -147,78 +127,6 @@ __ram_end = ORIGIN(ram) + LENGTH(ram);
  *************************************************************************/
 SECTIONS
 {
-    .config_D0805F80 : {
-      KEEP(*(.config_D0805F80))
-    } > config_D0805F80
-    .config_D0805E80 : {
-      KEEP(*(.config_D0805E80))
-    } > config_D0805E80
-    .config_D0805F84 : {
-      KEEP(*(.config_D0805F84))
-    } > config_D0805F84
-    .config_D0805F88 : {
-      KEEP(*(.config_D0805F88))
-    } > config_D0805F88
-    .config_D0805E8C : {
-      KEEP(*(.config_D0805E8C))
-    } > config_D0805E8C
-    .config_D0805E90 : {
-      KEEP(*(.config_D0805E90))
-    } > config_D0805E90
-    .config_D0805F98 : {
-      KEEP(*(.config_D0805F98))
-    } > config_D0805F98
-    .config_D0805F94 : {
-      KEEP(*(.config_D0805F94))
-    } > config_D0805F94
-    .config_D0805E98 : {
-      KEEP(*(.config_D0805E98))
-    } > config_D0805E98
-    .config_D0805E84 : {
-      KEEP(*(.config_D0805E84))
-    } > config_D0805E84
-    .config_D0805E9C : {
-      KEEP(*(.config_D0805E9C))
-    } > config_D0805E9C
-    .config_D0805EB0 : {
-      KEEP(*(.config_D0805EB0))
-    } > config_D0805EB0
-    .config_D0805F9C : {
-      KEEP(*(.config_D0805F9C))
-    } > config_D0805F9C
-    .config_D0805FB0 : {
-      KEEP(*(.config_D0805FB0))
-    } > config_D0805FB0
-    .config_D0805E88 : {
-      KEEP(*(.config_D0805E88))
-    } > config_D0805E88
-    .config_D0805EB4 : {
-      KEEP(*(.config_D0805EB4))
-    } > config_D0805EB4
-    .config_D0805FB8 : {
-      KEEP(*(.config_D0805FB8))
-    } > config_D0805FB8
-    .config_D0805FB4 : {
-      KEEP(*(.config_D0805FB4))
-    } > config_D0805FB4
-    .config_D0805FBC : {
-      KEEP(*(.config_D0805FBC))
-    } > config_D0805FBC
-    .config_D0805F8C : {
-      KEEP(*(.config_D0805F8C))
-    } > config_D0805F8C
-    .config_D0805EB8 : {
-      KEEP(*(.config_D0805EB8))
-    } > config_D0805EB8
-    .config_D0805F90 : {
-      KEEP(*(.config_D0805F90))
-    } > config_D0805F90
-    .config_D0805EBC : {
-      KEEP(*(.config_D0805EBC))
-    } > config_D0805EBC
-    .config_D0805E94 : {
-      KEEP(*(.config_D0805E94))
-    } > config_D0805E94
 
     /*
      * The linker moves the .vectors section into itcm when itcm is
