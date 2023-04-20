@@ -1,7 +1,7 @@
 /*
  * Component description for SILEX
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_SILEX_COMPONENT_H_
 #define _WBZ35_SILEX_COMPONENT_H_
 
@@ -1108,6 +1108,21 @@
 #define SILEX_RNG_DATA_HWCONFIG_AIS_Msk       (_UINT32_(0x1) << SILEX_RNG_DATA_HWCONFIG_AIS_Pos)   /* (SILEX_RNG_DATA_HWCONFIG Mask) AIS */
 #define SILEX_RNG_DATA_HWCONFIG_AIS(value)    (SILEX_RNG_DATA_HWCONFIG_AIS_Msk & (_UINT32_(value) << SILEX_RNG_DATA_HWCONFIG_AIS_Pos)) 
 
+/* -------- SILEX_CRYPTOCON : (SILEX Offset: 0x00) (R/W 32) Crypto control register. -------- */
+#define SILEX_CRYPTOCON_RESETVALUE            _UINT32_(0x00)                                       /*  (SILEX_CRYPTOCON) Crypto control register.  Reset Value */
+
+#define SILEX_CRYPTOCON_SWRST_Pos             _UINT32_(0)                                          /* (SILEX_CRYPTOCON) Software Reset Position */
+#define SILEX_CRYPTOCON_SWRST_Msk             (_UINT32_(0x1) << SILEX_CRYPTOCON_SWRST_Pos)         /* (SILEX_CRYPTOCON) Software Reset Mask */
+#define SILEX_CRYPTOCON_SWRST(value)          (SILEX_CRYPTOCON_SWRST_Msk & (_UINT32_(value) << SILEX_CRYPTOCON_SWRST_Pos)) /* Assigment of value for SWRST in the SILEX_CRYPTOCON register */
+#define SILEX_CRYPTOCON_ENABLE_Pos            _UINT32_(1)                                          /* (SILEX_CRYPTOCON) Enable clock to SILEX Position */
+#define SILEX_CRYPTOCON_ENABLE_Msk            (_UINT32_(0x1) << SILEX_CRYPTOCON_ENABLE_Pos)        /* (SILEX_CRYPTOCON) Enable clock to SILEX Mask */
+#define SILEX_CRYPTOCON_ENABLE(value)         (SILEX_CRYPTOCON_ENABLE_Msk & (_UINT32_(value) << SILEX_CRYPTOCON_ENABLE_Pos)) /* Assigment of value for ENABLE in the SILEX_CRYPTOCON register */
+#define SILEX_CRYPTOCON_RUNSTDBY_Pos          _UINT32_(6)                                          /* (SILEX_CRYPTOCON) Enable clock in idle mode Position */
+#define SILEX_CRYPTOCON_RUNSTDBY_Msk          (_UINT32_(0x1) << SILEX_CRYPTOCON_RUNSTDBY_Pos)      /* (SILEX_CRYPTOCON) Enable clock in idle mode Mask */
+#define SILEX_CRYPTOCON_RUNSTDBY(value)       (SILEX_CRYPTOCON_RUNSTDBY_Msk & (_UINT32_(value) << SILEX_CRYPTOCON_RUNSTDBY_Pos)) /* Assigment of value for RUNSTDBY in the SILEX_CRYPTOCON register */
+#define SILEX_CRYPTOCON_Msk                   _UINT32_(0x00000043)                                 /* (SILEX_CRYPTOCON) Register Mask  */
+
+
 /** \brief SILEX register offsets definitions */
 #define SILEX_DMA_FETCH_ADDR_LSB_REG_OFST _UINT32_(0x00)      /* (SILEX_DMA_FETCH_ADDR_LSB)  Offset */
 #define SILEX_DMA_FETCH_ADDR_MSB_REG_OFST _UINT32_(0x04)      /* (SILEX_DMA_FETCH_ADDR_MSB)  Offset */
@@ -1185,9 +1200,10 @@
 #define SILEX_RNG_DATA_AIS31CONF2_REG_OFST _UINT32_(0x4050)    /* (SILEX_RNG_DATA_AIS31CONF2) AIS31 configuration register 2. Offset */
 #define SILEX_RNG_DATA_AIS31STATUS_REG_OFST _UINT32_(0x4054)    /* (SILEX_RNG_DATA_AIS31STATUS) AIS31 status register. Offset */
 #define SILEX_RNG_DATA_HWCONFIG_REG_OFST _UINT32_(0x4058)    /* (SILEX_RNG_DATA_HWCONFIG) Hardware configuration register. Offset */
+#define SILEX_CRYPTOCON_REG_OFST       _UINT32_(0x00)      /* (SILEX_CRYPTOCON) Crypto control register. Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief SILEX register API structure */
+/** \brief SFR register API structure */
 typedef struct
 {  /*  */
   __IO  uint32_t                       SILEX_DMA_FETCH_ADDR_LSB; /**< Offset: 0x00 (R/W  32)  */
@@ -1273,6 +1289,16 @@ typedef struct
   __IO  uint32_t                       SILEX_RNG_DATA_AIS31CONF2; /**< Offset: 0x4050 (R/W  32) AIS31 configuration register 2. */
   __IO  uint32_t                       SILEX_RNG_DATA_AIS31STATUS; /**< Offset: 0x4054 (R/W  32) AIS31 status register. */
   __I   uint32_t                       SILEX_RNG_DATA_HWCONFIG; /**< Offset: 0x4058 (R/   32) Hardware configuration register. */
+} silex_sfr_registers_t;
+
+#define SILEX_SFR_NUMBER 1
+
+/** \brief SILEX register API structure */
+typedef struct
+{  /*  */
+  __IO  uint32_t                       SILEX_CRYPTOCON;    /**< Offset: 0x00 (R/W  32) Crypto control register. */
+  __I   uint8_t                        Reserved1[0xFFFC];
+        silex_sfr_registers_t          SFR[SILEX_SFR_NUMBER]; /**< Offset: 0x10000  */
 } silex_registers_t;
 
 
