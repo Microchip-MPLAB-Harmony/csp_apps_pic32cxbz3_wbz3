@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,24 +20,24 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_DSU_INSTANCE_
 #define _WBZ35_DSU_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DSU peripheral ========== */
-#define DSU_INSTANCE_ID                          (32)       
 #define DSU_DMAC_ID_DCC0                         (2)        
 #define DSU_DMAC_ID_DCC1                         (3)        
+#define DSU_INSTANCE_ID                          (32)       
 
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-#define DSU_PERM_ADDR_START1                     0x4400_0600 /* Permissible address range start */
-#define DSU_PERM_ADDR_END1                       0x4400_07FF /* Permissible address range end */
-#define DSU_PERM_ADDR_START2                     0x4400_2C00 /* Second permissible address range start */
-#define DSU_PERM_ADDR_END2                       0x4400_3BFF /* Second permissible address range end */
-#define DSU_FLASH_ADDR_START                     0x0080_0000 /* Flash address start */
 #define DSU_FLASH_ADDR_END                       0x0107_FFFF /* Flash address end */
+#define DSU_FLASH_ADDR_START                     0x0080_0000 /* Flash address start */
+#define DSU_PERM_ADDR_END1                       0x4400_07FF /* Permissible address range end */
+#define DSU_PERM_ADDR_END2                       0x4400_3BFF /* Second permissible address range end */
+#define DSU_PERM_ADDR_START1                     0x4400_0600 /* Permissible address range start */
+#define DSU_PERM_ADDR_START2                     0x4400_2C00 /* Second permissible address range start */
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 
