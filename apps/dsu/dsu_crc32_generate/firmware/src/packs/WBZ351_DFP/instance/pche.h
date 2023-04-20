@@ -1,7 +1,7 @@
 /*
  * Instance header file for WBZ351
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,23 +20,23 @@
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/* file generated from device description version 2023-04-11T16:47:17Z */
 #ifndef _WBZ35_PCHE_INSTANCE_
 #define _WBZ35_PCHE_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PCHE peripheral ========== */
-#define PCHE_UPB_ADDRL                           (0x2400)   
+#define PCHE_DCHE_PRIORITY                       (0)        /* dCache has equal priority with iCache and aCache */
+#define PCHE_FLOP_BASED_CACHE_ARRAY_A            (1)        /* Subject to Change / Design Legwork is needed */
+#define PCHE_FLOP_BASED_CACHE_ARRAY_D            (1)        /* Subject to Change / Design Legwork is needed */
+#define PCHE_FLOP_BASED_CACHE_ARRAY_I            (1)        /* Subject to Change / Design Legwork is needed */
+#define PCHE_NUM_CL_A                            (2)        
+#define PCHE_NUM_CL_D                            (2)        
+#define PCHE_NUM_CL_I                            (4)        
 #define PCHE_NUM_INTS                            (1)        /* ECC present */
 #define PCHE_PFM_ECC_PRESENT                     (1)        /* ECC present */
-#define PCHE_DCHE_PRIORITY                       (0)        /* dCache has equal priority with iCache and aCache */
 #define PCHE_PFM_RDATA_MSB                       (255)      /* bit flash data and 16-byte cache lines */
-#define PCHE_NUM_CL_I                            (4)        
-#define PCHE_NUM_CL_D                            (2)        
-#define PCHE_NUM_CL_A                            (2)        
-#define PCHE_FLOP_BASED_CACHE_ARRAY_I            (1)        /* Subject to Change / Design Legwork is needed */
-#define PCHE_FLOP_BASED_CACHE_ARRAY_D            (1)        /* Subject to Change / Design Legwork is needed */
-#define PCHE_FLOP_BASED_CACHE_ARRAY_A            (1)        /* Subject to Change / Design Legwork is needed */
+#define PCHE_UPB_ADDRL                           (0x2400)   
 
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
