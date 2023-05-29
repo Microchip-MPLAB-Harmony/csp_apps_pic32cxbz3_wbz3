@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CM JH01 family
+parent: Harmony 3 peripheral library application examples for PIC32CX-BZ3 and WBZ351 family
 title: TC capture mode
 has_children: false
 has_toc: false

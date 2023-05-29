@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 peripheral library application examples for PIC32CX-BZ3 and WBZ351 family
+title: TC timer mode
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # TC timer mode
