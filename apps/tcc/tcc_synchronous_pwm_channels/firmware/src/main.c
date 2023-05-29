@@ -64,22 +64,17 @@ void TCC_PeriodEventHandler(uint32_t status, uintptr_t context)
 {
     /* duty cycle values */
     static uint32_t duty0 = 0U;
-    static uint32_t duty1 = 800U;
-    static uint32_t duty2 = 1600U;
+    static uint32_t duty2 = 1200U;
 
     TCC0_PWM24bitDutySet(TCC0_CHANNEL0, duty0);
-    TCC0_PWM24bitDutySet(TCC0_CHANNEL1, duty1);
     TCC0_PWM24bitDutySet(TCC0_CHANNEL2, duty2);
     
     /* Increment duty cycle values */
     duty0 += DUTY_INCREMENT;
-    duty1 += DUTY_INCREMENT;
     duty2 += DUTY_INCREMENT;
     
     if (duty0 > period)
         duty0 = 0U;
-    if (duty1 > period)
-        duty1 = 0U;
     if (duty2 > period)
         duty2 = 0U;
 }
