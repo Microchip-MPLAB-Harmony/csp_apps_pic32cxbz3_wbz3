@@ -102,6 +102,20 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
                         DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
                         DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
                         break;
+        case LOW_POWER_EXTREME_DEEP_SLEEP_MODE:
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_XSEMAEN_Msk); // Disable Extended semaphore register
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_XSEMAEN_Msk);
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCPWREQ_Msk); // Disable power to RTCC
+                        DSCON_REGS->DSCON_DSCON &= (~DSCON_DSCON_RTCPWREQ_Msk);
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCCWDIS_Msk; // Disable wake up from RTCC
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_RTCCWDIS_Msk;
+                        
+                        CFG_REGS->CFG_CFGCON4 &= (~CFG_CFGCON4_DSWDTEN_Msk); // Disable DSWDT
+
+                        CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
+                        DSCON_REGS->DSCON_DSCON |= DSCON_DSCON_DSEN_Msk;
+                        break;
         default: 
                         enterLPMode = false;
                         break;
@@ -139,6 +153,7 @@ void POWER_DS_SoftwareRestore(void)
 // DSCON.RELEASE must be 0 before calling this
 void POWER_DS_WakeupSourceClear( POWER_DS_WAKEUP_SOURCE wakeupSource )
 {
+    DSCON_REGS->DSCON_DSWAKE &= ~((uint32_t)wakeupSource);
     DSCON_REGS->DSCON_DSWAKE &= ~((uint32_t)wakeupSource);
 }
 
@@ -235,8 +250,8 @@ void POWER_DS_SemaphoreWrite(POWER_DS_SEMAPHORE sema, uint32_t semaValue)
     }
     else
     {
-        DSCON_REGS->DSCON_DSSEMA1 = semaValue;
-        DSCON_REGS->DSCON_DSSEMA1 = semaValue;
+        DSCON_REGS->DSCON_DSXSEMA1 = semaValue;
+        DSCON_REGS->DSCON_DSXSEMA1 = semaValue;
     }
 
     /* Lock System */
