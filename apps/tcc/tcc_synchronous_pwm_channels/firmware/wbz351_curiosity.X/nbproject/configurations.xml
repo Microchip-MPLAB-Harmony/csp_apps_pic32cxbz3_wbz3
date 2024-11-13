@@ -157,19 +157,8 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="wbz351_curiosity.mhc" projectFiles="true">
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/core.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/evsys.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/project.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/wbz351_curiosity/wbz351_curiosity.mhc/tcc0.yml</itemPath>
-      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/wbz351_curiosity/harmony-manifest-success.yml</itemPath>
-      <itemPath>../src/config/wbz351_curiosity/harmony-manifest-failure.yml</itemPath>
       <itemPath>tcc_synchronous_pwm_channels_wbz351_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
