@@ -1,86 +1,85 @@
 /*
  * Component description for EFUSE
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
  *
- * Subject to your compliance with these terms, you may use Microchip software and any derivatives
- * exclusively with Microchip products. It is your responsibility to comply with third party license
- * terms applicable to your use of third party software (including open source software) that may
- * accompany Microchip software.
+ * SPDX-License-Identifier: Apache-2.0
  *
- * THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY,
- * APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND
- * FITNESS FOR A PARTICULAR PURPOSE.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL
- * LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF
- * MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE FULLEST EXTENT
- * ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT
- * EXCEED THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  *
  */
 
-/* file generated from device description version 2022-04-19T15:30:24Z */
+/*  file generated from device description file (ATDF) version 2025-02-18T06:25:25Z  */
 #ifndef _WBZ35_EFUSE_COMPONENT_H_
 #define _WBZ35_EFUSE_COMPONENT_H_
 
 /* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR EFUSE                                        */
+/*                     SOFTWARE API DEFINITION FOR EFUSE                      */
 /* ************************************************************************** */
 
 /* -------- EFUSE_SECCFG0 : (EFUSE Offset: 0x00) (R/W 8) Secure Configuration -------- */
 #define EFUSE_SECCFG0_RESETVALUE              _UINT8_(0x00)                                        /*  (EFUSE_SECCFG0) Secure Configuration  Reset Value */
 
-#define EFUSE_SECCFG0_UUID_LCK_Pos            _UINT8_(4)                                           /* (EFUSE_SECCFG0) Programming lock bits for Unique ID fuses Position */
-#define EFUSE_SECCFG0_UUID_LCK_Msk            (_UINT8_(0x3) << EFUSE_SECCFG0_UUID_LCK_Pos)         /* (EFUSE_SECCFG0) Programming lock bits for Unique ID fuses Mask */
-#define EFUSE_SECCFG0_UUID_LCK(value)         (EFUSE_SECCFG0_UUID_LCK_Msk & (_UINT8_(value) << EFUSE_SECCFG0_UUID_LCK_Pos)) /* Assigment of value for UUID_LCK in the EFUSE_SECCFG0 register */
-#define   EFUSE_SECCFG0_UUID_LCK_0_Val        _UINT8_(0x0)                                         /* (EFUSE_SECCFG0) Unique ID is not locked  */
-#define   EFUSE_SECCFG0_UUID_LCK_1_Val        _UINT8_(0x1)                                         /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed  */
-#define   EFUSE_SECCFG0_UUID_LCK_2_Val        _UINT8_(0x2)                                         /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed  */
-#define   EFUSE_SECCFG0_UUID_LCK_3_Val        _UINT8_(0x3)                                         /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed  */
-#define EFUSE_SECCFG0_UUID_LCK_0              (EFUSE_SECCFG0_UUID_LCK_0_Val << EFUSE_SECCFG0_UUID_LCK_Pos) /* (EFUSE_SECCFG0) Unique ID is not locked Position  */
-#define EFUSE_SECCFG0_UUID_LCK_1              (EFUSE_SECCFG0_UUID_LCK_1_Val << EFUSE_SECCFG0_UUID_LCK_Pos) /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG0_UUID_LCK_2              (EFUSE_SECCFG0_UUID_LCK_2_Val << EFUSE_SECCFG0_UUID_LCK_Pos) /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG0_UUID_LCK_3              (EFUSE_SECCFG0_UUID_LCK_3_Val << EFUSE_SECCFG0_UUID_LCK_Pos) /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG0_DEBUG_LCK_Pos           _UINT8_(6)                                           /* (EFUSE_SECCFG0) Lock bits for debug/programming Position */
-#define EFUSE_SECCFG0_DEBUG_LCK_Msk           (_UINT8_(0x3) << EFUSE_SECCFG0_DEBUG_LCK_Pos)        /* (EFUSE_SECCFG0) Lock bits for debug/programming Mask */
-#define EFUSE_SECCFG0_DEBUG_LCK(value)        (EFUSE_SECCFG0_DEBUG_LCK_Msk & (_UINT8_(value) << EFUSE_SECCFG0_DEBUG_LCK_Pos)) /* Assigment of value for DEBUG_LCK in the EFUSE_SECCFG0 register */
-#define   EFUSE_SECCFG0_DEBUG_LCK_0_Val       _UINT8_(0x0)                                         /* (EFUSE_SECCFG0) Debug is not locked  */
-#define   EFUSE_SECCFG0_DEBUG_LCK_1_Val       _UINT8_(0x1)                                         /* (EFUSE_SECCFG0) Debug is locked  */
-#define   EFUSE_SECCFG0_DEBUG_LCK_2_Val       _UINT8_(0x2)                                         /* (EFUSE_SECCFG0) Debug is locked  */
-#define   EFUSE_SECCFG0_DEBUG_LCK_3_Val       _UINT8_(0x3)                                         /* (EFUSE_SECCFG0) Debug is locked  */
-#define EFUSE_SECCFG0_DEBUG_LCK_0             (EFUSE_SECCFG0_DEBUG_LCK_0_Val << EFUSE_SECCFG0_DEBUG_LCK_Pos) /* (EFUSE_SECCFG0) Debug is not locked Position  */
-#define EFUSE_SECCFG0_DEBUG_LCK_1             (EFUSE_SECCFG0_DEBUG_LCK_1_Val << EFUSE_SECCFG0_DEBUG_LCK_Pos) /* (EFUSE_SECCFG0) Debug is locked Position  */
-#define EFUSE_SECCFG0_DEBUG_LCK_2             (EFUSE_SECCFG0_DEBUG_LCK_2_Val << EFUSE_SECCFG0_DEBUG_LCK_Pos) /* (EFUSE_SECCFG0) Debug is locked Position  */
-#define EFUSE_SECCFG0_DEBUG_LCK_3             (EFUSE_SECCFG0_DEBUG_LCK_3_Val << EFUSE_SECCFG0_DEBUG_LCK_Pos) /* (EFUSE_SECCFG0) Debug is locked Position  */
+#define EFUSE_SECCFG0_UUID_LOCK_Pos           _UINT8_(4)                                           /* (EFUSE_SECCFG0) Programming lock bits for Unique ID fuses Position */
+#define EFUSE_SECCFG0_UUID_LOCK_Msk           (_UINT8_(0x3) << EFUSE_SECCFG0_UUID_LOCK_Pos)        /* (EFUSE_SECCFG0) Programming lock bits for Unique ID fuses Mask */
+#define EFUSE_SECCFG0_UUID_LOCK(value)        (EFUSE_SECCFG0_UUID_LOCK_Msk & (_UINT8_(value) << EFUSE_SECCFG0_UUID_LOCK_Pos)) /* Assignment of value for UUID_LOCK in the EFUSE_SECCFG0 register */
+#define   EFUSE_SECCFG0_UUID_LOCK_UUID_NOT_LCK_0_Val _UINT8_(0x0)                                         /* (EFUSE_SECCFG0) Unique ID is not locked  */
+#define   EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_1_Val _UINT8_(0x1)                                         /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed  */
+#define   EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_2_Val _UINT8_(0x2)                                         /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed  */
+#define   EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_3_Val _UINT8_(0x3)                                         /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed  */
+#define EFUSE_SECCFG0_UUID_LOCK_UUID_NOT_LCK_0 (EFUSE_SECCFG0_UUID_LOCK_UUID_NOT_LCK_0_Val << EFUSE_SECCFG0_UUID_LOCK_Pos) /* (EFUSE_SECCFG0) Unique ID is not locked Position */
+#define EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_1 (EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_1_Val << EFUSE_SECCFG0_UUID_LOCK_Pos) /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed Position */
+#define EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_2 (EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_2_Val << EFUSE_SECCFG0_UUID_LOCK_Pos) /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed Position */
+#define EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_3 (EFUSE_SECCFG0_UUID_LOCK_UUID_LCK_NO_PROG_3_Val << EFUSE_SECCFG0_UUID_LOCK_Pos) /* (EFUSE_SECCFG0) Unique ID is locked and cannot be programmed Position */
+#define EFUSE_SECCFG0_DEBUG_LOCK_Pos          _UINT8_(6)                                           /* (EFUSE_SECCFG0) Lock bits for debug/programming Position */
+#define EFUSE_SECCFG0_DEBUG_LOCK_Msk          (_UINT8_(0x3) << EFUSE_SECCFG0_DEBUG_LOCK_Pos)       /* (EFUSE_SECCFG0) Lock bits for debug/programming Mask */
+#define EFUSE_SECCFG0_DEBUG_LOCK(value)       (EFUSE_SECCFG0_DEBUG_LOCK_Msk & (_UINT8_(value) << EFUSE_SECCFG0_DEBUG_LOCK_Pos)) /* Assignment of value for DEBUG_LOCK in the EFUSE_SECCFG0 register */
+#define   EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_NOT_LCK_0_Val _UINT8_(0x0)                                         /* (EFUSE_SECCFG0) Debug is not locked  */
+#define   EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_1_Val _UINT8_(0x1)                                         /* (EFUSE_SECCFG0) Debug is locked  */
+#define   EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_2_Val _UINT8_(0x2)                                         /* (EFUSE_SECCFG0) Debug is locked  */
+#define   EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_3_Val _UINT8_(0x3)                                         /* (EFUSE_SECCFG0) Debug is locked  */
+#define EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_NOT_LCK_0 (EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_NOT_LCK_0_Val << EFUSE_SECCFG0_DEBUG_LOCK_Pos) /* (EFUSE_SECCFG0) Debug is not locked Position */
+#define EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_1  (EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_1_Val << EFUSE_SECCFG0_DEBUG_LOCK_Pos) /* (EFUSE_SECCFG0) Debug is locked Position */
+#define EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_2  (EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_2_Val << EFUSE_SECCFG0_DEBUG_LOCK_Pos) /* (EFUSE_SECCFG0) Debug is locked Position */
+#define EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_3  (EFUSE_SECCFG0_DEBUG_LOCK_DEBUG_LCK_3_Val << EFUSE_SECCFG0_DEBUG_LOCK_Pos) /* (EFUSE_SECCFG0) Debug is locked Position */
 #define EFUSE_SECCFG0_Msk                     _UINT8_(0xF0)                                        /* (EFUSE_SECCFG0) Register Mask  */
 
 
 /* -------- EFUSE_SECCFG1 : (EFUSE Offset: 0x01) (R/W 8) Secure Configuration -------- */
 #define EFUSE_SECCFG1_RESETVALUE              _UINT8_(0x00)                                        /*  (EFUSE_SECCFG1) Secure Configuration  Reset Value */
 
-#define EFUSE_SECCFG1_ROOT_KEY_LCK_Pos        _UINT8_(0)                                           /* (EFUSE_SECCFG1) Lock bits for storage root Key Position */
-#define EFUSE_SECCFG1_ROOT_KEY_LCK_Msk        (_UINT8_(0x3) << EFUSE_SECCFG1_ROOT_KEY_LCK_Pos)     /* (EFUSE_SECCFG1) Lock bits for storage root Key Mask */
-#define EFUSE_SECCFG1_ROOT_KEY_LCK(value)     (EFUSE_SECCFG1_ROOT_KEY_LCK_Msk & (_UINT8_(value) << EFUSE_SECCFG1_ROOT_KEY_LCK_Pos)) /* Assigment of value for ROOT_KEY_LCK in the EFUSE_SECCFG1 register */
-#define   EFUSE_SECCFG1_ROOT_KEY_LCK_0_Val    _UINT8_(0x0)                                         /* (EFUSE_SECCFG1) Storage root key is not locked  */
-#define   EFUSE_SECCFG1_ROOT_KEY_LCK_1_Val    _UINT8_(0x1)                                         /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed  */
-#define   EFUSE_SECCFG1_ROOT_KEY_LCK_2_Val    _UINT8_(0x2)                                         /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed  */
-#define   EFUSE_SECCFG1_ROOT_KEY_LCK_3_Val    _UINT8_(0x3)                                         /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed  */
-#define EFUSE_SECCFG1_ROOT_KEY_LCK_0          (EFUSE_SECCFG1_ROOT_KEY_LCK_0_Val << EFUSE_SECCFG1_ROOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Storage root key is not locked Position  */
-#define EFUSE_SECCFG1_ROOT_KEY_LCK_1          (EFUSE_SECCFG1_ROOT_KEY_LCK_1_Val << EFUSE_SECCFG1_ROOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG1_ROOT_KEY_LCK_2          (EFUSE_SECCFG1_ROOT_KEY_LCK_2_Val << EFUSE_SECCFG1_ROOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG1_ROOT_KEY_LCK_3          (EFUSE_SECCFG1_ROOT_KEY_LCK_3_Val << EFUSE_SECCFG1_ROOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK_Pos        _UINT8_(2)                                           /* (EFUSE_SECCFG1) Lock bits for Secure Boot/OTA Key Position */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK_Msk        (_UINT8_(0x3) << EFUSE_SECCFG1_BOOT_KEY_LCK_Pos)     /* (EFUSE_SECCFG1) Lock bits for Secure Boot/OTA Key Mask */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK(value)     (EFUSE_SECCFG1_BOOT_KEY_LCK_Msk & (_UINT8_(value) << EFUSE_SECCFG1_BOOT_KEY_LCK_Pos)) /* Assigment of value for BOOT_KEY_LCK in the EFUSE_SECCFG1 register */
-#define   EFUSE_SECCFG1_BOOT_KEY_LCK_0_Val    _UINT8_(0x0)                                         /* (EFUSE_SECCFG1) Secure boot key is not locked  */
-#define   EFUSE_SECCFG1_BOOT_KEY_LCK_1_Val    _UINT8_(0x1)                                         /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed  */
-#define   EFUSE_SECCFG1_BOOT_KEY_LCK_2_Val    _UINT8_(0x2)                                         /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed  */
-#define   EFUSE_SECCFG1_BOOT_KEY_LCK_3_Val    _UINT8_(0x3)                                         /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed  */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK_0          (EFUSE_SECCFG1_BOOT_KEY_LCK_0_Val << EFUSE_SECCFG1_BOOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is not locked Position  */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK_1          (EFUSE_SECCFG1_BOOT_KEY_LCK_1_Val << EFUSE_SECCFG1_BOOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK_2          (EFUSE_SECCFG1_BOOT_KEY_LCK_2_Val << EFUSE_SECCFG1_BOOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed Position  */
-#define EFUSE_SECCFG1_BOOT_KEY_LCK_3          (EFUSE_SECCFG1_BOOT_KEY_LCK_3_Val << EFUSE_SECCFG1_BOOT_KEY_LCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed Position  */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos       _UINT8_(0)                                           /* (EFUSE_SECCFG1) Lock bits for storage root Key Position */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK_Msk       (_UINT8_(0x3) << EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos)    /* (EFUSE_SECCFG1) Lock bits for storage root Key Mask */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK(value)    (EFUSE_SECCFG1_ROOT_KEY_LOCK_Msk & (_UINT8_(value) << EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos)) /* Assignment of value for ROOT_KEY_LOCK in the EFUSE_SECCFG1 register */
+#define   EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_NOT_LCK_0_Val _UINT8_(0x0)                                         /* (EFUSE_SECCFG1) Storage root key is not locked  */
+#define   EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_1_Val _UINT8_(0x1)                                         /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed  */
+#define   EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_2_Val _UINT8_(0x2)                                         /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed  */
+#define   EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_3_Val _UINT8_(0x3)                                         /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed  */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_NOT_LCK_0 (EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_NOT_LCK_0_Val << EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Storage root key is not locked Position */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_1 (EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_1_Val << EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed Position */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_2 (EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_2_Val << EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed Position */
+#define EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_3 (EFUSE_SECCFG1_ROOT_KEY_LOCK_ROOT_KEY_LCK_3_Val << EFUSE_SECCFG1_ROOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Storage root key is locked and cannot be programmed Position */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos       _UINT8_(2)                                           /* (EFUSE_SECCFG1) Lock bits for Secure Boot/OTA Key Position */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK_Msk       (_UINT8_(0x3) << EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos)    /* (EFUSE_SECCFG1) Lock bits for Secure Boot/OTA Key Mask */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK(value)    (EFUSE_SECCFG1_BOOT_KEY_LOCK_Msk & (_UINT8_(value) << EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos)) /* Assignment of value for BOOT_KEY_LOCK in the EFUSE_SECCFG1 register */
+#define   EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_NOT_LCK_0_Val _UINT8_(0x0)                                         /* (EFUSE_SECCFG1) Secure boot key is not locked  */
+#define   EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_1_Val _UINT8_(0x1)                                         /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed  */
+#define   EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_2_Val _UINT8_(0x2)                                         /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed  */
+#define   EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_3_Val _UINT8_(0x3)                                         /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed  */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_NOT_LCK_0 (EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_NOT_LCK_0_Val << EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is not locked Position */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_1 (EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_1_Val << EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed Position */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_2 (EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_2_Val << EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed Position */
+#define EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_3 (EFUSE_SECCFG1_BOOT_KEY_LOCK_BOOT_KEY_LCK_3_Val << EFUSE_SECCFG1_BOOT_KEY_LOCK_Pos) /* (EFUSE_SECCFG1) Secure boot key is locked and cannot be programmed Position */
 #define EFUSE_SECCFG1_Msk                     _UINT8_(0x0F)                                        /* (EFUSE_SECCFG1) Register Mask  */
 
 
@@ -89,7 +88,7 @@
 
 #define EFUSE_SECCFG2_ADD_BOOT_KEY_Pos        _UINT8_(0)                                           /* (EFUSE_SECCFG2) Additional boot Key bit Position */
 #define EFUSE_SECCFG2_ADD_BOOT_KEY_Msk        (_UINT8_(0x1) << EFUSE_SECCFG2_ADD_BOOT_KEY_Pos)     /* (EFUSE_SECCFG2) Additional boot Key bit Mask */
-#define EFUSE_SECCFG2_ADD_BOOT_KEY(value)     (EFUSE_SECCFG2_ADD_BOOT_KEY_Msk & (_UINT8_(value) << EFUSE_SECCFG2_ADD_BOOT_KEY_Pos)) /* Assigment of value for ADD_BOOT_KEY in the EFUSE_SECCFG2 register */
+#define EFUSE_SECCFG2_ADD_BOOT_KEY(value)     (EFUSE_SECCFG2_ADD_BOOT_KEY_Msk & (_UINT8_(value) << EFUSE_SECCFG2_ADD_BOOT_KEY_Pos)) /* Assignment of value for ADD_BOOT_KEY in the EFUSE_SECCFG2 register */
 #define EFUSE_SECCFG2_Msk                     _UINT8_(0x01)                                        /* (EFUSE_SECCFG2) Register Mask  */
 
 
@@ -98,7 +97,7 @@
 
 #define EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos _UINT8_(0)                                           /* (EFUSE_ANTIROLLBACKCOUNTER) Anti rollback counter bits Position */
 #define EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Msk (_UINT8_(0xFF) << EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos) /* (EFUSE_ANTIROLLBACKCOUNTER) Anti rollback counter bits Mask */
-#define EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER(value) (EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Msk & (_UINT8_(value) << EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos)) /* Assigment of value for ANTIROLLBACKCOUNTER in the EFUSE_ANTIROLLBACKCOUNTER register */
+#define EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER(value) (EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Msk & (_UINT8_(value) << EFUSE_ANTIROLLBACKCOUNTER_ANTIROLLBACKCOUNTER_Pos)) /* Assignment of value for ANTIROLLBACKCOUNTER in the EFUSE_ANTIROLLBACKCOUNTER register */
 #define EFUSE_ANTIROLLBACKCOUNTER_Msk         _UINT8_(0xFF)                                        /* (EFUSE_ANTIROLLBACKCOUNTER) Register Mask  */
 
 
@@ -107,7 +106,7 @@
 
 #define EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Pos _UINT8_(0)                                           /* (EFUSE_LIFECYCLECOUNTER) Life cycle counter bits Position */
 #define EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Msk (_UINT8_(0xFF) << EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Pos) /* (EFUSE_LIFECYCLECOUNTER) Life cycle counter bits Mask */
-#define EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER(value) (EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Msk & (_UINT8_(value) << EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Pos)) /* Assigment of value for LIFECYCLECOUNTER in the EFUSE_LIFECYCLECOUNTER register */
+#define EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER(value) (EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Msk & (_UINT8_(value) << EFUSE_LIFECYCLECOUNTER_LIFECYCLECOUNTER_Pos)) /* Assignment of value for LIFECYCLECOUNTER in the EFUSE_LIFECYCLECOUNTER register */
 #define EFUSE_LIFECYCLECOUNTER_Msk            _UINT8_(0xFF)                                        /* (EFUSE_LIFECYCLECOUNTER) Register Mask  */
 
 
@@ -116,7 +115,7 @@
 
 #define EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Pos _UINT8_(0)                                           /* (EFUSE_SECUREBOOTKEY) Secure boot key bits Position */
 #define EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Msk (_UINT8_(0xFF) << EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Pos) /* (EFUSE_SECUREBOOTKEY) Secure boot key bits Mask */
-#define EFUSE_SECUREBOOTKEY_SECUREBOOTKEY(value) (EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Msk & (_UINT8_(value) << EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Pos)) /* Assigment of value for SECUREBOOTKEY in the EFUSE_SECUREBOOTKEY register */
+#define EFUSE_SECUREBOOTKEY_SECUREBOOTKEY(value) (EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Msk & (_UINT8_(value) << EFUSE_SECUREBOOTKEY_SECUREBOOTKEY_Pos)) /* Assignment of value for SECUREBOOTKEY in the EFUSE_SECUREBOOTKEY register */
 #define EFUSE_SECUREBOOTKEY_Msk               _UINT8_(0xFF)                                        /* (EFUSE_SECUREBOOTKEY) Register Mask  */
 
 
@@ -125,11 +124,11 @@
 
 #define EFUSE_UUID_UUID_Pos                   _UINT8_(0)                                           /* (EFUSE_UUID) Unique ID bits Position */
 #define EFUSE_UUID_UUID_Msk                   (_UINT8_(0xFF) << EFUSE_UUID_UUID_Pos)               /* (EFUSE_UUID) Unique ID bits Mask */
-#define EFUSE_UUID_UUID(value)                (EFUSE_UUID_UUID_Msk & (_UINT8_(value) << EFUSE_UUID_UUID_Pos)) /* Assigment of value for UUID in the EFUSE_UUID register */
+#define EFUSE_UUID_UUID(value)                (EFUSE_UUID_UUID_Msk & (_UINT8_(value) << EFUSE_UUID_UUID_Pos)) /* Assignment of value for UUID in the EFUSE_UUID register */
 #define EFUSE_UUID_Msk                        _UINT8_(0xFF)                                        /* (EFUSE_UUID) Register Mask  */
 
 
-/** \brief EFUSE register offsets definitions */
+/* EFUSE register offsets definitions */
 #define EFUSE_SECCFG0_REG_OFST         _UINT32_(0x00)      /* (EFUSE_SECCFG0) Secure Configuration Offset */
 #define EFUSE_SECCFG1_REG_OFST         _UINT32_(0x01)      /* (EFUSE_SECCFG1) Secure Configuration Offset */
 #define EFUSE_SECCFG2_REG_OFST         _UINT32_(0x02)      /* (EFUSE_SECCFG2) Secure Configuration Offset */
@@ -237,18 +236,18 @@
 #define EFUSE_UUID15_REG_OFST          _UINT32_(0x1E7)     /* (EFUSE_UUID15) Unique ID Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief EFUSE register API structure */
+/* EFUSE register API structure */
 typedef struct
 {  /* Efuse Memory Map */
-  __IO  uint8_t                        EFUSE_SECCFG0;      /**< Offset: 0x00 (R/W  8) Secure Configuration */
-  __IO  uint8_t                        EFUSE_SECCFG1;      /**< Offset: 0x01 (R/W  8) Secure Configuration */
-  __IO  uint8_t                        EFUSE_SECCFG2;      /**< Offset: 0x02 (R/W  8) Secure Configuration */
+  __IO  uint8_t                        EFUSE_SECCFG0;      /* Offset: 0x00 (R/W  8) Secure Configuration */
+  __IO  uint8_t                        EFUSE_SECCFG1;      /* Offset: 0x01 (R/W  8) Secure Configuration */
+  __IO  uint8_t                        EFUSE_SECCFG2;      /* Offset: 0x02 (R/W  8) Secure Configuration */
   __I   uint8_t                        Reserved1[0x01];
-  __IO  uint8_t                        EFUSE_ANTIROLLBACKCOUNTER[32]; /**< Offset: 0x04 (R/W  8) Anti Roll back counter */
-  __IO  uint8_t                        EFUSE_LIFECYCLECOUNTER[2]; /**< Offset: 0x24 (R/W  8) Life cycle counter */
-  __IO  uint8_t                        EFUSE_SECUREBOOTKEY[48]; /**< Offset: 0x26 (R/W  8) Secure boot key */
+  __IO  uint8_t                        EFUSE_ANTIROLLBACKCOUNTER[32]; /* Offset: 0x04 (R/W  8) Anti Roll back counter */
+  __IO  uint8_t                        EFUSE_LIFECYCLECOUNTER[2]; /* Offset: 0x24 (R/W  8) Life cycle counter */
+  __IO  uint8_t                        EFUSE_SECUREBOOTKEY[48]; /* Offset: 0x26 (R/W  8) Secure boot key */
   __I   uint8_t                        Reserved2[0x182];
-  __IO  uint8_t                        EFUSE_UUID[16];     /**< Offset: 0x1D8 (R/W  8) Unique ID */
+  __IO  uint8_t                        EFUSE_UUID[16];     /* Offset: 0x1D8 (R/W  8) Unique ID */
 } efuse_registers_t;
 
 

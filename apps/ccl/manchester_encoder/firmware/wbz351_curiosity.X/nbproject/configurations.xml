@@ -99,6 +99,7 @@
             <itemPath>../src/packs/WBZ351_DFP/component/tcc.h</itemPath>
             <itemPath>../src/packs/WBZ351_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/WBZ351_DFP/component/zigbee.h</itemPath>
+            <itemPath>../src/packs/WBZ351_DFP/component/efuse.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/WBZ351_DFP/instance/ac.h</itemPath>
@@ -153,6 +154,7 @@
             <itemPath>../src/packs/WBZ351_DFP/instance/tcc2.h</itemPath>
             <itemPath>../src/packs/WBZ351_DFP/instance/wdt.h</itemPath>
             <itemPath>../src/packs/WBZ351_DFP/instance/zigbee.h</itemPath>
+            <itemPath>../src/packs/WBZ351_DFP/instance/efuse.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/WBZ351_DFP/pio/wbz351.h</itemPath>
@@ -162,9 +164,19 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="manchester_encoder_wbz351_curiosity_wbz351_curiosity" displayName="manchester_encoder_wbz351_curiosity_wbz351_curiosity" projectFiles="true">
+        <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/components/ccl.yml</itemPath>
+          <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/components/cmsis.yml</itemPath>
+          <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/components/core.yml</itemPath>
+          <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/components/dfp.yml</itemPath>
+          <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/components/evsys.yml</itemPath>
+          <itemPath>manchester_encoder_wbz351_curiosity_wbz351_curiosity/components/sercom1.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/wbz351_curiosity/harmony-manifest-success.yml</itemPath>
-      <itemPath>manchester_encoder_wbz351_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
@@ -232,12 +244,12 @@
         <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CX-BZ3_DFP" vendor="Microchip" version="1.2.183"/>
+        <pack name="PIC32CX-BZ3_DFP" vendor="Microchip" version="1.3.216"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
