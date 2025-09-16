@@ -52,7 +52,7 @@
 // *****************************************************************************
 
 /* Object to hold callback function and context */
-volatile static ADCHS_CALLBACK_OBJECT ADCHS_CallbackObj[11];
+static volatile ADCHS_CALLBACK_OBJECT ADCHS_CallbackObj[11];
 
 
 
@@ -203,7 +203,7 @@ void __attribute__((used)) ADCHS_InterruptHandler( void )
     status  = ADCHS_REGS->ADCHS_ADCDSTAT1;
     status &= ADCHS_REGS->ADCHS_ADCGIRQEN1;
 
-    
+
     uintptr_t context;
 
 
