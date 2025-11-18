@@ -1,0 +1,556 @@
+generatedFiles:
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/evsys/plib_evsys.h
+  projectFolder: config/wbz351_curiosity/peripheral/evsys
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/evsys/plib_evsys.c
+  projectFolder: config/wbz351_curiosity/peripheral/evsys
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/device_cache.h
+  projectFolder: config/wbz351_curiosity
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/toolchain_specifics.h
+  projectFolder: config/wbz351_curiosity
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/main.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/definitions.h
+  projectFolder: config/wbz351_curiosity
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/initialization.c
+  projectFolder: config/wbz351_curiosity
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/interrupts.c
+  projectFolder: config/wbz351_curiosity
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/interrupts.h
+  projectFolder: config/wbz351_curiosity
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/device_vectors.h
+  projectFolder: config/wbz351_curiosity
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/exceptions.c
+  projectFolder: config/wbz351_curiosity
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/WBZ351.ld
+  projectFolder: config/wbz351_curiosity
+  type: Linker Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/stdio/xc32_monitor.c
+  projectFolder: config/wbz351_curiosity/stdio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/clk/plib_clk.h
+  projectFolder: config/wbz351_curiosity/peripheral/clk
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/clk/plib_clk.c
+  projectFolder: config/wbz351_curiosity/peripheral/clk
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/gpio/plib_gpio.h
+  projectFolder: config/wbz351_curiosity/peripheral/gpio
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/gpio/plib_gpio.c
+  projectFolder: config/wbz351_curiosity/peripheral/gpio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/nvic/plib_nvic.h
+  projectFolder: config/wbz351_curiosity/peripheral/nvic
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/nvic/plib_nvic.c
+  projectFolder: config/wbz351_curiosity/peripheral/nvic
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/pac/plib_pac.h
+  projectFolder: config/wbz351_curiosity/peripheral/pac
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/pac/plib_pac.c
+  projectFolder: config/wbz351_curiosity/peripheral/pac
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/cmcc/plib_cmcc.h
+  projectFolder: config/wbz351_curiosity/peripheral/cmcc
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/cmcc/plib_cmcc.c
+  projectFolder: config/wbz351_curiosity/peripheral/cmcc
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/startup_xc32.c
+  projectFolder: config/wbz351_curiosity
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/libc_syscalls.c
+  projectFolder: config/wbz351_curiosity
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/device.h
+  projectFolder: config/wbz351_curiosity
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/ac.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/adchs.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/arb.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/ble.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/btzbsys.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/ccl.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/cfg.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/cmcc.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/cru.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/cvd.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/dac_ctrl.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/dgi_spi.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/dmac.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/dmt.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/dscon.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/dsu.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/efuse.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/eic.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/evsys.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/freqm.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/fuses.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/gpio.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/hmatrix2top.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/nvm.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/pac.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/pche.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/pfw.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/pmu.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/pps.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/qspi.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/ramecc.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/rcon.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/rot.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/rtc.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/sercom.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/silex.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/tc.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/tcc.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/wdt.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/component/zigbee.h
+  projectFolder: packs/WBZ351_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/ac.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/adchs.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/arb.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/ble.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/btzbsys.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/ccl.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/cfg.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/cmcc.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/cru.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/cvd.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/dac_ctrl.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/dgi_spi.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/dmac.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/dmt.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/dscon.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/dsu.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/efuse.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/eic.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/evsys.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/freqm.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/fuses.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/gpioa.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/gpiob.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/hmatrix2top.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/nvm.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/pac.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/pche.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/pfw.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/pmu.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/pps.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/qspi.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/ramecc.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/rcon.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/rot.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/rtc.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/sercom0.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/sercom1.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/sercom2.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/silex.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc0.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc1.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc2.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc3.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc4.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc5.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc6.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tc7.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tcc0.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tcc1.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/tcc2.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/wdt.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/instance/zigbee.h
+  projectFolder: packs/WBZ351_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/wbz351.h
+  projectFolder: packs/WBZ351_DFP
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/WBZ351_DFP/pio/wbz351.h
+  projectFolder: packs/WBZ351_DFP/pio
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/dsu/plib_dsu.h
+  projectFolder: config/wbz351_curiosity/peripheral/dsu
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/csp_apps_pic32cxbz3_wbz3/apps/dsu/dsu_crc32_generate/firmware/src/config/wbz351_curiosity/peripheral/dsu/plib_dsu.c
+  projectFolder: config/wbz351_curiosity/peripheral/dsu
+  type: Source Files
+generatedSettings:
+- category: C32-LD
+  key: preprocessor-macros
+  value: ''
+- category: C32-LD
+  key: heap-size
+  value: '512'
+- category: C32
+  key: extra-include-directories
+  value: ../src;../src/config/wbz351_curiosity;../src/packs/WBZ351_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/
+- category: C32CPP
+  key: extra-include-directories
+  value: ../src;../src/config/wbz351_curiosity;../src/packs/WBZ351_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/
+- category: C32-LD
+  key: no-device-startup-code
+  value: 'true'
+- category: C32Global
+  key: mitcm
+  value: ''
+- category: C32Global
+  key: mdtcm
+  value: ''
+- category: C32Global
+  key: mstacktcm
+  value: 'false'
+removedFiles: [
+  ]
