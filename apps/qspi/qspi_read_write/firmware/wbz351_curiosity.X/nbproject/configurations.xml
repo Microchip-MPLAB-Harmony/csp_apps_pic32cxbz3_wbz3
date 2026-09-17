@@ -233,7 +233,6 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
-      <itemPath>../src/app_sst26.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
